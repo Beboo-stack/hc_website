@@ -16,60 +16,127 @@ export const slides = [
   ],
 ];
 
+export const mallCategories = [
+  {
+    name: "Modern Furniture ",
+    image: "/Mall Categories/modern.jpg",
+  },
+  {
+    name: "Classic Furniture ",
+    image: "/Mall Categories/classic.jpg",
+  },
+  {
+    name: "Lighting ",
+    image: "/Mall Categories/lighting.jpg",
+  },
+  {
+    name: "Outdoor Furniture ",
+    image: "/Mall Categories/outdoor.jpg",
+  },
+  {
+    name: "Kitchen Wear ",
+    image: "/Mall Categories/kitchen-wear.jpg",
+  },
+  {
+    name: "Home Appliances ",
+    image: "/Mall Categories/home-appliances.jpg",
+  },
+  {
+    name: "Bathrooms Accesories  ",
+    image: "/Mall Categories/modern.jpg",
+  },
+  {
+    name: "Artificial Plants  ",
+    image: "/Mall Categories/classic.jpg",
+  },
+  {
+    name: "Flooring  ",
+    image: "/Mall Categories/lighting.jpg",
+  },
+  {
+    name: "Wallpaper  ",
+    image: "/Mall Categories/outdoor.jpg",
+  },
+  {
+    name: "Dressing Rooms ",
+    image: "/Mall Categories/kitchen-wear.jpg",
+  },
+  {
+    name: "Handcraft  ",
+    image: "/Mall Categories/home-appliances.jpg",
+  },
+  {
+    name: "Hardwear  ",
+    image: "/Mall Categories/modern.jpg",
+  },
+  {
+    name: "Fabric& Curtains   ",
+    image: "/Mall Categories/classic.jpg",
+  },
+  {
+    name: "Kitchens   ",
+    image: "/Mall Categories/lighting.jpg",
+  },
+  {
+    name: "Doors & Windows    ",
+    image: "/Mall Categories/outdoor.jpg",
+  },
+  {
+    name: "Home Accessories   ",
+    image: "/Mall Categories/kitchen-wear.jpg",
+  },
+  {
+    name: "Office Furniture   ",
+    image: "/Mall Categories/home-appliances.jpg",
+  },
+  {
+    name: "Shutters & Motoriesd Gates    ",
+    image: "/Mall Categories/modern.jpg",
+  },
+  {
+    name: "Mattress and Bed Linens    ",
+    image: "/Mall Categories/classic.jpg",
+  },
+];
+
 export const mainLinks = [
   {
-    name: "WHAT'S NEW",
+    name: "About Us",
     href: "#",
   },
   {
-    name: "SHOP",
+    name: "Mall Categories",
     href: "#",
   },
   {
-    name: "DINE",
+    name: "Shops",
     href: "#",
   },
   {
-    name: "STAY",
+    name: "What's New",
     href: "#",
   },
   {
-    name: "ENTERTAIN",
-    href: "#",
-  },
-  {
-    name: "PLAN YOUR VISIT",
-    href: "#",
-  },
-  {
-    name: "SERVICES",
+    name: "Floor Plan",
     href: "#",
   },
 ];
 
 export const blackLinks = [
   {
-    name: "FASHION AVENUE",
+    name: "Offers",
     href: "#",
   },
   {
-    name: "FOUNTAIN VIEWS",
+    name: "Contact Us",
     href: "#",
   },
   {
-    name: "CHINATOWN",
+    name: "Services",
     href: "#",
   },
   {
-    name: "SOUK AL BAHAR",
-    href: "#",
-  },
-  {
-    name: "OFFERS",
-    href: "#",
-  },
-  {
-    name: "EVENTS",
+    name: "Policy",
     href: "#",
   },
 ];

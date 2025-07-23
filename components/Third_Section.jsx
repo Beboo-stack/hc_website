@@ -3,8 +3,8 @@ import React from "react";
 
 const Third_Section = () => {
   return (
-    <div className="py-[2px] w-full h-full md:h-[75vh] flex flex-col lg:flex-row justify-center items-center">
-      <div className="w-full lg:w-[50%] h-screen md:h-full relative">
+    <div className="py-[2px] w-full h-full flex flex-col lg:flex-row justify-center items-center">
+      <div className="w-full lg:w-[50%] h-[75vh] relative">
         <Image
           src="/2.jpg"
           alt="Third Section Image"
@@ -32,7 +32,7 @@ const Third_Section = () => {
         </div>
       </div>
 
-      <div className="w-full lg:w-[50%] h-screen md:h-full relative">
+      <div className="w-full lg:w-[50%] h-[75vh] relative">
         <Image
           src="/1.jpg"
           alt="Third Section Image"
