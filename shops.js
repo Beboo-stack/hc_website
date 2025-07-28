@@ -1,6 +1,6 @@
 export const shops = [
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/1.jpg",
     phone: ["01222822999"],
     email: "example@mail.com",
@@ -10,7 +10,7 @@ export const shops = [
     category: ["Moder Furniture", "Classic Furniture", "Lighting", "Pots & Plants", "Outdoor Furniture"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/2.jpg",
     phone: ["02-38260366", "19997"],
     email: "example@mail.com",
@@ -20,7 +20,7 @@ export const shops = [
     category: ["Modern Furniture"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/3.jpg",
     phone: ["01022237672"],
     email: "example@mail.com",
@@ -30,7 +30,7 @@ export const shops = [
     category: ["Kitchen", "Dressing"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/4.jpg",
     phone: ["01225479978", "01280803335"],
     email: "example@mail.com",
@@ -40,7 +40,7 @@ export const shops = [
     category: ["Accessories & Decor", "Hand Made"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/5.jpg",
     phone: ["02-38260080", "01211158580"],
     email: "example@mail.com",
@@ -50,7 +50,7 @@ export const shops = [
     category: ["Curtains & Fabrics"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/6.jpg",
     phone: ["01202400782"],
     email: "example@mail.com",
@@ -60,7 +60,7 @@ export const shops = [
     category: ["Modern Furniture"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/7.jpg",
     phone: ["01099927451"],
     email: "example@mail.com",
@@ -70,7 +70,7 @@ export const shops = [
     category: ["Modern Furniture", "Lighting"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/8.jpg",
     phone: ["19744", "0127266676"],
     email: "example@mail.com",
@@ -80,7 +80,7 @@ export const shops = [
     category: ["Modern Furniture", "Lighting"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/9.jpg",
     phone: ["01220760333"],
     email: "example@mail.com",
@@ -90,7 +90,7 @@ export const shops = [
     category: ["Lighting"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/10.jpg",
     phone: ["01050860030"],
     email: "example@mail.com",
@@ -100,7 +100,7 @@ export const shops = [
     category: ["Lighting"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/11.jpg",
     phone: ["01066600490", "01066600495"],
     email: "example@mail.com",
@@ -110,7 +110,7 @@ export const shops = [
     category: ["Accessories & Decore", "Flooring", "Wallpaper"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/12.jpg",
     phone: ["00201066433666"],
     email: "example@mail.com",
@@ -130,7 +130,7 @@ export const shops = [
     category: ["Doors & Windows"]
   },
   {
-    floor: "Ground",
+    floor: "Ground Floor",
     logo: "/14.jpg",
     phone: ["01225555003", "0238260068", "01140493330"],
     email: "example@mail.com",
@@ -360,7 +360,7 @@ export const shops = [
     category: ["Modern Furniture"]
   },
   {
-    floor: "Ground Floor",
+    floor: "Ground Floor Floor",
     logo: "/37.jpg",
     phone: ["01090709999"],
     email: "example@mail.com",
@@ -410,7 +410,7 @@ export const shops = [
     category: ["Modern Furniture"]
   },
   {
-    floor: "Ground Floor",
+    floor: "Ground Floor Floor",
     logo: "/42.jpg",
     phone: ["01550140557", "01555108015"],
     email: "example@mail.com",
@@ -450,7 +450,7 @@ export const shops = [
     category: ["Modern furniture"]
   },
   {
-    floor: "Ground Floor",
+    floor: "Ground Floor Floor",
     logo: "/46.jpg",
     phone: ["0112 7206 763 0103 0266 007 "],
     name: "Only Tables",

@@ -1,20 +1,42 @@
 'use client'
 import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { shops } from '@/shops';
+import ShopStructure from '@/components/shop_structure';
 
 function Page() {
-    const searchParams = useSearchParams();
+  const searchParams = useSearchParams();
+  const queryShopName = searchParams.get('name');
 
-    const name = searchParams.get('name');
-    const age = searchParams.get('age');
+  const [data, setData] = useState({})
+  const [error, setError] = useState(false)
 
+  useEffect(() => {
+    const foundShop = shops.find(shop => shop.name === queryShopName);
 
-    return (
-        <div>
-            <h1>Query Parameters:</h1>
-            {name && <p>Name: {name}</p>}
-            {age && <p>Age: {age}</p>}
+    if (foundShop) {
+      setData(foundShop);
+      console.log(foundShop);
+
+      console.log(queryShopName);
+
+    } else {
+      setData("Nothing found")
+      setError(true)
+    }
+  }, []);
+
+  return (
+    <>
+      {error ? (
+        <div className='flex items-center justify-center h-screen text-3xl font-bold'>
+          <p>Shop not found</p>
         </div>
-    );
+      ) : (
+        <ShopStructure data={data} />
+      )}
+    </>
+  );
 }
 
 export default Page;

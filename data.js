@@ -16,7 +16,6 @@ export const slides = [
   ],
 ];
 
-<<<<<<< HEAD
 export const aboutUsPageSlides = [
   [
     {
@@ -41,8 +40,6 @@ export const aboutUsPageSlides = [
   ],
 ];
 
-=======
->>>>>>> 389cb91b82355f5bd28ce8600fcd7fbd6d98b35b
 export const mallCategories = [
   {
     name: "Modern Furniture ",
@@ -129,11 +126,7 @@ export const mallCategories = [
 export const mainLinks = [
   {
     name: "About Us",
-<<<<<<< HEAD
     href: "/about-us",
-=======
-    href: "#",
->>>>>>> 389cb91b82355f5bd28ce8600fcd7fbd6d98b35b
   },
   {
     name: "Mall Categories",
@@ -164,30 +157,10 @@ export const blackLinks = [
   },
   {
     name: "Services",
-<<<<<<< HEAD
     href: "/services",
-=======
-    href: "#",
->>>>>>> 389cb91b82355f5bd28ce8600fcd7fbd6d98b35b
   },
   {
     name: "Policy",
     href: "#",
   },
 ];
-<<<<<<< HEAD
-
-export const shops = [
-  {
-    floor: "Ground",
-    logo: "/1.jpg",
-    phone: "123456789",
-    email: "example@mail.com",
-    name: "Telda",
-    facebook: "",
-    instagram: "",
-    category: []
-  }
-]
-=======
->>>>>>> 389cb91b82355f5bd28ce8600fcd7fbd6d98b35b
