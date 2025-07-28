@@ -66,6 +66,7 @@ const Carousel = ({ slides }) => {
       </div>
       {/* Carousel Controls */}
       <button
+<<<<<<< HEAD
         className="absolute w-10 flex items-center justify-center left-4 top-1/2 -translate-y-1/2  rounded-full p-2 text-white"
         onClick={scrollPrev}
         aria-label="Previous slide"
@@ -74,6 +75,16 @@ const Carousel = ({ slides }) => {
       </button>
       <button
         className="absolute w-10 flex items-center justify-center right-4 top-1/2 -translate-y-1/2 rounded-full p-2 text-white"
+=======
+        className="absolute w-10 flex items-center justify-center left-4 top-1/2 -translate-y-1/2 bg-white/50 rounded-full p-2 text-black"
+        onClick={scrollPrev}
+        aria-label="Previous slide"
+      >
+        <ChevronLeft />
+      </button>
+      <button
+        className="absolute w-10 flex items-center justify-center right-4 top-1/2 -translate-y-1/2 bg-white/50 rounded-full p-2 text-black"
+>>>>>>> 389cb91b82355f5bd28ce8600fcd7fbd6d98b35b
         onClick={scrollNext}
         aria-label="Next slide"
       >
