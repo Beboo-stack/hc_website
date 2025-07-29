@@ -99,7 +99,6 @@ export default function Header() {
                             alt={cat.name}
                             className="w-[100px] h-[100px] object-cover rounded shadow-sm border border-gray-100"
                           />
-<<<<<<< HEAD
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">
                             {cat.name.trim()}
                           </span>
@@ -141,10 +140,6 @@ export default function Header() {
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">
                             {shop.name.trim()}
                           </span>
-=======
-                          <span className="font-semibold text-center text-secondary group-hover:text-primary">{cat.name.trim()}</span>
-                          <span className="text-xs text-gray-500 text-center">Category description here</span>
->>>>>>> bfda2e8b429c622c7d736fe436260a80eb6a2949
                         </div>
                       </Link>
                     ))}
