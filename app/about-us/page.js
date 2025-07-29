@@ -60,7 +60,7 @@ const Page = () => {
               </p>
               <p>
                 Variety Under One Roof: From sofas to kitchens, decor to
-                curtains, outdoor furniture to flooring—you'll find everything
+                curtains, outdoor furniture to flooring—you&apos;ll find everything
                 you need for your home in one place.
               </p>
               <p>
