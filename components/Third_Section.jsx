@@ -25,9 +25,6 @@ const Third_Section = () => {
             <button className=" px-6 py-2 w-full md:w-fit border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
               Discover Now
             </button>
-            <button className=" px-6 py-2 w-full md:w-fit border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
-              Discover Now
-            </button>
           </div>
         </div>
       </div>
@@ -53,9 +50,7 @@ const Third_Section = () => {
             <button className=" px-6 py-2 w-full md:w-fit border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
               Discover Now
             </button>
-            <button className=" px-6 py-2 w-full md:w-fit border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
-              Discover Now
-            </button>
+
           </div>
         </div>
       </div>

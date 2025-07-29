@@ -37,7 +37,12 @@ export default function Header() {
           href="/"
           className="hidden text-secondary border-b-2 mb-2 pb-3 border-black/20 w-full md:flex justify-center font-bold text-2xl tracking-widest"
         >
-          <Image src="/HC Logo Source-01.png" width={150} height={150} alt="HC mall logo"/>
+          <Image
+            src="/HC Logo Source-01.png"
+            width={150}
+            height={150}
+            alt="HC mall logo"
+          />
         </Link>
         <div className="flex items-center justify-between w-full md:w-auto gap-4">
           <button
@@ -51,7 +56,12 @@ export default function Header() {
             href="/"
             className="md:hidden text-secondary font-bold text-2xl tracking-widest mx-auto md:mx-0"
           >
-            HC MALL
+            <Image
+              src="/HC Logo Source-01.png"
+              width={150}
+              height={150}
+              alt="HC mall logo"
+            />  
           </Link>
           <div className="hidden w-full md:flex justify-center items-center gap-12 lg:gap-20 text-base font-medium">
             {mainLinks.map((link, index) => (
@@ -150,7 +160,7 @@ export default function Header() {
       </header>
 
       {/* Secondary Navbar (Black, desktop only) */}
-      <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[100px] lg:mt-[105px]">
+      <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[100px] lg:mt-[120px]">
         {blackLinks.map((link, index) => (
           <Link key={index} href={link.href} className="hover:text-gray-400">
             {link.name}

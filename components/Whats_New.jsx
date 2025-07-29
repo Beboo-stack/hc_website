@@ -5,7 +5,7 @@ const Whats_New = () => {
   return (
     <div className="w-full h-[40vh] flex flex-col items-center justify-center relative">
       <Image
-        src="/Mall Photo_s/IMG_7893 copy.jpg"
+        src="/Mall Photo_s/IMG_7885 copy.jpg"
         alt="Third Section Image"
         width={1000}
         height={1000}
