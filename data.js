@@ -86,11 +86,11 @@ export const mallCategories = [
     image: "/Mall Categories/kitchen-wear.jpg",
   },
   {
-    name: "Handcraft  ",
+    name: "Hand Made  ",
     image: "/Mall Categories/home-appliances.jpg",
   },
   {
-    name: "Hardwear",
+    name: "Hardware",
     image: "/Mall Categories/modern.jpg",
   },
   {

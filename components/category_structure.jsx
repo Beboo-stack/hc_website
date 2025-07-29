@@ -34,8 +34,11 @@ const CategoryStructure = ({ category }) => {
                         <h2 className="text-2xl font-bold mb-4">{category.name} Shops</h2>
                         <hr className="mb-10" />
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                            {shops
-                                .filter(shop => shop.category.includes(category.name.trim()))
+                            {shops.filter(shop =>
+                                shop.category.some(cat =>
+                                    cat.toLowerCase().includes(category.name.toLowerCase().trim())
+                                )
+                            )
                                 .map((shop, index) => (
                                     <ShopCard
                                         key={index}

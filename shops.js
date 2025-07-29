@@ -27,7 +27,7 @@ export const shops = [
     name: "Contistahl",
     facebook: "https://www.facebook.com/ContistahlGroup/?locale=ar_AR",
     instagram: "https://www.instagram.com/contistahl_group/?hl=ar",
-    category: ["Kitchen", "Dressing"]
+    category: ["Kitchen", "Dressing Rooms"]
   },
   {
     floor: "Ground Floor",
@@ -137,7 +137,7 @@ export const shops = [
     name: "Hanimex",
     facebook: "https://www.facebook.com/hanimex.net/?locale=ar_AR",
     instagram: "",
-    category: ["Kitchens", "Dressing", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
+    category: ["Kitchens", "Dressing Rooms", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
   },
   {
     floor: "First Floor",
@@ -147,7 +147,7 @@ export const shops = [
     name: "Divano",
     facebook: "",
     instagram: "https://www.instagram.com/divano.home.furniture/?hl=ar",
-    category: ["Modern Furniture", "Dressing"]
+    category: ["Modern Furniture", "Dressing Rooms"]
   },
   {
     floor: "First Floor",
@@ -257,7 +257,7 @@ export const shops = [
     name: "Malek",
     facebook: "",
     instagram: "",
-    category: ["Bed Linen", "Dressing"]
+    category: ["Bed Linen", "Dressing Rooms"]
   },
   {
     floor: "First Floor",
@@ -327,7 +327,7 @@ export const shops = [
     name: "Caja",
     facebook: "https://www.facebook.com/CAJA.furniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/caja.furniture/?hl=ar",
-    category: ["Kitchens", "Dressing"]
+    category: ["Kitchens", "Dressing Rooms"]
   },
   {
     floor: "Second Floor",
@@ -377,7 +377,7 @@ export const shops = [
     name: "Artynova",
     facebook: "https://www.facebook.com/ArtynovaFurniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/artynovafurniture/?hl=ar",
-    category: ["Kitchens", "Dressing"]
+    category: ["Kitchens", "Dressing Rooms"]
   },
   {
     floor: "First Floor",
