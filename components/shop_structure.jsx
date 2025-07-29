@@ -1,4 +1,3 @@
-// pages/shop/bulgari.js or app/shop/bulgari/page.js (for App Router)
 import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, MapPin } from 'lucide-react';
@@ -8,14 +7,24 @@ const ShopStructure = ({ data }) => {
         <div className="min-h-screen bg-gradient-to-br from-purple-200 via-pink-100 to-blue-100">
             {/* Breadcrumb Navigation */}
             <nav className="px-6 py-4 text-white">
-                <div className="flex items-center space-x-2 text-sm">
-                    <Link href="/" className="hover:underline">
-                        Home
-                    </Link>
-                    <span>›</span>
-                    <span className="font-medium">{data.name}</span>
+                <div className="flex justify-between items-center">
+                    {/* Left: Breadcrumb */}
+                    <div className="flex items-center space-x-2 text-sm">
+                        <Link href="/" className="hover:underline">
+                            Home
+                        </Link>
+                        <span>›</span>
+                        <span className="font-medium">{data.name}</span>
+                    </div>
+
+                    {/* Right: Floor Location */}
+                    <div className="flex items-center space-x-2 text-sm text-primary">
+                        <MapPin className="w-5 h-5" />
+                        <span className="text-lg font-medium">{data.floor}</span>
+                    </div>
                 </div>
             </nav>
+
 
             {/* Main Content */}
             <div className="container mx-auto px-6 py-8">
@@ -40,7 +49,7 @@ const ShopStructure = ({ data }) => {
                 </div>
 
                 {/* Bottom Content - Description and Contact */}
-                <div className="mt-16 grid lg:grid-cols-3 gap-8">
+                <div className="mt-16  grid lg:grid-cols-3 gap-8">
 
                     {/* Brand Description */}
                     <div className="lg:col-span-2">
@@ -56,8 +65,8 @@ const ShopStructure = ({ data }) => {
                     </div>
 
                     {/* Contact Information */}
-                    <div className="flex justify-center lg:justify-end">
-                        <div className="bg-black/30 backdrop-blur-sm p-6 rounded-lg text-white text-center lg:text-left">
+                    <div className="flex  lg:justify-end">
+                        <div className="bg-black/30 backdrop-blur-sm w-full lg:w-fit p-6 rounded-lg text-white text-center lg:text-left">
                             <h3 className="text-xl font-semibold mb-4 uppercase tracking-wide">
                                 Contact :
                             </h3>
@@ -72,10 +81,7 @@ const ShopStructure = ({ data }) => {
                             ) : (
                                 <p>No phone numbers available.</p>
                             )}
-                            <div className="flex items-center justify-center lg:justify-start space-x-3">
-                                <MapPin className="w-5 h-5" />
-                                <span className="text-lg font-medium">{data.floor}</span>
-                            </div>
+
                         </div>
                     </div>
 

@@ -24,7 +24,7 @@ function Page() {
       setData("Nothing found")
       setError(true)
     }
-  }, []);
+  }, [queryShopName, searchParams]);
 
   return (
     <>

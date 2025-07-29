@@ -24,13 +24,13 @@ const Page = () => {
       <p className="mx-auto mt-5 font-bold text-2xl">HC MALL</p>
 
       {/* Main Content - 90% of viewport height */}
-      <main className="flex-1 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto ">
         {/* Rest of your content remains the same */}
         <div className="container mx-auto px-12 py-2 space-y-4">
           {/* Section*/}
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">📖 About Us</h2>
-            <div className="space-y-4 p-max-90ch">
+            <div className="space-y-4 p-max-90ch text-secondary">
               <p>
                 HC Furniture Mall revolutionized the shopping experience by
                 transforming the concept of short-term exhibitions into a

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { mainLinks, blackLinks, mallCategories } from "@/data";
 import Image from "next/image";
@@ -10,6 +10,26 @@ import { shops } from "@/shops";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
+  
+  // Add refs to control dropdown visibility
+  const mallCategoriesRef = useRef(null);
+  const shopsRef = useRef(null);
+
+  // Function to hide dropdowns
+  const hideDropdown = (dropdownRef) => {
+    if (dropdownRef.current) {
+      // Remove focus and blur to hide the dropdown
+      dropdownRef.current.blur();
+      // Force remove hover state by temporarily removing the group class
+      const parentGroup = dropdownRef.current.closest('.group');
+      if (parentGroup) {
+        parentGroup.classList.remove('group');
+        setTimeout(() => {
+          parentGroup.classList.add('group');
+        }, 50);
+      }
+    }
+  };
 
   return (
     <>
@@ -52,13 +72,14 @@ export default function Header() {
                 {/* Enhanced Dropdown for Mall Categories */}
                 {link.name === "Mall Categories" && (
                   <div
+                    ref={mallCategoriesRef}
                     tabIndex={0}
                     className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
                     aria-label="Mall Categories"
                   >
-                    <div className="col-span-full mb-2 text-lg font-bold text-primary">
+                    <div className="col-span-full mb-2 text-lg font-bold text-primary text-center">
                       Mall Categories
                     </div>
                     {mallCategories.map((cat, subIndex) => (
@@ -68,6 +89,7 @@ export default function Header() {
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
+                        onClick={() => hideDropdown(mallCategoriesRef)}
                       >
                         <div className="flex flex-col items-center gap-2">
                           <Image
@@ -88,14 +110,15 @@ export default function Header() {
                 {/*dropdown for shops */}
                 {link.name === "Shops" && (
                   <div
+                    ref={shopsRef}
                     tabIndex={0}
                     className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
                     aria-label="Mall Categories"
                   >
-                    <div className="col-span-full mb-2 text-lg font-bold text-primary">
-                      Mall Categories
+                    <div className="col-span-full mb-2 text-lg font-bold text-primary text-center">
+                      Shops
                     </div>
                     {shops.map((shop, subIndex) => (
                       <Link
@@ -104,6 +127,7 @@ export default function Header() {
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
+                        onClick={() => hideDropdown(shopsRef)}
                       >
                         <div className="flex flex-col items-center gap-2">
                           <Image
@@ -208,6 +232,7 @@ export default function Header() {
                           key={idx}
                           href="#"
                           className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"
+                          onClick={() => setMobileCategoriesOpen(false)}
                         >
                           <Image
                             width={40}

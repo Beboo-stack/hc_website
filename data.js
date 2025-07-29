@@ -90,11 +90,11 @@ export const mallCategories = [
     image: "/Mall Categories/home-appliances.jpg",
   },
   {
-    name: "Hardwear  ",
+    name: "Hardwear",
     image: "/Mall Categories/modern.jpg",
   },
   {
-    name: "Fabric& Curtains   ",
+    name: "Fabric& Curtains",
     image: "/Mall Categories/classic.jpg",
   },
   {
@@ -102,15 +102,15 @@ export const mallCategories = [
     image: "/Mall Categories/lighting.jpg",
   },
   {
-    name: "Doors & Windows    ",
+    name: "Doors & Windows",
     image: "/Mall Categories/outdoor.jpg",
   },
   {
-    name: "Home Accessories   ",
+    name: "Home Accessories",
     image: "/Mall Categories/kitchen-wear.jpg",
   },
   {
-    name: "Office Furniture   ",
+    name: "Office Furniture",
     image: "/Mall Categories/home-appliances.jpg",
   },
   {
@@ -130,7 +130,7 @@ export const mainLinks = [
   },
   {
     name: "Mall Categories",
-    href: "#",
+    href: "/categories",
   },
   {
     name: "Shops",
