@@ -5,7 +5,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { mainLinks, blackLinks, mallCategories } from "@/data";
 import Image from "next/image";
 import { ChevronDownIcon } from "lucide-react";
-import { shops } from "@/shops";
+import { shops } from "@/shops"; 
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
