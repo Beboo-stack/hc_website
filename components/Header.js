@@ -10,7 +10,10 @@ import { shops } from "@/shops";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
-  
+
+  // Sort shops alphabetically by name
+  const sortedShops = [...shops].sort((a, b) => a.name.localeCompare(b.name));
+
   // Add refs to control dropdown visibility
   const mallCategoriesRef = useRef(null);
   const shopsRef = useRef(null);
@@ -21,11 +24,11 @@ export default function Header() {
       // Remove focus and blur to hide the dropdown
       dropdownRef.current.blur();
       // Force remove hover state by temporarily removing the group class
-      const parentGroup = dropdownRef.current.closest('.group');
+      const parentGroup = dropdownRef.current.closest(".group");
       if (parentGroup) {
-        parentGroup.classList.remove('group');
+        parentGroup.classList.remove("group");
         setTimeout(() => {
-          parentGroup.classList.add('group');
+          parentGroup.classList.add("group");
         }, 50);
       }
     }
@@ -99,7 +102,6 @@ export default function Header() {
                             alt={cat.name}
                             className="w-[100px] h-[100px] object-cover rounded shadow-sm border border-gray-100"
                           />
-<<<<<<< HEAD
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">
                             {cat.name.trim()}
                           </span>
@@ -121,10 +123,11 @@ export default function Header() {
                     <div className="col-span-full mb-2 text-lg font-bold text-primary text-center">
                       Shops
                     </div>
-                    {shops.map((shop, subIndex) => (
+                    {/* Use sortedShops here */}
+                    {sortedShops.map((shop, subIndex) => (
                       <Link
                         key={subIndex}
-                        href={`/shop/${shop.name.replace(/\s+/g, '')}`}
+                        href={`/shop/${shop.name.replace(/\s+/g, "")}`}
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
@@ -136,15 +139,11 @@ export default function Header() {
                             height={120}
                             src={shop.logo}
                             alt={shop.name}
-                            className="w-[100px] h-[100px] object-cover rounded shadow-sm border border-gray-100"
+                            className="w-[100px] h-[100px] object-contain rounded shadow-sm border border-gray-100 bg-white"
                           />
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">
                             {shop.name.trim()}
                           </span>
-=======
-                          <span className="font-semibold text-center text-secondary group-hover:text-primary">{cat.name.trim()}</span>
-                          <span className="text-xs text-gray-500 text-center">Category description here</span>
->>>>>>> bfda2e8b429c622c7d736fe436260a80eb6a2949
                         </div>
                       </Link>
                     ))}

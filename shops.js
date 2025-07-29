@@ -1,7 +1,7 @@
 export const shops = [
   {
     floor: "Ground Floor",
-    logo: "/1.jpg",
+    logo: "/logos/Verdera_Original Logo.webp",
     phone: ["01222822999"],
     email: "example@mail.com",
     name: "Verinno",
@@ -11,7 +11,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/2.jpg",
+    logo: "/logos/American-Furniture.webp",
     phone: ["02-38260366", "19997"],
     email: "example@mail.com",
     name: "American Furniture",
@@ -21,7 +21,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/3.jpg",
+    logo: "/logos/Cotistahl.webp",
     phone: ["01022237672"],
     email: "example@mail.com",
     name: "Contistahl",
@@ -31,7 +31,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/4.jpg",
+    logo: "/logos/Cairo-Art-.webp",
     phone: ["01225479978", "01280803335"],
     email: "example@mail.com",
     name: "Cairo Art",
@@ -41,7 +41,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/logo1.png",
+    logo: "/logos/TEXMAR-LOGO-ENGLISH.webp",
     phone: ["02-38260080", "01211158580"],
     email: "example@mail.com",
     name: "Texmar",
@@ -51,7 +51,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/6.jpg",
+    logo: "/logos/Esque_Artboard 1.webp",
     phone: ["01202400782"],
     email: "example@mail.com",
     name: "Esque",
@@ -61,7 +61,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/7.jpg",
+    logo: "/logos/APEX-logo(1)-1.webp",
     phone: ["01099927451"],
     email: "example@mail.com",
     name: "Apex",
@@ -81,7 +81,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/9.jpg",
+    logo: "/logos/logo-FB.webp",
     phone: ["01220760333"],
     email: "example@mail.com",
     name: "Tiffany",
@@ -91,7 +91,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/10.jpg",
+    logo: "/logos/Artboard 1 copy 10.webp",
     phone: ["01050860030"],
     email: "example@mail.com",
     name: "Asfour Crystal",
@@ -101,7 +101,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/11.jpg",
+    logo: "/logos/Home_Plus2.webp",
     phone: ["01066600490", "01066600495"],
     email: "example@mail.com",
     name: "Home Plus",
@@ -111,7 +111,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/12.jpg",
+    logo: "/logos/Verdera_Original Logo.webp",
     phone: ["00201066433666"],
     email: "example@mail.com",
     name: "Verdera",
@@ -121,7 +121,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/13.jpg",
+    logo: "/logos/SMART-Shutter-Final-Logo-copy.webp",
     phone: ["01280646818"],
     email: "example@mail.com",
     name: "Smart Shutter",
@@ -131,7 +131,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/14.jpg",
+    logo: "/logos/Hanimex_logo_black.webp",
     phone: ["01225555003", "0238260068", "01140493330"],
     email: "example@mail.com",
     name: "Hanimex",
@@ -141,7 +141,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/15.jpg",
+    logo: "/logos/Divano_Artboard 1.webp",
     phone: ["01068820413"],
     email: "example@mail.com",
     name: "Divano",
@@ -151,7 +151,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/16.jpg",
+    logo: "/logos/fagor copy.webp",
     phone: ["01227237666"],
     email: "example@mail.com",
     name: "Fagor",
@@ -161,7 +161,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/17.jpg",
+    logo: "/logos/Zahran_Logo_English copy.webp",
     phone: ["02-38260079"],
     email: "example@mail.com",
     name: "Zahran",
@@ -171,7 +171,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/18.jpg",
+    logo: "/logos/Raif Tex_Artboard 1.webp",
     phone: ["01029505398"],
     email: "example@mail.com",
     name: "Raif",
@@ -181,7 +181,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/19.jpg",
+    logo: "/logos/velour-de-jene-logo-FINAL--2.webp",
     phone: ["01115851266"],
     email: "example@mail.com",
     name: "Velour De Gene",
@@ -191,7 +191,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/20.jpg",
+    logo: "/logos/Lumberjack-logo_vector.webp",
     phone: ["01104369689"],
     email: "example@mail.com",
     name: "Lumberjack",
@@ -201,7 +201,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/21.jpg",
+    logo: "/logos/Cube.webp",
     phone: ["01201111451"],
     email: "example@mail.com",
     name: "Cube Furniture",
@@ -211,7 +211,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/22.jpg",
+    logo: "/logos/Comfort Home collection (2).webp",
     phone: ["01110505035"],
     email: "example@mail.com",
     name: "Comfort home",
@@ -221,7 +221,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/23.jpg",
+    logo: "/logos/Artboard 1 copy.webp",
     phone: ["0109666146"],
     email: "example@mail.com",
     name: "Bed In Home",
@@ -231,7 +231,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/24.jpg",
+    logo: "/logos/Malina.webp",
     phone: ["01156156020", "01021943886"],
     email: "example@mail.com",
     name: "Malina",
@@ -251,7 +251,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/26.jpg",
+    logo: "/logos/Malek-New-Logo-2.webp",
     phone: ["01015157998"],
     email: "example@mail.com",
     name: "Malek",
@@ -261,7 +261,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/27.jpg",
+    logo: "/logos/T-Track.webp",
     phone: ["01151404600"],
     email: "example@mail.com",
     name: "T-Track",
@@ -271,7 +271,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/28.jpg",
+    logo: "/logos/Asia-copy.webp",
     phone: ["02-38260097", "01066677755"],
     email: "example@mail.com",
     name: "Asia Furniture",
@@ -281,7 +281,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/29.jpg",
+    logo: "/logos/kian-logo.webp",
     phone: ["01227342555"],
     email: "example@mail.com",
     name: "Kian",
@@ -291,7 +291,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/30.jpg",
+    logo: "/logos/Comfort-Sleep-Logo.webp",
     phone: ["01148559991"],
     email: "example@mail.com",
     name: "Comfort Sleep",
@@ -301,7 +301,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/31.jpg",
+    logo: "/logos/Fida-Home-Gte-Vinyl.webp",
     phone: ["01147902010"],
     email: "example@mail.com",
     name: "Fida Home",
@@ -311,7 +311,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/32.jpg",
+    logo: "/logos/Capital-Design.webp",
     phone: ["01026444366"],
     email: "example@mail.com",
     name: "Capital Design",
@@ -321,7 +321,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/33.jpg",
+    logo: "/logos/CAJA Text logo.webp",
     phone: ["01096660844", "01027003500"],
     email: "example@mail.com",
     name: "Caja",
@@ -331,7 +331,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/34.jpg",
+    logo: "/logos/Doortech-New-Logo-2023-3.webp",
     phone: ["01283989041"],
     email: "example@mail.com",
     name: "Door Teck",
@@ -341,7 +341,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/35.jpg",
+    logo: "/logos/RADWAN-Mardini-NEW.webp",
     phone: ["01009218540", "01111598448"],
     email: "example@mail.com",
     name: "Radwan Mardini",
@@ -351,7 +351,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/36.jpg",
+    logo: "/logos/innova-logo--2.webp",
     phone: ["01101315752"],
     email: "example@mail.com",
     name: "Innova",
@@ -381,7 +381,7 @@ export const shops = [
   },
   {
     floor: "First Floor",
-    logo: "/39.jpg",
+    logo: "/logos/spring-copy.webp",
     phone: ["01129221244", "0112922255"],
     email: "example@mail.com",
     name: "Spring Air",
@@ -391,7 +391,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/40.jpg",
+    logo: "/logos/Alf-Italia.webp",
     phone: ["19744", "01210776664"],
     email: "example@mail.com",
     name: "ALF Italia",
@@ -401,7 +401,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/41.jpg",
+    logo: "/logos/Natuzzi-Edition.webp",
     phone: ["19744", "01270266679"],
     email: "example@mail.com",
     name: "Natuzzi",
@@ -411,7 +411,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor Floor",
-    logo: "/42.jpg",
+    logo: "/logos/vevian final logo white background.webp",
     phone: ["01550140557", "01555108015"],
     email: "example@mail.com",
     name: "Vevian",
@@ -431,7 +431,7 @@ export const shops = [
   },
   {
     floor: "Second Floor",
-    logo: "/44.jpg",
+    logo: "/logos/Elara Logo-06.webp",
     phone: ["00201011777314"],
     email: "example@mail.com",
     name: "Elara",
@@ -441,7 +441,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor Floor",
-    logo: "/45.jpg",
+    logo: "/logos/Only-Tables.webp",
     phone: ["0112 7206 763 0103 0266 007 "],
     name: "Only Tables",
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",

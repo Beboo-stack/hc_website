@@ -35,7 +35,7 @@ const ShopStructure = ({ data }) => {
                         <div className="w-full max-w-md">
                             <div className="relative w-full h-48">
                                 <Image
-                                    src="/logo1.png"
+                                    src={data.logo}
                                     alt="Brand Logo"
                                     fill
                                     className="object-contain"
