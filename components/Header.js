@@ -38,7 +38,7 @@ export default function Header() {
       <header className="fixed top-0 left-0 w-full z-50 bg-white flex md:flex-col items-center justify-between px-6 md:px-0 py-3">
         <Link
           href="/"
-          className="hidden text-secondary border-b-2 mb-2 pb-3 border-black/20 w-full md:flex justify-center font-bold text-2xl tracking-widest"
+          className="hidden text-secondary  mb-2  w-fit md:flex justify-center font-bold text-2xl tracking-widest"
           onClick={() => {
             setMobileShopsOpen(false);
             setMenuOpen(false);
@@ -51,7 +51,7 @@ export default function Header() {
             alt="HC mall logo"
           />
         </Link>
-        <div className="flex items-center justify-between w-full md:w-auto gap-4">
+        <div className="flex items-center justify-between w-full md:w-full gap-4 md:border-t-2 md:border-black/20">
           <button
             className="md:hidden text-2xl"
             aria-label="Open menu"
@@ -126,7 +126,8 @@ export default function Header() {
                     {mallCategories.map((cat, subIndex) => (
                       <Link
                         key={subIndex}
-                        href={`/categories/${cat.name.toLocaleLowerCase()
+                        href={`/categories/${cat.name
+                          .toLocaleLowerCase()
                           .trim()
                           .replace(/\s+/g, "-")}`}
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
