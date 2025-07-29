@@ -1,5 +1,6 @@
 import AutomaticCarousel from "@/components/Automatic_Carousel";
 import { aboutUsPageSlides, slides } from "@/data";
+import Image from "next/image";
 import React from "react";
 
 const Page = () => {
@@ -8,15 +9,18 @@ const Page = () => {
       <header className="h-[50vh] bg-white shadow-md relative overflow-hidden">
         {/* Constrained image container */}
         <div className="h-full w-full relative">
-          <img
+          <Image
+            width={1920}
+            height={1080}
             src="/2.jpg"
             alt="Dubai Mall"
             className="h-full w-full object-cover"
           />
           {/* Text overlay - centered */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 p-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About HC Mall</h1>
-            
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              About HC Mall
+            </h1>
           </div>
         </div>
       </header>
@@ -43,7 +47,7 @@ const Page = () => {
                 planning—focusing on location, tenant mix, mall circulation, and
                 consumer behavior. Every detail was carefully executed to
                 deliver a cozy, friendly, and inspiring atmosphere that enhances
-                the customer’s journey.
+                the customer&apos;s journey.
               </p>
               <p>
                 In July 2012, HC Furniture Mall launched at Mall of Arabia,
