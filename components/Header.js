@@ -10,20 +10,16 @@ import { shops } from "@/shops";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
+  const [mobileShopsOpen, setMobileShopsOpen] = useState(false);
 
-  // Sort shops alphabetically by name
   const sortedShops = [...shops].sort((a, b) => a.name.localeCompare(b.name));
 
-  // Add refs to control dropdown visibility
   const mallCategoriesRef = useRef(null);
   const shopsRef = useRef(null);
 
-  // Function to hide dropdowns
   const hideDropdown = (dropdownRef) => {
     if (dropdownRef.current) {
-      // Remove focus and blur to hide the dropdown
       dropdownRef.current.blur();
-      // Force remove hover state by temporarily removing the group class
       const parentGroup = dropdownRef.current.closest(".group");
       if (parentGroup) {
         parentGroup.classList.remove("group");
@@ -36,7 +32,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-white flex md:flex-col items-center justify-between px-6 md:px-0 py-3">
         <Link
           href="/"
@@ -63,8 +58,7 @@ export default function Header() {
               <div key={index} className="group">
                 <Link href={link.href} className="group inline-block">
                   <div className="relative flex items-center justify-center gap-1 pb-2 border-b-2 border-transparent group-hover:border-black transition-colors duration-200">
-                    {(link.name === "Mall Categories" ||
-                      link.name === "Shops") && (
+                    {(link.name === "Mall Categories" || link.name === "Shops") && (
                       <span className="text-black">
                         <ChevronDownIcon className="w-5 h-5" />
                       </span>
@@ -72,7 +66,7 @@ export default function Header() {
                     {link.name}
                   </div>
                 </Link>
-                {/* Enhanced Dropdown for Mall Categories */}
+
                 {link.name === "Mall Categories" && (
                   <div
                     ref={mallCategoriesRef}
@@ -110,7 +104,7 @@ export default function Header() {
                     ))}
                   </div>
                 )}
-                {/*dropdown for shops */}
+
                 {link.name === "Shops" && (
                   <div
                     ref={shopsRef}
@@ -118,16 +112,15 @@ export default function Header() {
                     className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
-                    aria-label="Mall Categories"
+                    aria-label="Shops"
                   >
                     <div className="col-span-full mb-2 text-lg font-bold text-primary text-center">
                       Shops
                     </div>
-                    {/* Use sortedShops here */}
                     {sortedShops.map((shop, subIndex) => (
                       <Link
                         key={subIndex}
-                        href={`/shop/${shop.name.replace(/\s+/g, "")}`}
+                        href={`/shops/${shop.name.replace(/\s+/g, "")}`}
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
@@ -144,29 +137,6 @@ export default function Header() {
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">
                             {shop.name.trim()}
                           </span>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-                {/* Default dropdown for other links with subLinks */}
-                {link.subLinks && link.name !== "Mall Categories" && (
-                  <div className="absolute hidden group-hover:grid transition-all duration-500 w-full overflow-y-auto grid-cols-6 left-0 gap-10 bg-white shadow-lg mt-2 rounded-lg p-4">
-                    {link.subLinks.map((subLink, subIndex) => (
-                      <Link
-                        key={subIndex}
-                        href={"#"}
-                        className="block text-sm text-gray-700 hover:text-gray-900"
-                      >
-                        <div className="flex flex-col items-center gap-2">
-                          <Image
-                            width={150}
-                            height={150}
-                            src={subLink.image}
-                            alt={subLink.name}
-                            className="w-[150px] h-[150px] object-cover rounded"
-                          />
-                          <span>{subLink.name.trim()}</span>
                         </div>
                       </Link>
                     ))}
@@ -204,7 +174,7 @@ export default function Header() {
             >
               HC MALL
             </Link>
-            <div style={{ width: 32 }} /> {/* Spacer for symmetry */}
+            <div style={{ width: 32 }} />
           </div>
           <nav className="flex flex-col">
             {mainLinks.map((link, index) =>
@@ -247,6 +217,51 @@ export default function Header() {
                           />
                           <span className="text-sm font-medium text-secondary">
                             {cat.name.trim()}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : link.name === "Shops" ? (
+                <>
+                  <button
+                    key={index}
+                    className="px-6 py-4 border-b text-primary font-medium text-base flex items-center justify-between focus:outline-none"
+                    onClick={() => setMobileShopsOpen((open) => !open)}
+                    aria-expanded={mobileShopsOpen}
+                    aria-controls="mobile-shops-list"
+                  >
+                    <span>Shops</span>
+                    <span
+                      className={`transition-transform duration-200 ${
+                        mobileShopsOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      ▼
+                    </span>
+                  </button>
+                  {mobileShopsOpen && (
+                    <div
+                      id="mobile-shops-list"
+                      className="flex flex-col gap-2 px-6 py-2 bg-gray-50 border-b"
+                    >
+                      {sortedShops.map((shop, idx) => (
+                        <Link
+                          key={idx}
+                          href={`/shops/${shop.name.replace(/\s+/g, "")}`}
+                          className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"
+                          onClick={() => setMobileShopsOpen(false)}
+                        >
+                          <Image
+                            width={40}
+                            height={40}
+                            src={shop.logo}
+                            alt={shop.name}
+                            className="w-10 h-10 object-contain bg-white border border-gray-100 rounded"
+                          />
+                          <span className="text-sm font-medium text-secondary">
+                            {shop.name.trim()}
                           </span>
                         </Link>
                       ))}

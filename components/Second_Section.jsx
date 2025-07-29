@@ -5,7 +5,7 @@ const Second_Section = () => {
   return (
     <div className="py-[2px] w-full h-[100vh] md:h-[75vh] relative">
       <Image
-        src="/2.jpg"
+        src="/Mall Photo_s/IMG_7894 copy.jpg"
         alt="Second Section Image"
         width={1000}
         height={1000}

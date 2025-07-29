@@ -6,7 +6,7 @@ const First_Section = () => {
     <div className="w-full h-[100vh] md:h-[80vh] flex items-center justify-center py-[2px] relative">
       <div className="w-[100%] md:w-[50%] lg:w-[60%] h-full">
         <Image
-          src="/1.jpg"
+          src="/Mall Photo_s/IMG_7884 copy.jpg"
           alt="First Section Image"
           width={1000}
           height={1000}

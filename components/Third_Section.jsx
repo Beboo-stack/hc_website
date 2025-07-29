@@ -6,7 +6,7 @@ const Third_Section = () => {
     <div className="py-[2px] w-full h-full flex flex-col lg:flex-row justify-center items-center">
       <div className="w-full lg:w-[50%] h-[75vh] relative">
         <Image
-          src="/2.jpg"
+          src="/Mall Photo_s/2 copy.JPG"
           alt="Third Section Image"
           width={1000}
           height={1000}
@@ -34,7 +34,7 @@ const Third_Section = () => {
 
       <div className="w-full lg:w-[50%] h-[75vh] relative">
         <Image
-          src="/1.jpg"
+          src="/Mall Photo_s/IMG_5380 copy.JPG"
           alt="Third Section Image"
           width={1000}
           height={1000}

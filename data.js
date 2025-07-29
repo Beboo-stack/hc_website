@@ -134,7 +134,7 @@ export const mainLinks = [
   },
   {
     name: "Shops",
-    href: "/shop",
+    href: "/shops",
   },
   {
     name: "What's New",

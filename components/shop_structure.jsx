@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, Facebook, Instagram} from 'lucide-react';
 
 const ShopStructure = ({ data }) => {
     return (
@@ -65,13 +65,15 @@ const ShopStructure = ({ data }) => {
                     </div>
 
                     {/* Contact Information */}
-                    <div className="flex  lg:justify-end">
+                    {/* Contact Information */}
+                    <div className="flex lg:justify-end">
                         <div className="bg-black/30 backdrop-blur-sm w-full lg:w-fit p-6 rounded-lg text-white text-center lg:text-left">
                             <h3 className="text-xl font-semibold mb-4 uppercase tracking-wide">
                                 Contact :
                             </h3>
+
+                            {/* Phone numbers */}
                             {data.phone && data.phone.length > 0 ? (
-                                // Map over the phone numbers array
                                 data.phone.map((phoneNumber, index) => (
                                     <div className="flex items-center justify-center lg:justify-start space-x-3" key={index}>
                                         <Phone className="w-5 h-5" />
@@ -82,8 +84,22 @@ const ShopStructure = ({ data }) => {
                                 <p>No phone numbers available.</p>
                             )}
 
+                            {/* Social Media Icons */}
+                            <div className="flex items-center justify-center lg:justify-start gap-4 mt-4 ">
+                                {data.facebook && (
+                                    <Link href={data.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
+                                        <Facebook size={32}/>
+                                    </Link>
+                                )}
+                                {data.instagram && (
+                                    <Link href={data.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
+                                        <Instagram size={32}/>
+                                    </Link>
+                                )}
+                            </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>

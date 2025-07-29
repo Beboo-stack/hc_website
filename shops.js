@@ -448,3 +448,4 @@ export const shops = [
     category: ["Accessories", "Decor"]
   },
 ];
+
