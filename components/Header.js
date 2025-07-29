@@ -199,7 +199,7 @@ export default function Header() {
       </header>
 
       {/* Secondary Navbar (Black, desktop only) */}
-      <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[100px] lg:mt-[120px]">
+      <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[120px]">
         {blackLinks.map((link, index) => (
           <Link
             key={index}
