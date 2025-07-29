@@ -58,7 +58,8 @@ export default function Header() {
               <div key={index} className="group">
                 <Link href={link.href} className="group inline-block">
                   <div className="relative flex items-center justify-center gap-1 pb-2 border-b-2 border-transparent group-hover:border-black transition-colors duration-200">
-                    {(link.name === "Mall Categories" || link.name === "Shops") && (
+                    {(link.name === "Mall Categories" ||
+                      link.name === "Shops") && (
                       <span className="text-black">
                         <ChevronDownIcon className="w-5 h-5" />
                       </span>
@@ -206,7 +207,10 @@ export default function Header() {
                           key={idx}
                           href="#"
                           className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"
-                          onClick={() => setMobileCategoriesOpen(false)}
+                          onClick={() => {
+                            setMobileCategoriesOpen(false);
+                            setMenuOpen(false);
+                          }}
                         >
                           <Image
                             width={40}
@@ -251,7 +255,10 @@ export default function Header() {
                           key={idx}
                           href={`/shops/${shop.name.replace(/\s+/g, "")}`}
                           className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"
-                          onClick={() => setMobileShopsOpen(false)}
+                          onClick={() => {
+                            setMobileShopsOpen(false);
+                            setMenuOpen(false);
+                          }}
                         >
                           <Image
                             width={40}
@@ -273,6 +280,7 @@ export default function Header() {
                   key={index}
                   href={link.href}
                   className="px-6 py-4 border-b text-primary font-medium text-base"
+                  onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
@@ -283,6 +291,7 @@ export default function Header() {
                 key={index}
                 href={link.href}
                 className="px-6 py-4 bg-black text-white font-semibold text-base border-b"
+                onClick={() => setMenuOpen(false)}
               >
                 {link.name}
               </Link>

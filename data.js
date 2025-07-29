@@ -1,14 +1,14 @@
 export const slides = [
   [
     {
-      image: "/1.jpg",
+      image: "/1.webp",
       title: "YOU SHOP. WE DELIVER.",
       subtitle:
         "Enjoy a seamless shopping experience with our Delivery Service.",
       button: "LEARN MORE",
     },
     {
-      image: "/2.jpg",
+      image: "/2.webp",
       title: "DISCOVER FASHION AVENUE",
       subtitle: "Explore the latest trends at HC Mall.",
       button: "EXPLORE NOW",
