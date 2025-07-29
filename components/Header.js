@@ -5,6 +5,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { mainLinks, blackLinks, mallCategories } from "@/data";
 import Image from "next/image";
 import { ChevronDownIcon } from "lucide-react";
+import { shops } from "@/shops";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,13 +37,11 @@ export default function Header() {
           </Link>
           <div className="hidden w-full md:flex justify-center items-center gap-12 lg:gap-20 text-base font-medium">
             {mainLinks.map((link, index) => (
-              <div key={index} className=" group">
-                <Link
-                  href={link.href}
-                  className="group inline-block"
-                >
+              <div key={index} className="group">
+                <Link href={link.href} className="group inline-block">
                   <div className="relative flex items-center justify-center gap-1 pb-2 border-b-2 border-transparent group-hover:border-black transition-colors duration-200">
-                    {link.name === "Mall Categories" && (
+                    {(link.name === "Mall Categories" ||
+                      link.name === "Shops") && (
                       <span className="text-black">
                         <ChevronDownIcon className="w-5 h-5" />
                       </span>
@@ -80,6 +79,42 @@ export default function Header() {
                           />
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">
                             {cat.name.trim()}
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                {/*dropdown for shops */}
+                {link.name === "Shops" && (
+                  <div
+                    tabIndex={0}
+                    className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
+                    style={{ maxHeight: "60vh" }}
+                    role="menu"
+                    aria-label="Mall Categories"
+                  >
+                    <div className="col-span-full mb-2 text-lg font-bold text-primary">
+                      Mall Categories
+                    </div>
+                    {shops.map((shop, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={`/shop?name=${encodeURIComponent(shop.name)}`}
+                        className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
+                        tabIndex={0}
+                        role="menuitem"
+                      >
+                        <div className="flex flex-col items-center gap-2">
+                          <Image
+                            width={120}
+                            height={120}
+                            src={shop.logo}
+                            alt={shop.name}
+                            className="w-[100px] h-[100px] object-cover rounded shadow-sm border border-gray-100"
+                          />
+                          <span className="font-semibold text-center text-secondary group-hover:text-primary">
+                            {shop.name.trim()}
                           </span>
                         </div>
                       </Link>

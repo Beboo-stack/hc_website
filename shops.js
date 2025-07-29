@@ -41,7 +41,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/5.jpg",
+    logo: "/logo1.png",
     phone: ["02-38260080", "01211158580"],
     email: "example@mail.com",
     name: "Texmar",
