@@ -123,7 +123,7 @@ export default function Header() {
                     {shops.map((shop, subIndex) => (
                       <Link
                         key={subIndex}
-                        href={`/shop?name=${encodeURIComponent(shop.name)}`}
+                        href={`/shop/${shop.name.replace(/\s+/g, '')}`}
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"

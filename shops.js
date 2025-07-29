@@ -440,18 +440,8 @@ export const shops = [
     category: ["Modern furniture"]
   },
   {
-    floor: "Second Floor",
-    logo: "/45.jpg",
-    phone: ["00201011777314"],
-    email: "example@mail.com",
-    name: "Elara",
-    facebook: "",
-    instagram: "https://www.instagram.com/elara.furniture/?hl=ar",
-    category: ["Modern furniture"]
-  },
-  {
     floor: "Ground Floor Floor",
-    logo: "/46.jpg",
+    logo: "/45.jpg",
     phone: ["0112 7206 763 0103 0266 007 "],
     name: "Only Tables",
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",
