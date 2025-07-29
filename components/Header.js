@@ -37,7 +37,7 @@ export default function Header() {
           href="/"
           className="hidden text-secondary border-b-2 mb-2 pb-3 border-black/20 w-full md:flex justify-center font-bold text-2xl tracking-widest"
         >
-          HC MALL
+          <Image src="/HC Logo Source-01.png" width={150} height={150} alt="HC mall logo"/>
         </Link>
         <div className="flex items-center justify-between w-full md:w-auto gap-4">
           <button
