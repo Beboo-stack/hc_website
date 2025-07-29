@@ -209,7 +209,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full text-center text-base bg-black py-3 text-white pb-4">
-        © 2025 HC Mall. All rights reserved.
+        © {new Date().getFullYear()} HC Mall. All rights reserved.
       </div>
       {/* Floating WhatsApp Button */}
       <a
