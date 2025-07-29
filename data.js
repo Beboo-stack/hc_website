@@ -1,17 +1,17 @@
 export const slides = [
   [
     {
-      image: "/1.webp",
+      image: "/home2.jpg",
+      title: "DISCOVER FASHION AVENUE",
+      subtitle: "Explore the latest trends at HC Mall.",
+      button: "EXPLORE NOW",
+    },
+    {
+      image: "/home.jpg",
       title: "YOU SHOP. WE DELIVER.",
       subtitle:
         "Enjoy a seamless shopping experience with our Delivery Service.",
       button: "LEARN MORE",
-    },
-    {
-      image: "/2.webp",
-      title: "DISCOVER FASHION AVENUE",
-      subtitle: "Explore the latest trends at HC Mall.",
-      button: "EXPLORE NOW",
     },
   ],
 ];
@@ -42,11 +42,11 @@ export const aboutUsPageSlides = [
 
 export const mallCategories = [
   {
-    name: "Modern Furniture ",
+    name: "Modern Furniture",
     image: "/Mall Categories/modern.jpg",
   },
   {
-    name: "Classic Furniture ",
+    name: "Classic Furniture",
     image: "/Mall Categories/classic.jpg",
   },
   {
@@ -94,7 +94,7 @@ export const mallCategories = [
     image: "/Mall Categories/modern.jpg",
   },
   {
-    name: "Fabric& Curtains",
+    name: "Fabric Curtains",
     image: "/Mall Categories/classic.jpg",
   },
   {

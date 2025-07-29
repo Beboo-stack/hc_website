@@ -12,7 +12,7 @@ const Page = () => {
           <Image
             width={1920}
             height={1080}
-            src="/2.jpg"
+            src="/Mall Photo_s/2 copy.JPG"
             alt="Dubai Mall"
             className="h-full w-full object-cover"
           />

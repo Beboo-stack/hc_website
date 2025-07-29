@@ -17,16 +17,19 @@ export default function Header() {
   const mallCategoriesRef = useRef(null);
   const shopsRef = useRef(null);
 
-  const hideDropdown = (dropdownRef) => {
-    if (dropdownRef.current) {
-      dropdownRef.current.blur();
-      const parentGroup = dropdownRef.current.closest(".group");
-      if (parentGroup) {
-        parentGroup.classList.remove("group");
-        setTimeout(() => {
-          parentGroup.classList.add("group");
-        }, 50);
-      }
+  // This function will be called when clicking on a sub-item or leaving the dropdown area
+  const closeAllDropdowns = () => {
+    setMobileShopsOpen(false);
+    setMobileCategoriesOpen(false); // Make sure this is also handled for consistency
+    // No need to set menuOpen here as this function is primarily for desktop dropdowns
+  };
+
+  // Function to handle closing dropdowns on mouse leave from the parent group
+  const handleDropdownMouseLeave = () => {
+    // Only close if the dropdown is currently open
+    // This will implicitly handle both shops and categories if they are under the same mechanism
+    if (mallCategoriesRef.current || shopsRef.current) {
+      closeAllDropdowns();
     }
   };
 
@@ -36,6 +39,10 @@ export default function Header() {
         <Link
           href="/"
           className="hidden text-secondary border-b-2 mb-2 pb-3 border-black/20 w-full md:flex justify-center font-bold text-2xl tracking-widest"
+          onClick={() => {
+            setMobileShopsOpen(false);
+            setMenuOpen(false);
+          }}
         >
           <Image
             src="/HC Logo Source-01.png"
@@ -48,25 +55,50 @@ export default function Header() {
           <button
             className="md:hidden text-2xl"
             aria-label="Open menu"
-            onClick={() => setMenuOpen(true)}
+            onClick={() => {
+              setMenuOpen(true);
+              setMobileShopsOpen(false); // Close shops dropdown if open
+              setMobileCategoriesOpen(false); // Close categories dropdown if open
+            }}
           >
             <FiMenu />
           </button>
           <Link
             href="/"
             className="md:hidden text-secondary font-bold text-2xl tracking-widest mx-auto md:mx-0"
+            onClick={() => {
+              setMobileShopsOpen(false);
+              setMenuOpen(false);
+            }}
           >
             <Image
               src="/HC Logo Source-01.png"
               width={150}
               height={150}
               alt="HC mall logo"
-            />  
+            />
           </Link>
           <div className="hidden w-full md:flex justify-center items-center gap-12 lg:gap-20 text-base font-medium">
             {mainLinks.map((link, index) => (
-              <div key={index} className="group">
-                <Link href={link.href} className="group inline-block">
+              <div
+                key={index}
+                className="group"
+                onMouseLeave={
+                  link.name === "Mall Categories" || link.name === "Shops"
+                    ? handleDropdownMouseLeave
+                    : undefined
+                }
+              >
+                <Link
+                  href={link.href}
+                  className="group inline-block"
+                  onClick={() => {
+                    setMobileShopsOpen(false);
+                    setMenuOpen(false);
+                    // Also close desktop dropdowns if a non-dropdown link is clicked
+                    closeAllDropdowns();
+                  }}
+                >
                   <div className="relative flex items-center justify-center gap-1 pb-2 border-b-2 border-transparent group-hover:border-black transition-colors duration-200">
                     {(link.name === "Mall Categories" ||
                       link.name === "Shops") && (
@@ -82,6 +114,7 @@ export default function Header() {
                   <div
                     ref={mallCategoriesRef}
                     tabIndex={0}
+                    // onMouseLeave is already on the parent group div
                     className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
@@ -93,11 +126,13 @@ export default function Header() {
                     {mallCategories.map((cat, subIndex) => (
                       <Link
                         key={subIndex}
-                        href="#"
+                        href={`/categories/${cat.name.toLocaleLowerCase()
+                          .trim()
+                          .replace(/\s+/g, "-")}`}
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
-                        onClick={() => hideDropdown(mallCategoriesRef)}
+                        onClick={closeAllDropdowns} // Call closeAllDropdowns when a sub-item is clicked
                       >
                         <div className="flex flex-col items-center gap-2">
                           <Image
@@ -120,6 +155,7 @@ export default function Header() {
                   <div
                     ref={shopsRef}
                     tabIndex={0}
+                    // onMouseLeave is already on the parent group div
                     className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
@@ -135,7 +171,9 @@ export default function Header() {
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
-                        onClick={() => hideDropdown(shopsRef)}
+                        onClick={() => {
+                          closeAllDropdowns();
+                        }} // Call closeAllDropdowns when a sub-item is clicked
                       >
                         <div className="flex flex-col items-center gap-2">
                           <Image
@@ -162,7 +200,16 @@ export default function Header() {
       {/* Secondary Navbar (Black, desktop only) */}
       <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[100px] lg:mt-[120px]">
         {blackLinks.map((link, index) => (
-          <Link key={index} href={link.href} className="hover:text-gray-400">
+          <Link
+            key={index}
+            href={link.href}
+            className="hover:text-gray-400"
+            onClick={() => {
+              setMobileShopsOpen(false);
+              setMenuOpen(false);
+              closeAllDropdowns(); // Also close desktop dropdowns
+            }}
+          >
             {link.name}
           </Link>
         ))}
@@ -182,8 +229,17 @@ export default function Header() {
             <Link
               href="/"
               className="font-bold text-secondary text-2xl tracking-widest"
+              onClick={() => {
+                setMobileShopsOpen(false);
+                setMenuOpen(false);
+              }}
             >
-              HC MALL
+              <Image
+                src="/HC Logo Source-01.png"
+                width={150}
+                height={150}
+                alt="HC mall logo"
+              />
             </Link>
             <div style={{ width: 32 }} />
           </div>
@@ -194,7 +250,10 @@ export default function Header() {
                   <button
                     key={index}
                     className="px-6 py-4 border-b text-primary font-medium text-base flex items-center justify-between focus:outline-none"
-                    onClick={() => setMobileCategoriesOpen((open) => !open)}
+                    onClick={() => {
+                      setMobileCategoriesOpen((open) => !open);
+                      setMobileShopsOpen(false); // Close shops dropdown if categories is opened
+                    }}
                     aria-expanded={mobileCategoriesOpen}
                     aria-controls="mobile-mall-categories-list"
                   >
@@ -215,7 +274,9 @@ export default function Header() {
                       {mallCategories.map((cat, idx) => (
                         <Link
                           key={idx}
-                          href="#"
+                          href={`/categories/${cat.name
+                            .trim()
+                            .replace(/\s+/g, "-")}`}
                           className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"
                           onClick={() => {
                             setMobileCategoriesOpen(false);
@@ -242,7 +303,10 @@ export default function Header() {
                   <button
                     key={index}
                     className="px-6 py-4 border-b text-primary font-medium text-base flex items-center justify-between focus:outline-none"
-                    onClick={() => setMobileShopsOpen((open) => !open)}
+                    onClick={() => {
+                      setMobileShopsOpen((open) => !open);
+                      setMobileCategoriesOpen(false); // Close categories dropdown if shops is opened
+                    }}
                     aria-expanded={mobileShopsOpen}
                     aria-controls="mobile-shops-list"
                   >
@@ -290,7 +354,11 @@ export default function Header() {
                   key={index}
                   href={link.href}
                   className="px-6 py-4 border-b text-primary font-medium text-base"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setMobileShopsOpen(false); // Close mobile shops dropdown
+                    setMobileCategoriesOpen(false); // Close mobile categories dropdown
+                  }}
                 >
                   {link.name}
                 </Link>
@@ -301,7 +369,11 @@ export default function Header() {
                 key={index}
                 href={link.href}
                 className="px-6 py-4 bg-black text-white font-semibold text-base border-b"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false);
+                  setMobileShopsOpen(false); // Close mobile shops dropdown
+                  setMobileCategoriesOpen(false); // Close mobile categories dropdown
+                }}
               >
                 {link.name}
               </Link>

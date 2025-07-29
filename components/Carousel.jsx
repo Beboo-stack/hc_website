@@ -46,7 +46,7 @@ const Carousel = ({ slides }) => {
                 style={{ minWidth: 0 }}
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center"
+                  className={`absolute inset-0 bg-cover bg-center ${idx === 0 && "bg-bottom"}`}
                   style={{ backgroundImage: `url(${slide.image})` }}
                 >
                   <div className="absolute inset-0 bg-black bg-opacity-40"></div>

@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "baseUrl": ".",                         // ✅ add this line
     "paths": {
-      "@/*": ["./*"]                         // ✅ and this block
+      "@/*": ["./*"]                        
     },
     "plugins": [
       {

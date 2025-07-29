@@ -15,8 +15,8 @@ const Footer = () => {
       {/* Top Row: Social, Newsletter, App Badges */}
       <div className="flex w-full justify-center text-center items-center">
         <div className="w-full h-[3px] bg-gray-200" />
-        <h2 className=" w-[20%] md:text-2xl font-semibold  text-black">
-          <Image src="/HC Logo Source-01.png" width={300} height={100} alt="HC mall logo"/>
+        <h2 className="w-fit md:text-2xl font-semibold  text-black">
+          <Image src="/HC Logo Source-01.png" width={330} height={330} alt="HC mall logo"/>
         </h2>
         <div className="w-full h-[3px] bg-gray-200" />
       </div>

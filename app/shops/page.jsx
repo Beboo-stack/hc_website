@@ -28,7 +28,7 @@ const Page = () => {
       {/* Main Content - 90% of viewport height */}
       <main className="flex-1 overflow-y-auto ">
         {/* Rest of your content remains the same */}
-        <div className="container mx-auto px-12 py-2 space-y-4">
+        <div className="container mx-auto px-5 py-2 space-y-4">
           {/* Section*/}
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">🛒 Shops</h2>
