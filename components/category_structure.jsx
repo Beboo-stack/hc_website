@@ -35,7 +35,7 @@ const CategoryStructure = ({ category }) => {
                         <hr className="mb-10" />
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                             {shops
-                                .filter(shop => shop.category.includes(category.name))
+                                .filter(shop => shop.category.includes(category.name.trim()))
                                 .map((shop, index) => (
                                     <ShopCard
                                         key={index}

@@ -50,15 +50,15 @@ export const mallCategories = [
     image: "/Mall Categories/classic.jpg",
   },
   {
-    name: "Lighting ",
+    name: "Lighting",
     image: "/Mall Categories/lighting.jpg",
   },
   {
-    name: "Outdoor Furniture ",
+    name: "Outdoor Furniture",
     image: "/Mall Categories/outdoor.jpg",
   },
   {
-    name: "Kitchen Wear ",
+    name: "Kitchen Wear",
     image: "/Mall Categories/kitchen-wear.jpg",
   },
   {
