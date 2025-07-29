@@ -16,6 +16,30 @@ export const slides = [
   ],
 ];
 
+export const aboutUsPageSlides = [
+  [
+    {
+      image: "/1.jpg",
+      title: "YOU SHOP. WE DELIVER.",
+      subtitle:
+        "Enjoy a seamless shopping experience with our Delivery Service.",
+      button: "LEARN MORE",
+    },
+    {
+      image: "/2.jpg",
+      title: "DISCOVER FASHION AVENUE",
+      subtitle: "Explore the latest trends at HC Mall.",
+      button: "EXPLORE NOW",
+    },
+    {
+      image: "/2.jpg",
+      title: "DISCOVER FASHION AVENUE",
+      subtitle: "Explore the latest trends at HC Mall.",
+      button: "EXPLORE NOW",
+    },
+  ],
+];
+
 export const mallCategories = [
   {
     name: "Modern Furniture ",
@@ -66,11 +90,11 @@ export const mallCategories = [
     image: "/Mall Categories/home-appliances.jpg",
   },
   {
-    name: "Hardwear  ",
+    name: "Hardwear",
     image: "/Mall Categories/modern.jpg",
   },
   {
-    name: "Fabric& Curtains   ",
+    name: "Fabric& Curtains",
     image: "/Mall Categories/classic.jpg",
   },
   {
@@ -78,15 +102,15 @@ export const mallCategories = [
     image: "/Mall Categories/lighting.jpg",
   },
   {
-    name: "Doors & Windows    ",
+    name: "Doors & Windows",
     image: "/Mall Categories/outdoor.jpg",
   },
   {
-    name: "Home Accessories   ",
+    name: "Home Accessories",
     image: "/Mall Categories/kitchen-wear.jpg",
   },
   {
-    name: "Office Furniture   ",
+    name: "Office Furniture",
     image: "/Mall Categories/home-appliances.jpg",
   },
   {
@@ -102,15 +126,15 @@ export const mallCategories = [
 export const mainLinks = [
   {
     name: "About Us",
-    href: "#",
+    href: "/about-us",
   },
   {
     name: "Mall Categories",
-    href: "#",
+    href: "/categories",
   },
   {
     name: "Shops",
-    href: "#",
+    href: "/shop",
   },
   {
     name: "What's New",
@@ -133,7 +157,7 @@ export const blackLinks = [
   },
   {
     name: "Services",
-    href: "#",
+    href: "/services",
   },
   {
     name: "Policy",

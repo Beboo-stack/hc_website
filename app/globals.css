@@ -102,3 +102,6 @@
     border-radius: 8px;
   }
 }
+.p-max-90ch p {
+  max-width: 200ch;
+}

@@ -1,14 +1,35 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { mainLinks, blackLinks, mallCategories } from "@/data";
 import Image from "next/image";
 import { ChevronDownIcon } from "lucide-react";
+import { shops } from "@/shops";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileCategoriesOpen, setMobileCategoriesOpen] = useState(false);
+  
+  // Add refs to control dropdown visibility
+  const mallCategoriesRef = useRef(null);
+  const shopsRef = useRef(null);
+
+  // Function to hide dropdowns
+  const hideDropdown = (dropdownRef) => {
+    if (dropdownRef.current) {
+      // Remove focus and blur to hide the dropdown
+      dropdownRef.current.blur();
+      // Force remove hover state by temporarily removing the group class
+      const parentGroup = dropdownRef.current.closest('.group');
+      if (parentGroup) {
+        parentGroup.classList.remove('group');
+        setTimeout(() => {
+          parentGroup.classList.add('group');
+        }, 50);
+      }
+    }
+  };
 
   return (
     <>
@@ -36,10 +57,11 @@ export default function Header() {
           </Link>
           <div className="hidden w-full md:flex justify-center items-center gap-12 lg:gap-20 text-base font-medium">
             {mainLinks.map((link, index) => (
-              <div key={index} className=" group">
-                <Link href={link.href} className="group">
-                  <div className="relative flex items-center justify-center gap-1">
-                    {link.name === "Mall Categories" && (
+              <div key={index} className="group">
+                <Link href={link.href} className="group inline-block">
+                  <div className="relative flex items-center justify-center gap-1 pb-2 border-b-2 border-transparent group-hover:border-black transition-colors duration-200">
+                    {(link.name === "Mall Categories" ||
+                      link.name === "Shops") && (
                       <span className="text-black">
                         <ChevronDownIcon className="w-5 h-5" />
                       </span>
@@ -50,13 +72,16 @@ export default function Header() {
                 {/* Enhanced Dropdown for Mall Categories */}
                 {link.name === "Mall Categories" && (
                   <div
+                    ref={mallCategoriesRef}
                     tabIndex={0}
                     className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
-                    style={{ maxHeight: '60vh' }}
+                    style={{ maxHeight: "60vh" }}
                     role="menu"
                     aria-label="Mall Categories"
                   >
-                    <div className="col-span-full mb-2 text-lg font-bold text-primary">Mall Categories</div>
+                    <div className="col-span-full mb-2 text-lg font-bold text-primary text-center">
+                      Mall Categories
+                    </div>
                     {mallCategories.map((cat, subIndex) => (
                       <Link
                         key={subIndex}
@@ -64,6 +89,7 @@ export default function Header() {
                         className="block focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors duration-200 hover:bg-primary/10 hover:border-primary border border-transparent p-2"
                         tabIndex={0}
                         role="menuitem"
+                        onClick={() => hideDropdown(mallCategoriesRef)}
                       >
                         <div className="flex flex-col items-center gap-2">
                           <Image
@@ -74,6 +100,7 @@ export default function Header() {
                             className="w-[100px] h-[100px] object-cover rounded shadow-sm border border-gray-100"
                           />
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">{cat.name.trim()}</span>
+                          <span className="text-xs text-gray-500 text-center">Category description here</span>
                         </div>
                       </Link>
                     ))}
@@ -137,7 +164,7 @@ export default function Header() {
             <div style={{ width: 32 }} /> {/* Spacer for symmetry */}
           </div>
           <nav className="flex flex-col">
-            {mainLinks.map((link, index) => (
+            {mainLinks.map((link, index) =>
               link.name === "Mall Categories" ? (
                 <>
                   <button
@@ -148,15 +175,25 @@ export default function Header() {
                     aria-controls="mobile-mall-categories-list"
                   >
                     <span>Mall Categories</span>
-                    <span className={`transition-transform duration-200 ${mobileCategoriesOpen ? 'rotate-180' : ''}`}>▼</span>
+                    <span
+                      className={`transition-transform duration-200 ${
+                        mobileCategoriesOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      ▼
+                    </span>
                   </button>
                   {mobileCategoriesOpen && (
-                    <div id="mobile-mall-categories-list" className="flex flex-col gap-2 px-6 py-2 bg-gray-50 border-b">
+                    <div
+                      id="mobile-mall-categories-list"
+                      className="flex flex-col gap-2 px-6 py-2 bg-gray-50 border-b"
+                    >
                       {mallCategories.map((cat, idx) => (
                         <Link
                           key={idx}
                           href="#"
                           className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"
+                          onClick={() => setMobileCategoriesOpen(false)}
                         >
                           <Image
                             width={40}
@@ -165,7 +202,9 @@ export default function Header() {
                             alt={cat.name}
                             className="w-10 h-10 object-cover rounded border border-gray-100"
                           />
-                          <span className="text-sm font-medium text-secondary">{cat.name.trim()}</span>
+                          <span className="text-sm font-medium text-secondary">
+                            {cat.name.trim()}
+                          </span>
                         </Link>
                       ))}
                     </div>
@@ -180,7 +219,7 @@ export default function Header() {
                   {link.name}
                 </Link>
               )
-            ))}
+            )}
             {blackLinks.map((link, index) => (
               <Link
                 key={index}

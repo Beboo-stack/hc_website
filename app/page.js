@@ -4,7 +4,7 @@ import First_Section from "@/components/First_Section";
 import Second_Section from "@/components/Second_Section";
 import Third_Section from "@/components/Third_Section";
 import Whats_New from "@/components/Whats_New";
-import { slides } from "@/data"; // Assuming slides.js is in the same directory
+import { slides } from "@/data"; 
 
 export default function HomePage() {
   return (

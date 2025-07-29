@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Carousel = ({ slides }) => {
+const AutomaticCarousel = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -26,7 +26,18 @@ const Carousel = ({ slides }) => {
     [emblaApi]
   );
 
-  // Listen for slide change
+  useEffect(() => {
+    if (!emblaApi) return;
+    
+    const autoScroll = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 3000); 
+
+    return () => {
+      clearInterval(autoScroll);
+    };
+  }, [emblaApi]);
+
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.on("select", onSelect);
@@ -64,21 +75,6 @@ const Carousel = ({ slides }) => {
           </div>
         </div>
       </div>
-      {/* Carousel Controls */}
-      <button
-        className="absolute w-10 flex items-center justify-center left-4 top-1/2 -translate-y-1/2  rounded-full p-2 text-white"
-        onClick={scrollPrev}
-        aria-label="Previous slide"
-      >
-        <ChevronLeft/>
-      </button>
-      <button
-        className="absolute w-10 flex items-center justify-center right-4 top-1/2 -translate-y-1/2 rounded-full p-2 text-white"
-        onClick={scrollNext}
-        aria-label="Next slide"
-      >
-        <ChevronRight />
-      </button>
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {slides[0].map((_, idx) => (
@@ -96,4 +92,4 @@ const Carousel = ({ slides }) => {
   );
 };
 
-export default Carousel;
+export default AutomaticCarousel;
