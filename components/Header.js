@@ -74,7 +74,6 @@ export default function Header() {
                             className="w-[100px] h-[100px] object-cover rounded shadow-sm border border-gray-100"
                           />
                           <span className="font-semibold text-center text-secondary group-hover:text-primary">{cat.name.trim()}</span>
-                          <span className="text-xs text-gray-500 text-center">Category description here</span>
                         </div>
                       </Link>
                     ))}
