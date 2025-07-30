@@ -78,7 +78,7 @@ export default function Header() {
               alt="HC mall logo"
             />
           </Link>
-          <div className="hidden w-full md:flex justify-center items-center gap-12 lg:gap-20 text-base font-medium">
+          <div className="hidden w-full md:flex justify-center items-center gap-12 lg:gap-20 pt-3 text-base font-medium">
             {mainLinks.map((link, index) => (
               <div
                 key={index}
@@ -199,7 +199,7 @@ export default function Header() {
       </header>
 
       {/* Secondary Navbar (Black, desktop only) */}
-      <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[120px]">
+      <nav className="hidden md:flex flex-wrap bg-black items-center justify-center text-white lg:gap-16 md:gap-8 px-8 py-2 font-semibold text-base tracking-wider md:mt-[120px] lg:mt-[125px]">
         {blackLinks.map((link, index) => (
           <Link
             key={index}
@@ -276,6 +276,7 @@ export default function Header() {
                         <Link
                           key={idx}
                           href={`/categories/${cat.name
+                            .toLocaleLowerCase()
                             .trim()
                             .replace(/\s+/g, "-")}`}
                           className="flex items-center gap-3 py-2 px-2 rounded hover:bg-primary/10 border border-transparent hover:border-primary transition-colors duration-200"

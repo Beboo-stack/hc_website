@@ -27,7 +27,7 @@ export const shops = [
     name: "Contistahl",
     facebook: "https://www.facebook.com/ContistahlGroup/?locale=ar_AR",
     instagram: "https://www.instagram.com/contistahl_group/?hl=ar",
-    category: ["Kitchen", "Dressing Rooms"]
+    category: ["Kitchen Wear", "Dressing Rooms"]
   },
   {
     floor: "Ground Floor",
@@ -137,7 +137,7 @@ export const shops = [
     name: "Hanimex",
     facebook: "https://www.facebook.com/hanimex.net/?locale=ar_AR",
     instagram: "",
-    category: ["Kitchens", "Dressing Rooms", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
+    category: ["Kitchen Wears", "Dressing Rooms", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
   },
   {
     floor: "First Floor",
@@ -157,7 +157,7 @@ export const shops = [
     name: "Fagor",
     facebook: "",
     instagram: "",
-    category: ["Kitchen Appliances"]
+    category: ["Kitchen Wear Appliances"]
   },
   {
     floor: "First Floor",
@@ -167,7 +167,7 @@ export const shops = [
     name: "Zahran",
     facebook: "https://www.facebook.com/zahranstoreofficial/?locale=ar_AR",
     instagram: "https://www.instagram.com/zahranstores/?hl=ar",
-    category: ["Kitchen Hardware"]
+    category: ["Kitchen Wear Hardware"]
   },
   {
     floor: "First Floor",
@@ -327,7 +327,7 @@ export const shops = [
     name: "Caja",
     facebook: "https://www.facebook.com/CAJA.furniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/caja.furniture/?hl=ar",
-    category: ["Kitchens", "Dressing Rooms"]
+    category: ["Kitchen Wears", "Dressing Rooms"]
   },
   {
     floor: "Second Floor",
@@ -377,7 +377,7 @@ export const shops = [
     name: "Artynova",
     facebook: "https://www.facebook.com/ArtynovaFurniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/artynovafurniture/?hl=ar",
-    category: ["Kitchens", "Dressing Rooms"]
+    category: ["Kitchen Wears", "Dressing Rooms"]
   },
   {
     floor: "First Floor",
@@ -417,7 +417,7 @@ export const shops = [
     name: "Vevian",
     facebook: "https://www.facebook.com/people/Drobina/100089809546351/",
     instagram: "",
-    category: ["Kitchen Hardware"]
+    category: ["Kitchen Wear Hardware"]
   },
   {
     floor: "First Floor",
