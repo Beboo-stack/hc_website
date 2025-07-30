@@ -5,7 +5,7 @@ import CategoryCard from '@/components/CategoryCard';
 const Page = () => {
   return (
 
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col pt-5">
 
       {/* Main Content - 90% of viewport height */}
       <main className="flex-1 overflow-y-auto ">
