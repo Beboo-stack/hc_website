@@ -114,8 +114,7 @@ export default function Header() {
                   <div
                     ref={mallCategoriesRef}
                     tabIndex={0}
-                    // onMouseLeave is already on the parent group div
-                    className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
+                    className="absolute left-0 z-40 hidden group-hover:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
                     aria-label="Mall Categories"
@@ -157,7 +156,7 @@ export default function Header() {
                     ref={shopsRef}
                     tabIndex={0}
                     // onMouseLeave is already on the parent group div
-                    className="absolute left-0 z-40 hidden group-hover:grid group-focus-within:grid transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
+                    className="absolute left-0 z-40 hidden group-hover:grid  transition-all duration-300 ease-out w-full overflow-y-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 bg-white border border-gray-200 shadow-2xl rounded-xl p-6 animate-fade-in-down focus:outline-none custom-scrollbar"
                     style={{ maxHeight: "60vh" }}
                     role="menu"
                     aria-label="Shops"
