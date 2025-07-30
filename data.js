@@ -138,11 +138,11 @@ export const mainLinks = [
   },
   {
     name: "What's New",
-    href: "#",
+    href: "/whats-new",
   },
   {
     name: "Floor Plan",
-    href: "#",
+    href: "/floor-plan",
   },
 ];
 
@@ -153,7 +153,7 @@ export const blackLinks = [
   },
   {
     name: "Contact Us",
-    href: "#",
+    href: "/contact",
   },
   {
     name: "Services",
@@ -163,4 +163,129 @@ export const blackLinks = [
     name: "Policy",
     href: "#",
   },
+];
+
+// New arrivals data for What's New page
+export const newArrivals = [
+  {
+    id: 1,
+    brandName: "Nordic Living",
+    description: "Modern Nordic pieces for living and dining.",
+    floor: "First Floor",
+    phone: "0100 123 4567",
+    instagram: "https://www.instagram.com/nordicliving",
+    facebook: "https://www.facebook.com/nordicliving",
+    logo: "/logos/Verdera_Original Logo.webp",
+    image: "/Mall Photo_s/IMG_7893 copy.jpg",
+    category: "Modern Furniture"
+  },
+  {
+    id: 2,
+    brandName: "Sleep Comfort",
+    description: "Imported bedding sets now available.",
+    floor: "Ground Floor",
+    phone: "0100 654 3210",
+    instagram: "https://www.instagram.com/sleepcomfort",
+    facebook: "https://www.facebook.com/sleepcomfort",
+    logo: "/logos/Comfort-Sleep-Logo.webp",
+    image: "/Mall Photo_s/IMG_7891 copy.jpg",
+    category: "Bed Linen"
+  },
+  {
+    id: 3,
+    brandName: "Light & Cozy",
+    description: "Contemporary lighting solutions for every space.",
+    floor: "Second Floor",
+    phone: "0100 987 6543",
+    instagram: "https://www.instagram.com/lightandcozy",
+    facebook: "https://www.facebook.com/lightandcozy",
+    logo: "/logos/Artboard 1 copy 10.webp",
+    image: "/Mall Photo_s/IMG_7890 copy.jpg",
+    category: "Lighting"
+  }
+];
+
+// Hot deals data for What's New page
+export const hotDeals = [
+  {
+    id: 1,
+    brandName: "American Furniture",
+    logo: "/logos/American-Furniture.webp",
+    products: [
+      {
+        name: "Modern Sofa Set",
+        originalPrice: 15000,
+        discountedPrice: 11250,
+        discount: 25,
+        image: "/Mall Photo_s/IMG_7888 copy.jpg",
+        validUntil: "2024-12-31"
+      },
+      {
+        name: "Dining Table",
+        originalPrice: 8000,
+        discountedPrice: 6000,
+        discount: 25,
+        image: "/Mall Photo_s/IMG_7887 copy.jpg",
+        validUntil: "2024-12-31"
+      }
+    ],
+    floor: "Ground Floor",
+    phone: "02-38260366",
+    instagram: "https://www.instagram.com/american_furniture_egypt/",
+    facebook: "https://www.facebook.com/AmericanFurnitureEgypt/"
+  },
+  {
+    id: 2,
+    brandName: "Cube Furniture",
+    logo: "/logos/Cube.webp",
+    products: [
+      {
+        name: "Bedroom Set",
+        originalPrice: 12000,
+        discountedPrice: 9000,
+        discount: 25,
+        image: "/Mall Photo_s/IMG_7886 copy.jpg",
+        validUntil: "2024-12-31"
+      },
+      {
+        name: "Office Desk",
+        originalPrice: 5000,
+        discountedPrice: 3750,
+        discount: 25,
+        image: "/Mall Photo_s/IMG_7884 copy.jpg",
+        validUntil: "2024-12-31"
+      }
+    ],
+    floor: "First Floor",
+    phone: "01201111451",
+    instagram: "https://www.instagram.com/cube.furniture/",
+    facebook: "https://www.facebook.com/cubehomefurniture/"
+  },
+  {
+    id: 3,
+    brandName: "Tiffany Lighting",
+    logo: "/logos/logo-FB.webp",
+    products: [
+      {
+        name: "Chandelier Collection",
+        originalPrice: 3000,
+        discountedPrice: 2250,
+        discount: 25,
+        image: "/Mall Photo_s/IMG_7902 copy.jpg",
+        validUntil: "2024-12-31"
+      },
+      {
+        name: "Table Lamps",
+        originalPrice: 1500,
+        discountedPrice: 1125,
+        discount: 25,
+        image: "/Mall Photo_s/IMG_7903 copy.jpg",
+        validUntil: "2024-12-31"
+      }
+    ],
+    floor: "Ground Floor",
+    phone: "01220760333",
+    instagram: "https://www.instagram.com/tiffanylightingco/",
+    facebook: "https://www.facebook.com/Tiffanylighting/"
+  }
 ];
