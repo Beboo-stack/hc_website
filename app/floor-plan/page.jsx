@@ -60,7 +60,7 @@ const FloorPlanPage = () => {
       id: 'second',
       name: 'Second Floor',
       arabicName: 'الطابق الثاني',
-      image: '/Mall Photo_s/IMG_7890 copy.jpg',
+      image: '/Mall Photo_s/IMG_7900 copy.jpg',
       shops: [
         { name: 'CAPITAL DESIGN', category: 'Modern Furniture', location: 'Left', logo: '/logos/Capital-Design.webp' },
         { name: 'drobina', category: 'Kitchens Hardware', location: 'Left', logo: '/logos/vevian final logo white background.webp' },
@@ -193,19 +193,19 @@ const FloorPlanPage = () => {
                   {currentFloor?.name} - {currentFloor?.arabicName}
                 </h2>
                 <div className="relative bg-gray-100 rounded-lg p-4 min-h-[400px] flex items-center justify-center">
-                  <div className="text-center text-gray-500">
+                  {/* <div className="text-center text-gray-500">
                     <FaMapMarkerAlt size={48} className="mx-auto mb-4" />
                     <p className="text-lg">Floor Plan Image</p>
                     <p className="text-sm">Interactive floor plan will be displayed here</p>
-                  </div>
+                  </div> */}
                   {/* Placeholder for actual floor plan image */}
-                  {/* <Image
+                  <Image
                     src={currentFloor?.image}
                     alt={`${currentFloor?.name} Floor Plan`}
                     width={800}
                     height={600}
                     className="w-full h-auto rounded-lg"
-                  /> */}
+                  />
                 </div>
               </div>
             </div>
