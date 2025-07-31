@@ -146,21 +146,6 @@ const ContactPage = () => {
               Follow Us
             </a>
           </div>
-
-          {/* Email */}
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500 text-white mb-4">
-              <FaEnvelope size={24} />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">Email</h3>
-            <p className="text-gray-600 mb-4">info@hcfurnituremall.com</p>
-            <a
-              href="mailto:info@hcfurnituremall.com"
-              className="inline-block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300"
-            >
-              Send Email
-            </a>
-          </div>
         </div>
       </section>
 

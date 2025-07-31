@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const First_Section = () => {
@@ -23,9 +24,9 @@ const First_Section = () => {
               Avenue ready for you to discover.
             </p>
           </div>
-          <button className="mt-6 px-6 py-2 w-full md:w-[60%] border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
+          <Link href="/categories" className="mt-6 px-6 py-2 w-full md:w-[60%] border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
             Explore More
-          </button>
+          </Link>
         </div>
       </div>
 

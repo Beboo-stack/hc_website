@@ -5,6 +5,7 @@ export const slides = [
       title: "DISCOVER FASHION AVENUE",
       subtitle: "Explore the latest trends at HC Mall.",
       button: "EXPLORE NOW",
+      link: "/whats-new",
     },
     {
       image: "/home.jpg",
@@ -12,6 +13,7 @@ export const slides = [
       subtitle:
         "Enjoy a seamless shopping experience with our Delivery Service.",
       button: "LEARN MORE",
+      link: "/about-us",
     },
   ],
 ];
