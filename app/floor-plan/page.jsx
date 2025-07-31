@@ -13,7 +13,7 @@ const FloorPlanPage = () => {
       id: 'ground',
       name: 'Ground Floor',
       arabicName: 'الطابق الأرضي',
-      image: '/Mall Photo_s/IMG_7893 copy.jpg', // Placeholder - you'll need actual floor plan images
+      image: '/Mall Photo_s/Ground-Floor.jpg', // Placeholder - you'll need actual floor plan images
       shops: [
         { name: 'VERINNO', category: 'Modern Furniture', location: 'Top-left', logo: '/logos/Verdera_Original Logo.webp' },
         { name: 'VALUE\'S HOME FURNITURE', category: 'Modern Furniture', location: 'Bottom-left', logo: '/logos/values---new-logo[1]-copy.webp' },
@@ -33,7 +33,7 @@ const FloorPlanPage = () => {
       id: 'first',
       name: 'First Floor',
       arabicName: 'الطابق الأول',
-      image: '/Mall Photo_s/IMG_7891 copy.jpg',
+      image: '/Mall Photo_s/First-Floor.jpg',
       shops: [
         { name: 'Zahran', category: 'Kitchens Hardware', location: 'Left', logo: '/logos/Zahran_Logo_English copy.webp' },
         { name: 'CAJA', category: 'Kitchens', location: 'Left', logo: '/logos/CAJA Text logo.webp' },
@@ -60,7 +60,7 @@ const FloorPlanPage = () => {
       id: 'second',
       name: 'Second Floor',
       arabicName: 'الطابق الثاني',
-      image: '/Mall Photo_s/IMG_7900 copy.jpg',
+      image: '/Mall Photo_s/IMG_7890 copy.jpg',
       shops: [
         { name: 'CAPITAL DESIGN', category: 'Modern Furniture', location: 'Left', logo: '/logos/Capital-Design.webp' },
         { name: 'drobina', category: 'Kitchens Hardware', location: 'Left', logo: '/logos/vevian final logo white background.webp' },
@@ -193,13 +193,13 @@ const FloorPlanPage = () => {
                   {currentFloor?.name} - {currentFloor?.arabicName}
                 </h2>
                 <div className="relative bg-gray-100 rounded-lg p-4 min-h-[400px] flex items-center justify-center">
-                  {/* <div className="text-center text-gray-500">
+                  <div className="text-center text-gray-500">
                     <FaMapMarkerAlt size={48} className="mx-auto mb-4" />
                     <p className="text-lg">Floor Plan Image</p>
                     <p className="text-sm">Interactive floor plan will be displayed here</p>
-                  </div> */}
+                  </div>
                   {/* Placeholder for actual floor plan image */}
-                  <Image
+                  {/* <Image
                     src={currentFloor?.image}
                     alt={`${currentFloor?.name} Floor Plan`}
                     width={800}
@@ -291,25 +291,6 @@ const FloorPlanPage = () => {
           </div>
         </div>
       )}
-
-      {/* Categories Legend */}
-      <section className="py-8 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Shop Categories
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {categories.map((category, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-lg p-3 text-center hover:bg-gray-100 transition-colors duration-200 cursor-pointer"
-              >
-                <span className="text-sm font-medium text-gray-700">{category}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Facilities Information */}
       <section className="py-8 px-4 bg-gray-50">
