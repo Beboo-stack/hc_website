@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, MapPin, Facebook, Instagram } from 'lucide-react';
 
+
 const ShopStructure = ({ data }) => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-200 via-pink-100 to-blue-100">
