@@ -152,7 +152,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full text-center text-base bg-black py-3 texFt-white pb-4">
+      <div className="w-full text-center text-base bg-black py-3 text-white pb-4">
         © {new Date().getFullYear()} HC Mall. All rights reserved.
       </div>
       {/* Floating WhatsApp Button */}
