@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const AutomaticCarousel = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -14,15 +14,6 @@ const AutomaticCarousel = ({ slides }) => {
 
   const scrollTo = useCallback(
     (idx) => emblaApi && emblaApi.scrollTo(idx),
-    [emblaApi]
-  );
-
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
-  );
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
     [emblaApi]
   );
 
@@ -45,12 +36,14 @@ const AutomaticCarousel = ({ slides }) => {
     return () => emblaApi.off("select", onSelect);
   }, [emblaApi, onSelect]);
 
+  const router = useRouter();
+
   return (
     <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <div className="h-full w-full" ref={emblaRef}>
           <div className="flex h-full">
-            {slides[0].map((slide, idx) => (
+            {slides.map((slide, idx) => (
               <div
                 className="flex-[0_0_100%] relative h-full"
                 key={idx}
@@ -65,7 +58,7 @@ const AutomaticCarousel = ({ slides }) => {
                     <div className="text-lg font-semibold mb-2">EVENT</div>
                     <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
                     <p className="mb-6">{slide.subtitle}</p>
-                    <button className="px-6 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200">
+                    <button className="px-6 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200" onClick={() => {router.push(slide.link)}}>
                       {slide.button}
                     </button>
                   </div>
@@ -77,7 +70,7 @@ const AutomaticCarousel = ({ slides }) => {
       </div>
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-        {slides[0].map((_, idx) => (
+        {slides.map((_, idx) => (
           <button
             key={idx}
             className={`w-3 h-3 rounded-full ${

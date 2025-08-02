@@ -2,16 +2,17 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
-  FaMapMarkerAlt,
   FaSearch,
   FaFilter,
-  FaInfoCircle,
 } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const FloorPlanPage = () => {
   const [selectedFloor, setSelectedFloor] = useState("ground");
   const [selectedShop, setSelectedShop] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const router = useRouter()
 
   const floors = [
     {
@@ -27,7 +28,7 @@ const FloorPlanPage = () => {
           logo: "/logos/Verdera_Original Logo.webp",
         },
         {
-          name: "VALUE'S HOME FURNITURE",
+          name: "VALUES HOME",
           category: "Modern Furniture",
           location: "Bottom-left",
           logo: "/logos/values---new-logo[1]-copy.webp",
@@ -39,13 +40,13 @@ const FloorPlanPage = () => {
           logo: "/logos/American-Furniture.webp",
         },
         {
-          name: "TEXMAR FABRICS",
+          name: "TEXMAR",
           category: "Fabrics / Curtains",
           location: "Top-center",
           logo: "/logos/TEXMAR-LOGO-ENGLISH.webp",
         },
         {
-          name: "CONTISTAHL GROUP",
+          name: "CONTISTAHL",
           category: "Kitchens",
           location: "Top-center",
           logo: "/logos/Cotistahl.webp",
@@ -436,7 +437,11 @@ const FloorPlanPage = () => {
                     <div
                       key={index}
                       className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors duration-200"
-                      onClick={() => setSelectedShop(shop)}
+                      onClick={() => {
+                        router.push(`/shops/${shop.name.toLowerCase()
+                          .replace(/(^|\s)\w/g, letter => letter.toUpperCase())
+                          .replace(/\s+/g, '')}`);
+                      }}
                     >
                       <div className="flex items-center space-x-3">
                         {shop.logo && (

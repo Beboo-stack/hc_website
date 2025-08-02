@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone, MapPin, Facebook, Instagram} from 'lucide-react';
+import { Phone, MapPin, Facebook, Instagram } from 'lucide-react';
 
 const ShopStructure = ({ data }) => {
     return (
@@ -12,6 +12,10 @@ const ShopStructure = ({ data }) => {
                     <div className="flex items-center space-x-2 text-sm">
                         <Link href="/" className="hover:underline">
                             Home
+                        </Link>
+                        <span>›</span>
+                        <Link href="/shops" className="hover:underline">
+                            Shops
                         </Link>
                         <span>›</span>
                         <span className="font-medium">{data.name}</span>
@@ -55,16 +59,14 @@ const ShopStructure = ({ data }) => {
                     <div className="lg:col-span-2">
                         <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg text-white">
                             <p className="text-lg leading-relaxed">
-                                Bulgari was founded in Rome in 1884 and quickly established a reputation for Italian
-                                excellence with exquisite craftsmanship and magnificent creations. The history of
-                                Bulgari is distinguished by the magnificence of large, exceptionally rare colored
-                                gems, by the ability to harmonize the classical with the contemporary and by an
-                                unmistakable creative sensibility that transcends time and passing trends.
+                                HC Furniture Mall hosts over 55 premium furniture and home decor stores under one roof.
+                                From luxury living room sets to functional kitchens, cozy bedrooms, and stylish accessories — there's something for every style and budget.
+                                The shops feature both international and local brands, offering a wide variety of products and price points.
+                                Whether you're furnishing a new home or upgrading a single room, HC is your all-in-one destination.
                             </p>
                         </div>
                     </div>
 
-                    {/* Contact Information */}
                     {/* Contact Information */}
                     <div className="flex lg:justify-end">
                         <div className="bg-black/30 backdrop-blur-sm w-full lg:w-fit p-6 rounded-lg text-white text-center lg:text-left">
@@ -88,12 +90,12 @@ const ShopStructure = ({ data }) => {
                             <div className="flex items-center justify-center lg:justify-start gap-4 mt-4 ">
                                 {data.facebook && (
                                     <Link href={data.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
-                                        <Facebook size={32}/>
+                                        <Facebook size={32} />
                                     </Link>
                                 )}
                                 {data.instagram && (
                                     <Link href={data.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition-colors">
-                                        <Instagram size={32}/>
+                                        <Instagram size={32} />
                                     </Link>
                                 )}
                             </div>
