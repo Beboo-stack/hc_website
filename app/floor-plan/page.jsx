@@ -64,13 +64,13 @@ const FloorPlanPage = () => {
           logo: "/logos/Artboard 1 copy 10.webp",
         },
         {
-          name: "TIFFANY LIGHTING",
+          name: "TIFFANY",
           category: "Lighting",
           location: "Top-right",
           logo: "/logos/logo-FB.webp",
         },
         {
-          name: "APEX 1948",
+          name: "APEX",
           category: "Modern Furniture",
           location: "Bottom-left",
           logo: "/logos/APEX-logo(1)-1.webp",
@@ -82,7 +82,7 @@ const FloorPlanPage = () => {
           logo: "/logos/Esque_Artboard 1.webp",
         },
         {
-          name: "DROBINA",
+          name: "Vevian",
           category: "Kitchens Hardware",
           location: "Bottom-right",
           logo: "/logos/vevian final logo white background.webp",
@@ -120,7 +120,7 @@ const FloorPlanPage = () => {
           logo: "/logos/Raif Tex_Artboard 1.webp",
         },
         {
-          name: "The LumberJack",
+          name: "LumberJack",
           category: "Outdoor",
           location: "Left",
           logo: "/logos/Lumberjack-logo_vector.webp",
@@ -204,13 +204,13 @@ const FloorPlanPage = () => {
           logo: "/logos/spring-copy.webp",
         },
         {
-          name: "T Track",
+          name: "T- Track",
           category: "Doors & Windows",
           location: "Bottom",
           logo: "/logos/T-Track.webp",
         },
         {
-          name: "Naguib Selim",
+          name: "Nagib Selim",
           category: "Fabrics / Curtains",
           location: "Bottom",
           logo: "/25.jpg",
@@ -236,7 +236,7 @@ const FloorPlanPage = () => {
           logo: "/logos/vevian final logo white background.webp",
         },
         {
-          name: "DOOR TECH EGYPT",
+          name: "Door Teck",
           category: "Doors & Windows",
           location: "Left",
           logo: "/logos/Doortech-New-Logo-2023-3.webp",
