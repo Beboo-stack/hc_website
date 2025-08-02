@@ -153,7 +153,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full text-center text-base bg-black py-3 text-white pb-4">
-        © {new Date().getFullYear()} HC Mall. All rights reserved.
+        © {new Date().getFullYear()} HC Mall. All rights reserved. Developed by Digirain
       </div>
       {/* Floating WhatsApp Button */}
       <a
