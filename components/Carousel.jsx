@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Carousel = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });

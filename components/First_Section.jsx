@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const First_Section = () => {
 
@@ -20,7 +21,7 @@ const First_Section = () => {
           <h4 className="text-lg font-bold text-center mb-4">Categories</h4>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-4xl font-semibold lg:text-6xl text-center ">
-              Redefining <br /> luxury{" "}
+              Good Quality <br /> on focus
             </h2>
             <p className="lg:w-[60%] text-base text-center font-semibold mt-4">
               Discover a world of shopping with our diverse categories at Fashion Avenue, ready for you to explore.
@@ -37,7 +38,7 @@ const First_Section = () => {
         <h4 className="text-lg font-bold text-center mb-4">Discover Categories</h4>
         <div className="w-full flex flex-col items-center">
           <h2 className="text-2xl font-semibold lg:text-6xl text-center ">
-            Redefining <br /> luxury{" "}
+            Good Quality <br /> on focus
           </h2>
           <p className="lg:w-[60%] text-base text-center font-semibold text-gray-700 mt-4">
             Discover a world of shopping with our diverse categories, ready for you to explore.

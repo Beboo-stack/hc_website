@@ -5,40 +5,41 @@ export const slides = [
       title: "A MALL THAT HAS IT ALL!",
       subtitle: "Explore the latest trends at HC Mall.",
       button: "EXPLORE NOW",
-      link: "/shops",
+      link: "/whats-new",
     },
     {
       image: "/home.jpg",
       title: "A PLACE THAT INSPIRES YOU.",
       subtitle: "Your one-stop destination for everything you home Needs",
       button: "LEARN MORE",
-      link: "/floor-plan",
+      link: "/about-us",
     },
   ],
 ];
 
 export const aboutUsPageSlides = [
-  [
-    {
-      image: "/1.webp",
-      title: "YOU SHOP. WE DELIVER.",
-      subtitle:
-        "Enjoy a seamless shopping experience with our Delivery Service.",
-      button: "LEARN MORE",
-    },
-    {
-      image: "/2.webp",
-      title: "DISCOVER FASHION AVENUE",
-      subtitle: "Explore the latest trends at HC Mall.",
-      button: "EXPLORE NOW",
-    },
-    {
-      image: "/2.jpg",
-      title: "DISCOVER FASHION AVENUE",
-      subtitle: "Explore the latest trends at HC Mall.",
-      button: "EXPLORE NOW",
-    },
-  ],
+  {
+    image: "/5.jpg",
+    title: "All your home needs under one roof.",
+    subtitle: "Discover a world of shopping with our diverse categories, ready for you to explore.",
+    button: "LEARN MORE",
+    link: "/categories",
+  },
+  {
+    image: "/3.JPG",
+    title: "Where everyone satisfied.",
+    subtitle: "Explore Discover HC Furniture Mall's layout, featuring 55 unique furniture shops across multiple levels.",
+    button: "EXPLORE NOW",
+    link: "/floor-plan",
+  },
+  {
+    image: "/4.jpg",
+    title: "What you want. We have it all",
+    subtitle:
+      "Discover the latest trends at HC Mall",
+    button: "EXPLORE NOW",
+    link: "whats-new",
+  },
 ];
 
 export const mallCategories = [

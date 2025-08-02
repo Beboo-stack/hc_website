@@ -2,11 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
-  FaMapMarkerAlt,
   FaSearch,
   FaFilter,
-  FaInfoCircle,
 } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const FloorPlanPage = () => {
   const [selectedFloor, setSelectedFloor] = useState("ground");

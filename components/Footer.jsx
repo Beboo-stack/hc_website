@@ -1,15 +1,17 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaXTwitter,
-  FaYoutube,
   FaInstagram,
   FaWhatsapp,
 } from "react-icons/fa6";
-import { FaApple, FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 import Image from "next/image";
+import { mallCategories } from "@/data";
+import Link from "next/link";
+
+// NOTE: This assumes `mallCategories` is an array of objects like `{ name: 'Category Name', image: '...' }`
 
 const Footer = () => {
+
   return (
     <footer className="relative bg-white text-black text-sm mt-10">
       {/* Top Row: Social, Newsletter, App Badges */}
@@ -51,105 +53,87 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-200 my-2" />
+
       {/* Middle Section: Info Columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Visitor Information */}
-        <div>
+        {/* Categories - spans 2 columns */}
+        <div className="md:col-span-2">
           <span className="font-bold tracking-wider mb-3 block">
-            VISITOR INFORMATION
+            CATEGORIES
           </span>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="hover:underline">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Mall Map
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Emaar Gift Card
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                The Lounge
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                More from Emaar
-              </a>
-            </li>
-          </ul>
+          <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+            {/* The fix is here: {category.name} instead of {category} */}
+            {mallCategories.map((category, index) => (
+              <Link href={`/categories/${category.name
+                .toLocaleLowerCase()
+                .trim()
+                .replace(/\s+/g, "-")}`} key={index} className="text-gray-700 hover:text-black hover:underline cursor-pointer">
+                {category.name}
+              </Link>
+            ))}
+          </div>
         </div>
-        {/* About Us */}
-        <div>
-          <span className="font-bold tracking-wider mb-3 block">ABOUT US</span>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="hover:underline">
-                About Dubai Mall
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                About Emaar
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Media Centre
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Emaar Malls
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Careers
-              </a>
-            </li>
-          </ul>
-        </div>
+
         {/* E-Services/Legal */}
         <div>
           <span className="font-bold tracking-wider mb-3 block">
-            E-Services/Tenants' Portal
+            Services
           </span>
           <ul className="space-y-2">
             <li>
               <a href="#" className="hover:underline">
-                E-Services/Tenants' Portal
+                Elevators & Escalators
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Leasing Enquiries
+                Free Parking
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Privacy Policy
+                Clean Restrooms
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Terms and Conditions
+                Prayer Rooms
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Parking FAQs
+                Public Transport Access
               </a>
             </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Uber & Ride Pick-Up Point
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                24/7 Security & Cameras
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Accessibility Support
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Information Desk
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Wi-Fi Access
+              </a>
+            </li>
+
           </ul>
         </div>
+
         {/* Contact Us */}
         <div>
           <span className="font-bold tracking-wider mb-3 block">
@@ -173,7 +157,7 @@ const Footer = () => {
       </div>
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/"
+        href="https://wa.me/2001281100001"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed z-50 bottom-6 right-6 bg-green-500 rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors"
