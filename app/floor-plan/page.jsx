@@ -28,7 +28,7 @@ const FloorPlanPage = () => {
           logo: "/logos/Verdera_Original Logo.webp",
         },
         {
-          name: "VALUE'S HOME FURNITURE",
+          name: "VALUES HOME",
           category: "Modern Furniture",
           location: "Bottom-left",
           logo: "/logos/values---new-logo[1]-copy.webp",
@@ -40,13 +40,13 @@ const FloorPlanPage = () => {
           logo: "/logos/American-Furniture.webp",
         },
         {
-          name: "TEXMAR FABRICS",
+          name: "TEXMAR",
           category: "Fabrics / Curtains",
           location: "Top-center",
           logo: "/logos/TEXMAR-LOGO-ENGLISH.webp",
         },
         {
-          name: "CONTISTAHL GROUP",
+          name: "CONTISTAHL",
           category: "Kitchens",
           location: "Top-center",
           logo: "/logos/Cotistahl.webp",
