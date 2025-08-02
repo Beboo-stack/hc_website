@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import React from "react";
 
 const Second_Section = () => {
@@ -25,10 +25,12 @@ const Second_Section = () => {
           </p>
         </div>
         <div className="flex flex-col gap-3 md:flex-row w-full">
-          <button className=" px-6 py-2 w-full md:w-fit border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300" onClick={() => {router.push("/floor-plan")}}>
+          <Link
+            href="/floor-plan"
+            className=" px-6 py-2 w-full md:w-fit border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300"
+          >
             Explore More
-          </button>
-        
+          </Link>
         </div>
       </div>
     </div>

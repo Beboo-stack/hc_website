@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Carousel = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -56,9 +56,9 @@ const Carousel = ({ slides }) => {
                   <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white">
                     <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
                     <p className="mb-6">{slide.subtitle}</p>
-                    <button className="px-6 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200" onClick={() => {router.push(slide.link)}}>
+                    <Link href={slide.link} className="px-6 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200">
                       {slide.button}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
