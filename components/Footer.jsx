@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import Image from "next/image";
 import { mallCategories } from "@/data";
 import Link from "next/link";
@@ -11,7 +7,6 @@ import Link from "next/link";
 // NOTE: This assumes `mallCategories` is an array of objects like `{ name: 'Category Name', image: '...' }`
 
 const Footer = () => {
-
   return (
     <footer className="relative bg-white text-black text-sm mt-10">
       {/* Top Row: Social, Newsletter, App Badges */}
@@ -64,10 +59,14 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-x-8 gap-y-2">
             {/* The fix is here: {category.name} instead of {category} */}
             {mallCategories.map((category, index) => (
-              <Link href={`/categories/${category.name
-                .toLocaleLowerCase()
-                .trim()
-                .replace(/\s+/g, "-")}`} key={index} className="text-gray-700 hover:text-black hover:underline cursor-pointer">
+              <Link
+                href={`/categories/${category.name
+                  .toLocaleLowerCase()
+                  .trim()
+                  .replace(/\s+/g, "-")}`}
+                key={index}
+                className="text-gray-700 hover:text-black hover:underline cursor-pointer"
+              >
                 {category.name}
               </Link>
             ))}
@@ -76,61 +75,18 @@ const Footer = () => {
 
         {/* E-Services/Legal */}
         <div>
-          <span className="font-bold tracking-wider mb-3 block">
-            Services
-          </span>
+          <span className="font-bold tracking-wider mb-3 block">Services</span>
           <ul className="space-y-2">
-            <li>
-              <a href="#" className="hover:underline">
-                Elevators & Escalators
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Free Parking
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Clean Restrooms
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Prayer Rooms
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Public Transport Access
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Uber & Ride Pick-Up Point
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                24/7 Security & Cameras
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Accessibility Support
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Information Desk
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Wi-Fi Access
-              </a>
-            </li>
-
+            <li>Elevators & Escalators</li>
+            <li>Free Parking</li>
+            <li>Clean Restrooms</li>
+            <li>Prayer Rooms</li>
+            <li>Public Transport Access</li>
+            <li>Uber & Ride Pick-Up Point</li>
+            <li>24/7 Security & Cameras</li>
+            <li>Accessibility Support</li>
+            <li>Information Desk</li>
+            <li>Wi-Fi Access</li>
           </ul>
         </div>
 
@@ -153,7 +109,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full text-center text-base bg-black py-3 text-white pb-4">
-        © {new Date().getFullYear()} HC Mall. All rights reserved. Developed by Digirain
+        © {new Date().getFullYear()} HC Mall. Developed by Digirain.
       </div>
       {/* Floating WhatsApp Button */}
       <a
