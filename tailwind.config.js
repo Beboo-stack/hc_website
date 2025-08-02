@@ -55,6 +55,15 @@ module.exports = {
           5: "#434244",
         },
       },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" }, 
+        },
+      },
+      animation: {
+        slide: "slide 15s linear infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

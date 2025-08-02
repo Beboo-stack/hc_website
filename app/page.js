@@ -5,6 +5,7 @@ import Second_Section from "@/components/Second_Section";
 import Third_Section from "@/components/Third_Section";
 import Whats_New from "@/components/Whats_New";
 import { slides } from "@/data"; 
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -18,12 +19,12 @@ export default function HomePage() {
           Discover Events & Offers
         </h1>
         <div className="hidden w-full md:flex items-center justify-center">
-          <button className="px-6 py-2 mt-4 border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
+          <Link href="/whats-new" className="px-6 py-2 mt-4 border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
             View All Events
-          </button>
-          <button className="px-6 py-2 mt-4 ml-4 border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
+          </Link>
+          <Link href="/hot-deals" className="px-6 py-2 mt-4 ml-4 border-2 border-gray-400 text-sm hover:bg-black hover:text-white transition duration-300">
             View All Offers
-          </button>
+          </Link>
         </div>
       </div>
       <Whats_New />

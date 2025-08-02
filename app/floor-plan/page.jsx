@@ -2,11 +2,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaMapMarkerAlt, FaSearch, FaFilter, FaInfoCircle } from 'react-icons/fa';
+import { useRouter } from 'next/navigation';
 
 const FloorPlanPage = () => {
   const [selectedFloor, setSelectedFloor] = useState('ground');
-  const [selectedShop, setSelectedShop] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+
+  const router = useRouter()
 
   const floors = [
     {
@@ -18,7 +20,7 @@ const FloorPlanPage = () => {
         { name: 'VERINNO', category: 'Modern Furniture', location: 'Top-left', logo: '/logos/Verdera_Original Logo.webp' },
         { name: 'VALUE\'S HOME FURNITURE', category: 'Modern Furniture', location: 'Bottom-left', logo: '/logos/values---new-logo[1]-copy.webp' },
         { name: 'AMERICAN FURNITURE', category: 'Modern Furniture', location: 'Middle-right', logo: '/logos/American-Furniture.webp' },
-        { name: 'TEXMAR FABRICS', category: 'Fabrics / Curtains', location: 'Top-center', logo: '/logos/TEXMAR-LOGO-ENGLISH.webp' },
+        { name: 'TEXMAR', category: 'Fabrics / Curtains', location: 'Top-center', logo: '/logos/TEXMAR-LOGO-ENGLISH.webp' },
         { name: 'CONTISTAHL GROUP', category: 'Kitchens', location: 'Top-center', logo: '/logos/Cotistahl.webp' },
         { name: 'MAZLOUM HOME', category: 'Modern Furniture', location: 'Top-right', logo: '/8.jpg' },
         { name: 'ASFOUR CRYSTAL', category: 'Lighting', location: 'Top-right', logo: '/logos/Artboard 1 copy 10.webp' },
@@ -77,37 +79,9 @@ const FloorPlanPage = () => {
     }
   ];
 
-  const categories = [
-    'Modern Furniture',
-    'Classic Furniture',
-    'Lighting',
-    'Outdoor',
-    'Kitchen Wear',
-    'Home Appliances',
-    'Bathrooms Accessories',
-    'Artificial Plants',
-    'Flooring',
-    'Wallpaper',
-    'Dressing Rooms',
-    'Hand Made',
-    'Hardware',
-    'Fabric Curtains',
-    'Kitchens',
-    'Doors & Windows',
-    'Home Accessories',
-    'Office Furniture',
-    'Shutters & Motoriesd Gates',
-    'Mattress and Bed Linens',
-    'Bed Linen',
-    'Kitchens Hardware',
-    'Fabrics / Curtains',
-    'Appliances',
-    'Multiple Categories',
-    'Services'
-  ];
 
   const currentFloor = floors.find(floor => floor.id === selectedFloor);
-  const filteredShops = currentFloor?.shops.filter(shop => 
+  const filteredShops = currentFloor?.shops.filter(shop =>
     shop.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     shop.category.toLowerCase().includes(searchTerm.toLowerCase())
   ) || [];
@@ -142,11 +116,10 @@ const FloorPlanPage = () => {
               <button
                 key={floor.id}
                 onClick={() => setSelectedFloor(floor.id)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  selectedFloor === floor.id
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${selectedFloor === floor.id
+                  ? 'bg-blue-600 text-white shadow-lg'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
               >
                 <div className="text-center">
                   <div className="text-lg font-bold">{floor.name}</div>
@@ -193,7 +166,7 @@ const FloorPlanPage = () => {
                   {currentFloor?.name} - {currentFloor?.arabicName}
                 </h2>
                 <div className="relative bg-gray-100 rounded-lg p-4 min-h-[400px] flex items-center justify-center">
-                  
+
                   <Image
                     src={currentFloor?.image}
                     alt={`${currentFloor?.name} Floor Plan`}
@@ -216,7 +189,11 @@ const FloorPlanPage = () => {
                     <div
                       key={index}
                       className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors duration-200"
-                      onClick={() => setSelectedShop(shop)}
+                      onClick={() => {
+                        router.push(`/shops/${shop.name.toLowerCase()
+                          .replace(/(^|\s)\w/g, letter => letter.toUpperCase())
+                          .replace(/\s+/g, '')}`);
+                      }}
                     >
                       <div className="flex items-center space-x-3">
                         {shop.logo && (
@@ -243,49 +220,6 @@ const FloorPlanPage = () => {
         </div>
       </section>
 
-      {/* Shop Details Modal */}
-      {selectedShop && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg max-w-md w-full p-6">
-            <div className="flex justify-between items-start mb-4">
-              <h3 className="text-xl font-bold text-gray-900">{selectedShop.name}</h3>
-              <button
-                onClick={() => setSelectedShop(null)}
-                className="text-gray-400 hover:text-gray-600"
-              >
-                ✕
-              </button>
-            </div>
-            
-            {selectedShop.logo && (
-              <div className="mb-4">
-                <Image
-                  src={selectedShop.logo}
-                  alt={`${selectedShop.name} logo`}
-                  width={80}
-                  height={80}
-                  className="rounded-lg"
-                />
-              </div>
-            )}
-            
-            <div className="space-y-2">
-              <p><strong>Category:</strong> {selectedShop.category}</p>
-              <p><strong>Location:</strong> {selectedShop.location}</p>
-              <p><strong>Floor:</strong> {currentFloor?.name}</p>
-            </div>
-            
-            <div className="mt-6 flex space-x-3">
-              <button className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
-                View Details
-              </button>
-              <button className="flex-1 bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors duration-300">
-                Get Directions
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Facilities Information */}
       <section className="py-8 px-4 bg-gray-50">

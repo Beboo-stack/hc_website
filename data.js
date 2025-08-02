@@ -2,16 +2,17 @@ export const slides = [
   [
     {
       image: "/home2.jpg",
-      title: "DISCOVER FASHION AVENUE",
+      title: "A MALL THAT HAS IT ALL!",
       subtitle: "Explore the latest trends at HC Mall.",
       button: "EXPLORE NOW",
+      link: "/shops",
     },
     {
       image: "/home.jpg",
-      title: "YOU SHOP. WE DELIVER.",
-      subtitle:
-        "Enjoy a seamless shopping experience with our Delivery Service.",
+      title: "A PLACE THAT INSPIRES YOU.",
+      subtitle: "Your one-stop destination for everything you home Needs",
       button: "LEARN MORE",
+      link: "/floor-plan",
     },
   ],
 ];
@@ -19,14 +20,14 @@ export const slides = [
 export const aboutUsPageSlides = [
   [
     {
-      image: "/1.jpg",
+      image: "/1.webp",
       title: "YOU SHOP. WE DELIVER.",
       subtitle:
         "Enjoy a seamless shopping experience with our Delivery Service.",
       button: "LEARN MORE",
     },
     {
-      image: "/2.jpg",
+      image: "/2.webp",
       title: "DISCOVER FASHION AVENUE",
       subtitle: "Explore the latest trends at HC Mall.",
       button: "EXPLORE NOW",
@@ -148,8 +149,8 @@ export const mainLinks = [
 
 export const blackLinks = [
   {
-    name: "Offers",
-    href: "#",
+    name: "Hot Deals",
+    href: "/hot-deals",
   },
   {
     name: "Contact Us",
@@ -161,7 +162,7 @@ export const blackLinks = [
   },
   {
     name: "Policy",
-    href: "#",
+    href: "/policy",
   },
 ];
 
@@ -177,7 +178,7 @@ export const newArrivals = [
     facebook: "https://www.facebook.com/nordicliving",
     logo: "/logos/Verdera_Original Logo.webp",
     image: "/Mall Photo_s/IMG_7893 copy.jpg",
-    category: "Modern Furniture"
+    category: "Modern Furniture",
   },
   {
     id: 2,
@@ -189,7 +190,7 @@ export const newArrivals = [
     facebook: "https://www.facebook.com/sleepcomfort",
     logo: "/logos/Comfort-Sleep-Logo.webp",
     image: "/Mall Photo_s/IMG_7891 copy.jpg",
-    category: "Bed Linen"
+    category: "Bed Linen",
   },
   {
     id: 3,
@@ -201,8 +202,8 @@ export const newArrivals = [
     facebook: "https://www.facebook.com/lightandcozy",
     logo: "/logos/Artboard 1 copy 10.webp",
     image: "/Mall Photo_s/IMG_7890 copy.jpg",
-    category: "Lighting"
-  }
+    category: "Lighting",
+  },
 ];
 
 // Hot deals data for What's New page
@@ -218,7 +219,7 @@ export const hotDeals = [
         discountedPrice: 11250,
         discount: 25,
         image: "/Mall Photo_s/IMG_7888 copy.jpg",
-        validUntil: "2024-12-31"
+        validUntil: "2024-12-31",
       },
       {
         name: "Dining Table",
@@ -226,13 +227,13 @@ export const hotDeals = [
         discountedPrice: 6000,
         discount: 25,
         image: "/Mall Photo_s/IMG_7887 copy.jpg",
-        validUntil: "2024-12-31"
-      }
+        validUntil: "2024-12-31",
+      },
     ],
     floor: "Ground Floor",
     phone: "02-38260366",
     instagram: "https://www.instagram.com/american_furniture_egypt/",
-    facebook: "https://www.facebook.com/AmericanFurnitureEgypt/"
+    facebook: "https://www.facebook.com/AmericanFurnitureEgypt/",
   },
   {
     id: 2,
@@ -245,7 +246,7 @@ export const hotDeals = [
         discountedPrice: 9000,
         discount: 25,
         image: "/Mall Photo_s/IMG_7886 copy.jpg",
-        validUntil: "2024-12-31"
+        validUntil: "2024-12-31",
       },
       {
         name: "Office Desk",
@@ -253,13 +254,13 @@ export const hotDeals = [
         discountedPrice: 3750,
         discount: 25,
         image: "/Mall Photo_s/IMG_7884 copy.jpg",
-        validUntil: "2024-12-31"
-      }
+        validUntil: "2024-12-31",
+      },
     ],
     floor: "First Floor",
     phone: "01201111451",
     instagram: "https://www.instagram.com/cube.furniture/",
-    facebook: "https://www.facebook.com/cubehomefurniture/"
+    facebook: "https://www.facebook.com/cubehomefurniture/",
   },
   {
     id: 3,
@@ -272,7 +273,7 @@ export const hotDeals = [
         discountedPrice: 2250,
         discount: 25,
         image: "/Mall Photo_s/IMG_7902 copy.jpg",
-        validUntil: "2024-12-31"
+        validUntil: "2024-12-31",
       },
       {
         name: "Table Lamps",
@@ -280,12 +281,62 @@ export const hotDeals = [
         discountedPrice: 1125,
         discount: 25,
         image: "/Mall Photo_s/IMG_7903 copy.jpg",
-        validUntil: "2024-12-31"
-      }
+        validUntil: "2024-12-31",
+      },
     ],
     floor: "Ground Floor",
     phone: "01220760333",
     instagram: "https://www.instagram.com/tiffanylightingco/",
-    facebook: "https://www.facebook.com/Tiffanylighting/"
-  }
+    facebook: "https://www.facebook.com/Tiffanylighting/",
+  },
+];
+
+export const logos = [
+  "/logos/Alf-Italia.webp",
+  "/logos/American-Furniture.webp",
+  "/logos/APEX-logo(1)-1.webp",
+  "/logos/Artboard 1 copy 10.webp",
+  "/logos/Artboard 1 copy.webp",
+  "/logos/Artboard 1.webp",
+  "/logos/Asia-copy.webp",
+  "/logos/Cairo-Art-.webp",
+  "/logos/CAJA Text logo.webp",
+  "/logos/Capital-Design.webp",
+  "/logos/Comfort Home collection (2).webp",
+  "/logos/Comfort-Sleep-Logo.webp",
+  "/logos/Cotistahl.webp",
+  "/logos/Cube.webp",
+  "/logos/Divano_Artboard 1.webp",
+  "/logos/Doortech-New-Logo-2023-3.webp",
+  "/logos/Elara Logo-06.webp",
+  "/logos/Esque_Artboard 1.webp",
+  "/logos/fagor copy.webp",
+  "/logos/Fida-Home-Gte-Vinyl.webp",
+  "/logos/final logo.webp",
+  "/logos/Glass-Style.webp",
+  "/logos/Hanimex_logo_black.webp",
+  "/logos/Home-Store.webp",
+  "/logos/Home_Plus2.webp",
+  "/logos/innova-logo--2.webp",
+  "/logos/kian-logo.webp",
+  "/logos/logo-FB.webp",
+  "/logos/Lumberjack-logo_vector.webp",
+  "/logos/Malek-New-Logo-2.webp",
+  "/logos/Malina.webp",
+  "/logos/Natuzzi-Edition.webp",
+  "/logos/ns 1.85 .9-01.webp",
+  "/logos/Only-Tables.webp",
+  "/logos/RADWAN-Mardini-NEW.webp",
+  "/logos/Raif Tex_Artboard 1.webp",
+  "/logos/SMART-Shutter-Final-Logo-copy.webp",
+  "/logos/spring-copy.webp",
+  "/logos/T-Track.webp",
+  "/logos/TEXMAR-LOGO-ENGLISH.webp",
+  "/logos/values---new-logo[1]-copy.webp",
+  "/logos/velour-de-jene-logo-FINAL--2.webp",
+  "/logos/Verdera_Black Logo.webp",
+  "/logos/Verdera_Original Logo.webp",
+  "/logos/Verinno_Black_White.webp",
+  "/logos/vevian final logo white background.webp",
+  "/logos/Zahran_Logo_English copy.webp",
 ];
