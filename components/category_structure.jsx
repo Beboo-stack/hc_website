@@ -36,9 +36,7 @@ const CategoryStructure = ({ category }) => {
               {shops
                 .filter((shop) =>
                   shop.category.some((cat) =>
-                    cat
-                      .toLowerCase()
-                      .includes(category.name.toLowerCase().trim())
+                    cat.toLowerCase().trim() === category.name.toLowerCase().trim()
                   )
                 )
                 .map((shop, index) => (

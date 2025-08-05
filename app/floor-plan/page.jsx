@@ -293,35 +293,6 @@ const FloorPlanPage = () => {
     },
   ];
 
-  const categories = [
-    "Modern Furniture",
-    "Classic Furniture",
-    "Lighting",
-    "Outdoor",
-    "Kitchen Wear",
-    "Home Appliances",
-    "Bathrooms Accessories",
-    "Artificial Plants",
-    "Flooring",
-    "Wallpaper",
-    "Dressing Rooms",
-    "Hand Made",
-    "Hardware",
-    "Fabric Curtains",
-    "Kitchens",
-    "Doors & Windows",
-    "Home Accessories",
-    "Office Furniture",
-    "Shutters & Motoriesd Gates",
-    "Mattress and Bed Linens",
-    "Bed Linen",
-    "Kitchens Hardware",
-    "Fabrics / Curtains",
-    "Appliances",
-    "Multiple Categories",
-    "Services",
-  ];
-
   const currentFloor = floors.find((floor) => floor.id === selectedFloor);
   const filteredShops =
     currentFloor?.shops.filter(

@@ -3,7 +3,7 @@ export const slides = [
     {
       image: "/home2.jpg",
       title: "A MALL THAT HAS IT ALL!",
-      subtitle: "Explore the latest trends at HC Mall.",
+      subtitle: "Explore the latest trends at HC Furniture Mall.",
       button: "EXPLORE NOW",
       link: "/whats-new",
     },
@@ -60,19 +60,19 @@ export const mallCategories = [
     image: "/Mall Categories/outdoor.jpg",
   },
   {
-    name: "Kitchen Wear",
+    name: "Kitchen Ware",
     image: "/Mall Categories/kitchen-wear.jpg",
   },
   {
-    name: "Home Appliances ",
+    name: "Home Appliances",
     image: "/Mall Categories/home-appliances.jpg",
   },
   {
-    name: "Bathrooms Accesories  ",
+    name: "Bathrooms Accessories",
     image: "/Mall Categories/modern.jpg",
   },
   {
-    name: "Artificial Plants  ",
+    name: "Artificial Plants & Pots",
     image: "/Mall Categories/classic.jpg",
   },
   {

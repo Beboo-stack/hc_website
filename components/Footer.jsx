@@ -42,7 +42,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://www.instagram.com/hc_furniture_mall/"
+              href="https://www.instagram.com/hc_furnituremall/"
               target="_blank"
               aria-label="Instagram"
               className="hover:text-pink-500"
@@ -74,61 +74,56 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* E-Services/Legal */}
+        {/* Services */}
         <div>
           <span className="font-bold tracking-wider mb-3 block">
             Services
           </span>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:underline">
-                Elevators & Escalators
-              </a>
+              Elevators & Escalators
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Free Parking
-              </a>
+
+              Free Parking
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Clean Restrooms
-              </a>
+
+              Clean Restrooms
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Prayer Rooms
-              </a>
+
+              Prayer Rooms
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Public Transport Access
-              </a>
+
+              Public Transport Access
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Uber & Ride Pick-Up Point
-              </a>
+
+              Uber & Ride Pick-Up Point
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                24/7 Security & Cameras
-              </a>
+
+              24/7 Security & Cameras
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Accessibility Support
-              </a>
+
+              Accessibility Support
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Information Desk
-              </a>
+              Information Desk
+
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Wi-Fi Access
-              </a>
+              Wi-Fi Access
             </li>
 
           </ul>

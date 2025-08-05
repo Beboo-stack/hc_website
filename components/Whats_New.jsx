@@ -15,7 +15,7 @@ const Whats_New = () => {
 
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex flex-col items-center justify-center text-white px-5">
         <h2 className="text-2xl md:text-5xl font-semibold text-center mb-4">
-          What's New at <br /> HC Mall
+          What's New at <br /> HC Furniture Mall
         </h2>
         <Link
           href="/whats-new"

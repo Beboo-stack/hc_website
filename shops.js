@@ -1,13 +1,13 @@
 export const shops = [
   {
     floor: "Ground Floor",
-    logo: "/logos/Verdera_Original Logo.webp",
+    logo: "/logos/verinno.png",
     phone: ["01222822999"],
     email: "example@mail.com",
     name: "Verinno",
     facebook: "https://www.facebook.com/Verinnofurnitureeg/?locale=ar_AR",
     instagram: "https://www.instagram.com/verinno_furniture/?hl=ar",
-    category: ["Moder Furniture", "Classic Furniture", "Lighting", "Pots & Plants", "Outdoor Furniture"]
+    category: ["Modern Furniture", "Classic Furniture", "Lighting", " Artificial Plants & Pots", "Outdoor Furniture"]
   },
   {
     floor: "Ground Floor",
@@ -27,7 +27,7 @@ export const shops = [
     name: "Contistahl",
     facebook: "https://www.facebook.com/ContistahlGroup/?locale=ar_AR",
     instagram: "https://www.instagram.com/contistahl_group/?hl=ar",
-    category: ["Kitchen Wear", "Dressing Rooms"]
+    category: ["Kitchen Ware", "Dressing Rooms"]
   },
   {
     floor: "Ground Floor",
@@ -117,7 +117,7 @@ export const shops = [
     name: "Verdera",
     facebook: "",
     instagram: "",
-    category: ["Plants", "Pots"]
+    category: ["Artificial Plants & Pots"]
   },
   {
     floor: "Second Floor",
@@ -137,7 +137,7 @@ export const shops = [
     name: "Hanimex",
     facebook: "https://www.facebook.com/hanimex.net/?locale=ar_AR",
     instagram: "",
-    category: ["Kitchen Wears", "Dressing Rooms", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
+    category: ["Kitchen Wares", "Dressing Rooms", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
   },
   {
     floor: "First Floor",
@@ -149,16 +149,16 @@ export const shops = [
     instagram: "https://www.instagram.com/divano.home.furniture/?hl=ar",
     category: ["Modern Furniture", "Dressing Rooms"]
   },
-  {
-    floor: "First Floor",
-    logo: "/logos/fagor copy.webp",
-    phone: ["01227237666"],
-    email: "example@mail.com",
-    name: "Fagor",
-    facebook: "",
-    instagram: "",
-    category: ["Kitchen Wear Appliances"]
-  },
+    {
+      floor: "First Floor",
+      logo: "/logos/fagor copy.webp",
+      phone: ["01227237666"],
+      email: "example@mail.com",
+      name: "Fagor",
+      facebook: "",
+      instagram: "",
+      category: ["Kitchen Ware Appliances"]
+    },
   {
     floor: "First Floor",
     logo: "/logos/Zahran_Logo_English copy.webp",
@@ -167,7 +167,7 @@ export const shops = [
     name: "Zahran",
     facebook: "https://www.facebook.com/zahranstoreofficial/?locale=ar_AR",
     instagram: "https://www.instagram.com/zahranstores/?hl=ar",
-    category: ["Kitchen Wear Hardware"]
+    category: ["Kitchen Ware Hardware"]
   },
   {
     floor: "First Floor",
@@ -197,7 +197,7 @@ export const shops = [
     name: "Lumberjack",
     facebook: "https://www.facebook.com/thelumberjack.eg/?locale=ar_AR",
     instagram: "",
-    category: ["Moder Furniture", "Outdoor Furniture"]
+    category: ["Modern Furniture", "Outdoor Furniture"]
   },
   {
     floor: "First Floor",
@@ -327,7 +327,7 @@ export const shops = [
     name: "Caja",
     facebook: "https://www.facebook.com/CAJA.furniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/caja.furniture/?hl=ar",
-    category: ["Kitchen Wears", "Dressing Rooms"]
+    category: ["Kitchen Wares", "Dressing Rooms"]
   },
   {
     floor: "Second Floor",
@@ -361,7 +361,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor Floor",
-    logo: "/37.jpg",
+    logo: "/logos/values.png",
     phone: ["01090709999"],
     email: "example@mail.com",
     name: "Values Home",
@@ -377,7 +377,7 @@ export const shops = [
     name: "Artynova",
     facebook: "https://www.facebook.com/ArtynovaFurniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/artynovafurniture/?hl=ar",
-    category: ["Kitchen Wears", "Dressing Rooms"]
+    category: ["Kitchen Wares", "Dressing Rooms"]
   },
   {
     floor: "First Floor",
@@ -417,7 +417,7 @@ export const shops = [
     name: "Vevian",
     facebook: "https://www.facebook.com/people/Drobina/100089809546351/",
     instagram: "",
-    category: ["Kitchen Wear Hardware"]
+    category: ["Kitchen Ware Hardware"]
   },
   {
     floor: "First Floor",
