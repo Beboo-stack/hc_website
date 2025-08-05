@@ -7,7 +7,13 @@ export const shops = [
     name: "Verinno",
     facebook: "https://www.facebook.com/Verinnofurnitureeg/?locale=ar_AR",
     instagram: "https://www.instagram.com/verinno_furniture/?hl=ar",
-    category: ["Modern Furniture", "Classic Furniture", "Lighting", " Artificial Plants & Pots", "Outdoor Furniture"]
+    category: [
+      "Modern Furniture",
+      "Classic Furniture",
+      "Lighting",
+      " Artificial Plants & Pots",
+      "Outdoor Furniture",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -17,7 +23,7 @@ export const shops = [
     name: "American Furniture",
     facebook: "https://www.facebook.com/AmericanFurnitureEgypt/",
     instagram: "https://www.instagram.com/american_furniture_egypt/",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "Ground Floor",
@@ -27,7 +33,7 @@ export const shops = [
     name: "Contistahl",
     facebook: "https://www.facebook.com/ContistahlGroup/?locale=ar_AR",
     instagram: "https://www.instagram.com/contistahl_group/?hl=ar",
-    category: ["Kitchen Ware", "Dressing Rooms"]
+    category: ["Kitchens", "Dressing Rooms"],
   },
   {
     floor: "Ground Floor",
@@ -37,7 +43,7 @@ export const shops = [
     name: "Cairo Art",
     facebook: "https://www.facebook.com/cairo.art2020/",
     instagram: "",
-    category: ["Accessories & Decor", "Hand Made"]
+    category: ["Accessories & Decor", "Hand Made"],
   },
   {
     floor: "Ground Floor",
@@ -47,7 +53,7 @@ export const shops = [
     name: "Texmar",
     facebook: "",
     instagram: "",
-    category: ["Curtains & Fabrics"]
+    category: ["Fabric & Curtains"],
   },
   {
     floor: "Ground Floor",
@@ -57,7 +63,7 @@ export const shops = [
     name: "Esque",
     facebook: "",
     instagram: "",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "Ground Floor",
@@ -67,7 +73,7 @@ export const shops = [
     name: "Apex",
     facebook: "https://www.facebook.com/apex.furniture.1948",
     instagram: "https://www.instagram.com/apex.furniture/?hl=ar",
-    category: ["Modern Furniture", "Lighting"]
+    category: ["Modern Furniture", "Lighting"],
   },
   {
     floor: "Ground Floor",
@@ -77,7 +83,7 @@ export const shops = [
     name: "Mazloum Home",
     facebook: "https://www.facebook.com/mazloumhome/",
     instagram: "https://www.instagram.com/mazloum_home/?hl=ar",
-    category: ["Modern Furniture", "Lighting"]
+    category: ["Modern Furniture", "Lighting"],
   },
   {
     floor: "Ground Floor",
@@ -87,7 +93,7 @@ export const shops = [
     name: "Tiffany",
     facebook: "https://www.facebook.com/Tiffanylighting/?locale=ar_AR",
     instagram: "https://www.instagram.com/tiffanylightingco/?hl=ar",
-    category: ["Lighting"]
+    category: ["Lighting"],
   },
   {
     floor: "Ground Floor",
@@ -97,7 +103,7 @@ export const shops = [
     name: "Asfour Crystal",
     facebook: "https://www.facebook.com/AsfourCrystal/?locale=ar_AR",
     instagram: "https://www.instagram.com/asfourcrystalofficial/?hl=ar",
-    category: ["Lighting"]
+    category: ["Lighting"],
   },
   {
     floor: "Ground Floor",
@@ -107,7 +113,7 @@ export const shops = [
     name: "Home Plus",
     facebook: "https://www.facebook.com/Homepluseg/photos/?_rdr",
     instagram: "https://www.instagram.com/homepluseg/?hl=ar",
-    category: ["Accessories & Decore", "Flooring", "Wallpaper"]
+    category: ["Accessories & Decor", "Flooring", "Wallpaper"],
   },
   {
     floor: "Ground Floor",
@@ -117,7 +123,7 @@ export const shops = [
     name: "Verdera",
     facebook: "",
     instagram: "",
-    category: ["Artificial Plants & Pots"]
+    category: ["Artificial Plants & Pots"],
   },
   {
     floor: "Second Floor",
@@ -127,7 +133,7 @@ export const shops = [
     name: "Smart Shutter",
     facebook: "https://www.facebook.com/SmartShutterEg/",
     instagram: "",
-    category: ["Doors & Windows"]
+    category: ["Doors & Windows"],
   },
   {
     floor: "Ground Floor",
@@ -137,7 +143,16 @@ export const shops = [
     name: "Hanimex",
     facebook: "https://www.facebook.com/hanimex.net/?locale=ar_AR",
     instagram: "",
-    category: ["Kitchen Wares", "Dressing Rooms", "Office Furniture", "Lighting", "hardware", "Bathrooms accessories"]
+    category: [
+      "Kitchens",
+      "Dressing Rooms",
+      "Office Furniture",
+      "Lighting",
+      "hardware",
+      "Bathrooms accessories",
+      "Artificial Plants & Pots",
+      "Flooring",
+    ],
   },
   {
     floor: "First Floor",
@@ -147,18 +162,18 @@ export const shops = [
     name: "Divano",
     facebook: "",
     instagram: "https://www.instagram.com/divano.home.furniture/?hl=ar",
-    category: ["Modern Furniture", "Dressing Rooms"]
+    category: ["Modern Furniture", "Dressing Rooms"],
   },
-    {
-      floor: "First Floor",
-      logo: "/logos/fagor copy.webp",
-      phone: ["01227237666"],
-      email: "example@mail.com",
-      name: "Fagor",
-      facebook: "",
-      instagram: "",
-      category: ["Kitchen Ware Appliances"]
-    },
+  {
+    floor: "First Floor",
+    logo: "/logos/fagor copy.webp",
+    phone: ["01227237666"],
+    email: "example@mail.com",
+    name: "Fagor",
+    facebook: "",
+    instagram: "",
+    category: ["Kitchen Ware Appliances"],
+  },
   {
     floor: "First Floor",
     logo: "/logos/Zahran_Logo_English copy.webp",
@@ -167,7 +182,7 @@ export const shops = [
     name: "Zahran",
     facebook: "https://www.facebook.com/zahranstoreofficial/?locale=ar_AR",
     instagram: "https://www.instagram.com/zahranstores/?hl=ar",
-    category: ["Kitchen Ware Hardware"]
+    category: ["Kitchen Ware Hardware"],
   },
   {
     floor: "First Floor",
@@ -177,7 +192,7 @@ export const shops = [
     name: "Raif",
     facebook: "https://www.facebook.com/raiftextile/?locale=ar_AR",
     instagram: "https://www.instagram.com/raiftextile/?hl=ar",
-    category: ["Curtains & Fabrics"]
+    category: ["Fabric & Curtains"],
   },
   {
     floor: "First Floor",
@@ -187,7 +202,7 @@ export const shops = [
     name: "Velour De Gene",
     facebook: "",
     instagram: "https://www.instagram.com/reel/C0eosmOM8bU/",
-    category: ["Curtain & Fabrics"]
+    category: ["Fabric & Curtains"],
   },
   {
     floor: "First Floor",
@@ -197,7 +212,7 @@ export const shops = [
     name: "Lumberjack",
     facebook: "https://www.facebook.com/thelumberjack.eg/?locale=ar_AR",
     instagram: "",
-    category: ["Modern Furniture", "Outdoor Furniture"]
+    category: ["Modern Furniture", "Outdoor Furniture"],
   },
   {
     floor: "First Floor",
@@ -207,7 +222,7 @@ export const shops = [
     name: "Cube Furniture",
     facebook: "https://www.facebook.com/cubehomefurniture/",
     instagram: "https://www.instagram.com/cube.furniture/?hl=ar",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "First Floor",
@@ -217,7 +232,7 @@ export const shops = [
     name: "Comfort home",
     facebook: "https://www.facebook.com/comfort.hc/?locale=ar_AR",
     instagram: "https://www.instagram.com/comforthomecollection/?hl=ar",
-    category: ["Mattresses"]
+    category: ["Mattresses"],
   },
   {
     floor: "Second Floor",
@@ -227,7 +242,7 @@ export const shops = [
     name: "Bed In Home",
     facebook: "https://www.facebook.com/BedNHome/?locale=ar_AR",
     instagram: "https://www.instagram.com/bednhome1/?hl=ar",
-    category: ["Bed Linen"]
+    category: ["Bed Linen"],
   },
   {
     floor: "First Floor",
@@ -237,17 +252,17 @@ export const shops = [
     name: "Malina",
     facebook: "https://www.facebook.com/malinafurniture/",
     instagram: "",
-    category: ["Accessories & Décor", "Outdoor Furniture"]
+    category: ["Accessories & Décor", "Outdoor Furniture"],
   },
   {
     floor: "First Floor",
-    logo: "/25.jpg",
+    logo: "/logos/selim.png",
     phone: ["01069564959"],
     email: "example@mail.com",
     name: "Nagib Selim",
     facebook: "",
     instagram: "",
-    category: ["Curtains & Fabrics"]
+    category: ["Fabric & Curtains"],
   },
   {
     floor: "First Floor",
@@ -257,7 +272,7 @@ export const shops = [
     name: "Malek",
     facebook: "",
     instagram: "",
-    category: ["Bed Linen", "Dressing Rooms"]
+    category: ["Bed Linen", "Dressing Rooms"],
   },
   {
     floor: "First Floor",
@@ -265,9 +280,10 @@ export const shops = [
     phone: ["01151404600"],
     email: "example@mail.com",
     name: "T-Track",
-    facebook: "https://www.facebook.com/p/TTrack-Pvc-U-10/0067771684991/?locale=ar_AR",
+    facebook:
+      "https://www.facebook.com/p/TTrack-Pvc-U-10/0067771684991/?locale=ar_AR",
     instagram: "https://www.instagram.com/track.gmbh/",
-    category: ["Doors & Windows"]
+    category: ["Doors & Windows"],
   },
   {
     floor: "First Floor",
@@ -277,7 +293,7 @@ export const shops = [
     name: "Asia Furniture",
     facebook: "https://www.facebook.com/asiafurniturestore/",
     instagram: "https://www.instagram.com/asiafurniturestore/?hl=ar",
-    category: ["Outdoor Furniture"]
+    category: ["Outdoor Furniture"],
   },
   {
     floor: "First Floor",
@@ -287,7 +303,7 @@ export const shops = [
     name: "Kian",
     facebook: "https://www.facebook.com/kianegypt",
     instagram: "https://www.instagram.com/kianegypt/",
-    category: ["Outdoor Furniture", "Accessories & Décor"]
+    category: ["Outdoor Furniture", "Accessories & Décor"],
   },
   {
     floor: "First Floor",
@@ -297,7 +313,7 @@ export const shops = [
     name: "Comfort Sleep",
     facebook: "https://www.facebook.com/comfortsleepegypt/",
     instagram: "",
-    category: ["Mattresses"]
+    category: ["Mattresses"],
   },
   {
     floor: "Second Floor",
@@ -307,7 +323,7 @@ export const shops = [
     name: "Fida Home",
     facebook: "https://www.facebook.com/fidahome.egypt/",
     instagram: "",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "Second Floor",
@@ -317,7 +333,7 @@ export const shops = [
     name: "Capital Design",
     facebook: "https://www.facebook.com/capitaldesignfurniture/",
     instagram: "https://www.instagram.com/capital.design.eg/",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "First Floor",
@@ -327,7 +343,7 @@ export const shops = [
     name: "Caja",
     facebook: "https://www.facebook.com/CAJA.furniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/caja.furniture/?hl=ar",
-    category: ["Kitchen Wares", "Dressing Rooms"]
+    category: ["Kitchens", "Dressing Rooms"],
   },
   {
     floor: "Second Floor",
@@ -337,7 +353,7 @@ export const shops = [
     name: "Door Teck",
     facebook: "https://www.facebook.com/doortech.egy/?locale=ar_AR",
     instagram: "",
-    category: ["Doors & Windows"]
+    category: ["Doors & Windows"],
   },
   {
     floor: "First Floor",
@@ -347,7 +363,7 @@ export const shops = [
     name: "Radwan Mardini",
     facebook: "https://www.facebook.com/RadwanMardini/?locale=ar_AR",
     instagram: "",
-    category: ["Curtains & Fabrics"]
+    category: ["Fabric & Curtains"],
   },
   {
     floor: "Second Floor",
@@ -357,27 +373,28 @@ export const shops = [
     name: "Innova",
     facebook: "",
     instagram: "",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
-    floor: "Ground Floor Floor",
+    floor: "Ground Floor ",
     logo: "/logos/values.png",
     phone: ["01090709999"],
     email: "example@mail.com",
     name: "Values Home",
     facebook: "https://www.facebook.com/VALUESdesign/?locale=ar_AR",
     instagram: "",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
+
   {
     floor: "First Floor",
-    logo: "/38.jpg",
+    logo: "/logos/artynova.png",
     phone: ["01207300038", "01121554224"],
     email: "example@mail.com",
     name: "Artynova",
     facebook: "https://www.facebook.com/ArtynovaFurniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/artynovafurniture/?hl=ar",
-    category: ["Kitchen Wares", "Dressing Rooms"]
+    category: ["Kitchens", "Dressing Rooms"],
   },
   {
     floor: "First Floor",
@@ -387,7 +404,7 @@ export const shops = [
     name: "Spring Air",
     facebook: "https://www.facebook.com/SpringAirEgypt/?locale=ar_AR",
     instagram: "",
-    category: ["Mattresses"]
+    category: ["Mattresses"],
   },
   {
     floor: "Second Floor",
@@ -397,7 +414,7 @@ export const shops = [
     name: "ALF Italia",
     facebook: "",
     instagram: "",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "Second Floor",
@@ -407,7 +424,7 @@ export const shops = [
     name: "Natuzzi",
     facebook: "",
     instagram: "https://www.instagram.com/natuzziegypt/",
-    category: ["Modern Furniture"]
+    category: ["Modern Furniture"],
   },
   {
     floor: "Ground Floor Floor",
@@ -417,7 +434,7 @@ export const shops = [
     name: "Vevian",
     facebook: "https://www.facebook.com/people/Drobina/100089809546351/",
     instagram: "",
-    category: ["Kitchen Ware Hardware"]
+    category: ["Kitchen Ware Hardware"],
   },
   {
     floor: "First Floor",
@@ -427,7 +444,7 @@ export const shops = [
     name: "Broderie",
     facebook: "https://www.facebook.com/BroderieTex/",
     instagram: "https://www.instagram.com/broderie.textiles/",
-    category: ["Curtains & Fabrics"]
+    category: ["Fabric & Curtains"],
   },
   {
     floor: "Second Floor",
@@ -437,15 +454,23 @@ export const shops = [
     name: "Elara",
     facebook: "",
     instagram: "https://www.instagram.com/elara.furniture/?hl=ar",
-    category: ["Modern furniture"]
+    category: ["Modern furniture"],
   },
   {
-    floor: "Ground Floor Floor",
+    floor: "Ground Floor",
     logo: "/logos/Only-Tables.webp",
     phone: ["0112 7206 763 0103 0266 007 "],
     name: "Only Tables",
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",
-    category: ["Accessories", "Decor"]
+    category: ["Accessories", "Decor"],
   },
-];
+  {
+    floor: "Ground Floor",
+    logo: "/logos/glass-style.png",
+    phone: ["0112 7206 763 0103 0266 007 "],
+    name: "Glass Style",
+    facebook: "https://www.facebook.com/GlassStyle.walidonsy/?locale=ar_AR",
+    category: ["Accessories & Décor"],
+  },
 
+];

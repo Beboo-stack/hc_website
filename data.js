@@ -21,22 +21,23 @@ export const aboutUsPageSlides = [
   {
     image: "/5.jpg",
     title: "All your home needs under one roof.",
-    subtitle: "Discover a world of shopping with our diverse categories, ready for you to explore.",
+    subtitle:
+      "Discover a world of shopping with our diverse categories, ready for you to explore.",
     button: "LEARN MORE",
     link: "/categories",
   },
   {
     image: "/3.JPG",
     title: "Where everyone satisfied.",
-    subtitle: "Explore Discover HC Furniture Mall's layout, featuring 55 unique furniture shops across multiple levels.",
+    subtitle:
+      "Explore Discover HC Furniture Mall's layout, featuring 55 unique furniture shops across multiple levels.",
     button: "EXPLORE NOW",
     link: "/floor-plan",
   },
   {
     image: "/4.jpg",
     title: "What you want. We have it all",
-    subtitle:
-      "Discover the latest trends at HC Mall",
+    subtitle: "Discover the latest trends at HC Mall",
     button: "EXPLORE NOW",
     link: "whats-new",
   },
@@ -96,7 +97,7 @@ export const mallCategories = [
     image: "/Mall Categories/modern.jpg",
   },
   {
-    name: "Fabric Curtains",
+    name: "Fabric & Curtains",
     image: "/Mall Categories/classic.jpg",
   },
   {
@@ -171,39 +172,14 @@ export const blackLinks = [
 export const newArrivals = [
   {
     id: 1,
-    brandName: "Nordic Living",
-    description: "Modern Nordic pieces for living and dining.",
+    brandName: "Raif",
     floor: "First Floor",
-    phone: "0100 123 4567",
-    instagram: "https://www.instagram.com/nordicliving",
-    facebook: "https://www.facebook.com/nordicliving",
-    logo: "/logos/Verdera_Original Logo.webp",
+    phone: "01029505398",
+    instagram: "https://www.instagram.com/raiftextile/?hl=ar",
+    facebook: "https://www.facebook.com/raiftextile/?locale=ar_AR",
+    logo: "/logos/Raif Tex_Artboard 1.webp",
     image: "/Mall Photo_s/IMG_7893 copy.jpg",
-    category: "Modern Furniture",
-  },
-  {
-    id: 2,
-    brandName: "Sleep Comfort",
-    description: "Imported bedding sets now available.",
-    floor: "Ground Floor",
-    phone: "0100 654 3210",
-    instagram: "https://www.instagram.com/sleepcomfort",
-    facebook: "https://www.facebook.com/sleepcomfort",
-    logo: "/logos/Comfort-Sleep-Logo.webp",
-    image: "/Mall Photo_s/IMG_7891 copy.jpg",
-    category: "Bed Linen",
-  },
-  {
-    id: 3,
-    brandName: "Light & Cozy",
-    description: "Contemporary lighting solutions for every space.",
-    floor: "Second Floor",
-    phone: "0100 987 6543",
-    instagram: "https://www.instagram.com/lightandcozy",
-    facebook: "https://www.facebook.com/lightandcozy",
-    logo: "/logos/Artboard 1 copy 10.webp",
-    image: "/Mall Photo_s/IMG_7890 copy.jpg",
-    category: "Lighting",
+    category: "Curtains & Fabrics",
   },
 ];
 

@@ -41,7 +41,7 @@ const ContactPage = () => {
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Contact Us</h1>
             <p className="text-xl md:text-2xl mb-8">
-              Get in touch with HC Mall
+              Get in touch with HC Furniture Mall 
             </p>
           </div>
         </div>

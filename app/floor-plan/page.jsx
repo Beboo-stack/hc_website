@@ -25,13 +25,13 @@ const FloorPlanPage = () => {
           name: "VERINNO",
           category: "Modern Furniture",
           location: "Top-left",
-          logo: "/logos/Verdera_Original Logo.webp",
+          logo: "/logos/verinno.png",
         },
         {
           name: "VALUES HOME",
           category: "Modern Furniture",
           location: "Bottom-left",
-          logo: "/logos/values---new-logo[1]-copy.webp",
+          logo: "/logos/values.png",
         },
         {
           name: "AMERICAN FURNITURE",
@@ -153,7 +153,7 @@ const FloorPlanPage = () => {
           name: "ARTYNOVA",
           category: "Kitchens",
           location: "Center-left",
-          logo: "/38.jpg",
+          logo: "/logos/artynova.png",
         },
         {
           name: "Comfort Sleep",
@@ -213,7 +213,7 @@ const FloorPlanPage = () => {
           name: "Nagib Selim",
           category: "Fabrics / Curtains",
           location: "Bottom",
-          logo: "/25.jpg",
+          logo: "/logos/selim.png",
         },
       ],
     },
@@ -254,10 +254,10 @@ const FloorPlanPage = () => {
           logo: "/logos/Fida-Home-Gte-Vinyl.webp",
         },
         {
-          name: "FURNITURE BEYOUT",
+          name: "Elara",
           category: "Modern Furniture",
           location: "Top",
-          logo: null,
+          logo: "/logos/Elara Logo-06.webp",
         },
         {
           name: "HANIMEX",
@@ -266,7 +266,7 @@ const FloorPlanPage = () => {
           logo: "/logos/Hanimex_logo_black.webp",
         },
         {
-          name: "AL F ITALIA",
+          name: "ALF ITALIA",
           category: "Modern Furniture",
           location: "Center",
           logo: "/logos/Alf-Italia.webp",
@@ -284,7 +284,7 @@ const FloorPlanPage = () => {
           logo: "/logos/SMART-Shutter-Final-Logo-copy.webp",
         },
         {
-          name: "MAINNOVA",
+          name: "INNOVA",
           category: "Modern Furniture",
           location: "Bottom",
           logo: "/logos/innova-logo--2.webp",
@@ -329,11 +329,10 @@ const FloorPlanPage = () => {
               <button
                 key={floor.id}
                 onClick={() => setSelectedFloor(floor.id)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  selectedFloor === floor.id
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                }`}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${selectedFloor === floor.id
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  }`}
               >
                 <div className="text-center">
                   <div className="text-lg font-bold">{floor.name}</div>
