@@ -120,7 +120,7 @@ const Footer = () => {
       >
         <FaWhatsapp className="text-white text-3xl" />
       </a>
-    </footer>
+    </footer> 
   );
 };
 
