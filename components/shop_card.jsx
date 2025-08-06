@@ -27,14 +27,33 @@ export default function ShopCard({
     >
       <div> {/* Container for top content (logo, name, floor) */}
         <div className="flex items-center gap-4">
-          <div className="relative w-16 h-16 rounded-full overflow-hidden border">
-            <Image src={logo} alt={`${name} logo`} fill className="object-contain" />
-          </div>
+          {name === "Innova" ? (
+            <div className="w-16 h-16 rounded-full border flex items-center justify-center bg-white p-2">
+              <Image
+                src={logo}
+                alt={`${name} logo`}
+                width={56}
+                height={56}
+                className="object-contain"
+              />
+            </div>
+          ) : (
+            <div className="relative w-16 h-16 rounded-full overflow-hidden border">
+              <Image
+                src={logo}
+                alt={`${name} logo`}
+                fill
+                className="object-contain"
+              />
+            </div>
+          )}
+
           <div>
             <h2 className="text-xl font-semibold">{name}</h2>
-            <p className="text-sm text-gray-500">Floor: {floor}</p> {/* Changed from {floor} to Floor: {floor} for clarity */}
+            <p className="text-sm text-gray-500">Floor: {floor}</p>
           </div>
         </div>
+
 
         {/* Categories Section - Added below shop details */}
         {category && category.length > 0 && (
