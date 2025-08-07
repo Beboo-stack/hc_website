@@ -19,13 +19,13 @@ const Page = () => {
           {/* Text overlay - centered */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 p-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              About HC Mall
+              About HC Furniture Mall 
             </h1>
           </div>
         </div>
       </header>
 
-      <p className="mx-auto mt-5 font-bold text-2xl">HC MALL</p>
+      <p className="mx-auto mt-5 font-bold text-2xl">HC Furniture Mall </p>
 
       {/* Main Content - 90% of viewport height */}
       <main className="flex-1 overflow-y-auto ">

@@ -37,7 +37,7 @@ export const aboutUsPageSlides = [
   {
     image: "/4.jpg",
     title: "What you want. We have it all",
-    subtitle: "Discover the latest trends at HC Mall",
+    subtitle: "Discover the latest trends at HC Furniture Mall ",
     button: "EXPLORE NOW",
     link: "whats-new",
   },
