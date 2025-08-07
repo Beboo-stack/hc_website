@@ -103,7 +103,7 @@ const Footer = () => {
             target="_blank"
             className="hover:underline block"
           >
-            +20 0128 1100 001
+            +20 0128 1100 001 
           </a>
         </div>
       </div>
