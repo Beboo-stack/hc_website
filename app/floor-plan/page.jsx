@@ -1,10 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-  FaSearch,
-  FaFilter,
-} from "react-icons/fa";
+import { FaSearch, FaFilter } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
 const FloorPlanPage = () => {
@@ -12,13 +9,12 @@ const FloorPlanPage = () => {
   const [selectedShop, setSelectedShop] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const router = useRouter()
+  const router = useRouter();
 
   const floors = [
     {
       id: "ground",
       name: "Ground Floor",
-      arabicName: "الطابق الأرضي",
       image: "/Mall Photo_s/Ground-Floor.jpg", // Placeholder - you'll need actual floor plan images
       shops: [
         {
@@ -55,7 +51,7 @@ const FloorPlanPage = () => {
           name: "MAZLOUM HOME",
           category: "Modern Furniture",
           location: "Top-right",
-          logo: "/8.jpg",
+          logo: "/logos/Mazloum.png",
         },
         {
           name: "ASFOUR CRYSTAL",
@@ -98,7 +94,6 @@ const FloorPlanPage = () => {
     {
       id: "first",
       name: "First Floor",
-      arabicName: "الطابق الأول",
       image: "/Mall Photo_s/First-Floor.jpg",
       shops: [
         {
@@ -220,7 +215,6 @@ const FloorPlanPage = () => {
     {
       id: "second",
       name: "Second Floor",
-      arabicName: "الطابق الثاني",
       image: "/Mall Photo_s/Second-floor.jpg",
       shops: [
         {
@@ -329,14 +323,14 @@ const FloorPlanPage = () => {
               <button
                 key={floor.id}
                 onClick={() => setSelectedFloor(floor.id)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${selectedFloor === floor.id
-                  ? "bg-blue-600 text-white shadow-lg"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  }`}
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                  selectedFloor === floor.id
+                    ? "bg-blue-600 text-white shadow-lg"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
               >
                 <div className="text-center">
                   <div className="text-lg font-bold">{floor.name}</div>
-                  <div className="text-sm opacity-75">{floor.arabicName}</div>
                 </div>
               </button>
             ))}
@@ -408,9 +402,14 @@ const FloorPlanPage = () => {
                       key={index}
                       className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors duration-200"
                       onClick={() => {
-                        router.push(`/shops/${shop.name.toLowerCase()
-                          .replace(/(^|\s)\w/g, letter => letter.toUpperCase())
-                          .replace(/\s+/g, '')}`);
+                        router.push(
+                          `/shops/${shop.name
+                            .toLowerCase()
+                            .replace(/(^|\s)\w/g, (letter) =>
+                              letter.toUpperCase()
+                            )
+                            .replace(/\s+/g, "")}`
+                        );
                       }}
                     >
                       <div className="flex items-center space-x-3">

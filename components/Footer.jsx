@@ -1,5 +1,11 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa6";
 import Image from "next/image";
 import { mallCategories } from "@/data";
 import Link from "next/link";
@@ -25,9 +31,9 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row md:justify-center md:items-start gap-8">
         {/* Social */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 justify-center items-center">
           <span className="font-bold tracking-wider mb-2">FOLLOW US</span>
-          <div className="flex gap-4 text-2xl">
+          <div className="flex gap-4 text-2xl ">
             <a
               href="https://www.facebook.com/HCFurnitureMall/?eid=ARDi4rPTxlXxiH7LU5X5FbKjmzefHp0aI3kl1unAZtHkWdqbuoQQ_HRIYIlPOJlHeWrBPl7aQZZmzqzb"
               target="_blank"
@@ -43,6 +49,30 @@ const Footer = () => {
               className="hover:text-pink-500"
             >
               <FaInstagram />
+            </a>
+            <a
+              href="https://wa.me/2001281100001"
+              target="_blank"
+              aria-label="WhatsApp"
+              className="hover:text-green-500"
+            >
+              <FaWhatsapp />
+            </a>
+            <a
+              href="https://www.tiktok.com/@hc_furnituremall"
+              target="_blank"
+              aria-label="TikTok"
+              className="hover:text-pink-500"
+            >
+              <FaTiktok />
+            </a>
+            <a
+              href="https://www.youtube.com/@hcfurnituremall4504"
+              target="_blank"
+              aria-label="YouTube"
+              className="hover:text-red-500"
+            >
+              <FaYoutube />
             </a>
           </div>
         </div>
@@ -103,7 +133,7 @@ const Footer = () => {
             target="_blank"
             className="hover:underline block"
           >
-            +20 0128 1100 001 
+            +20 0128 1100 001
           </a>
         </div>
       </div>
@@ -120,7 +150,7 @@ const Footer = () => {
       >
         <FaWhatsapp className="text-white text-3xl" />
       </a>
-    </footer> 
+    </footer>
   );
 };
 

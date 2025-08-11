@@ -8,6 +8,8 @@ import {
   FaMapMarkerAlt,
   FaClock,
   FaEnvelope,
+  FaYoutube,
+  FaTiktok,
 } from "react-icons/fa";
 
 const ContactPage = () => {
@@ -15,16 +17,16 @@ const ContactPage = () => {
     facebook:
       "https://www.facebook.com/HCFurnitureMall/?eid=ARDi4rPTxlXxiH7LU5X5FbKjmzefHp0aI3kl1unAZtHkWdqbuoQQ_HRIYIlPOJlHeWrBPl7aQZZmzqzb",
     instagram: "https://www.instagram.com/hc_furnituremall/",
+    youtube: "https://www.youtube.com/@hcfurnituremall4504",
+    tiktok: "https://www.tiktok.com/@hc_furnituremall",
     website: "www.hcfurnituremall.com",
     phone: "01281100001",
     address: "Mall of Arabia - Gate 1, Juhayna Sq., 6th of October, Egypt",
   };
 
   const businessHours = [
-    { day: "Monday - Thursday", hours: "10:00 AM - 10:00 PM" },
-    { day: "Friday", hours: "10:00 AM - 11:00 PM" },
-    { day: "Saturday", hours: "10:00 AM - 11:00 PM" },
-    { day: "Sunday", hours: "10:00 AM - 10:00 PM" },
+    { day: "Saturday to Wednesday ", hours: "10:00 AM - 11:00 PM" },
+    { day: "Thursday and Friday ", hours: "10:00 AM - 12:00 Midnight" },
   ];
 
   return (
@@ -41,7 +43,7 @@ const ContactPage = () => {
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Contact Us</h1>
             <p className="text-xl md:text-2xl mb-8">
-              Get in touch with HC Furniture Mall 
+              Get in touch with HC Furniture Mall
             </p>
           </div>
         </div>
@@ -51,7 +53,7 @@ const ContactPage = () => {
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            HC Contacts
+            HC Furniture Mall Contacts
           </h2>
         </div>
 
@@ -142,6 +144,40 @@ const ContactPage = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors duration-300"
+            >
+              Follow Us
+            </a>
+          </div>
+          {/* YouTube */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500 text-white mb-4">
+              <FaYoutube size={24} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              YouTube
+            </h3>
+            <p className="text-gray-600 mb-4">Follow us on YouTube</p>
+            <a
+              href={contactInfo.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300"
+            >
+              Follow Us
+            </a>
+          </div>
+          {/* TikTok */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-black text-white mb-4">
+              <FaTiktok size={24} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">TikTok</h3>
+            <p className="text-gray-600 mb-4">Follow us on TikTok</p>
+            <a
+              href={contactInfo.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-300"
             >
               Follow Us
             </a>

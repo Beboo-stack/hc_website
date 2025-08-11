@@ -43,7 +43,7 @@ export const shops = [
     name: "Cairo Art",
     facebook: "https://www.facebook.com/cairo.art2020/",
     instagram: "",
-    category: ["Accessories & Decor", "Hand Made"],
+    category: ["Home Accessories & Decor", "Hand Made"],
   },
   {
     floor: "Ground Floor",
@@ -77,7 +77,7 @@ export const shops = [
   },
   {
     floor: "Ground Floor",
-    logo: "/8.jpg",
+    logo: "/logos/Mazloum.png",
     phone: ["19744", "0127266676"],
     email: "example@mail.com",
     name: "Mazloum Home",
@@ -113,7 +113,7 @@ export const shops = [
     name: "Home Plus",
     facebook: "https://www.facebook.com/Homepluseg/photos/?_rdr",
     instagram: "https://www.instagram.com/homepluseg/?hl=ar",
-    category: ["Accessories & Decor", "Flooring", "Wallpaper"],
+    category: ["Home Accessories & Decor", "Flooring", "Wallpaper"],
   },
   {
     floor: "Ground Floor",
@@ -123,7 +123,7 @@ export const shops = [
     name: "Verdera",
     facebook: "",
     instagram: "",
-    category: ["Artificial Plants & Pots"],
+    category: ["Artificial Plants & Pots", "Home Accessories & Decor"],
   },
   {
     floor: "Second Floor",
@@ -133,7 +133,7 @@ export const shops = [
     name: "Smart Shutter",
     facebook: "https://www.facebook.com/SmartShutterEg/",
     instagram: "",
-    category: ["Doors & Windows"],
+    category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
   },
   {
     floor: "Ground Floor",
@@ -145,6 +145,7 @@ export const shops = [
     instagram: "",
     category: [
       "Kitchens",
+      "Home Accessories & Decor",
       "Dressing Rooms",
       "Office Furniture",
       "Lighting",
@@ -172,7 +173,7 @@ export const shops = [
     name: "Fagor",
     facebook: "",
     instagram: "",
-    category: ["Kitchen Ware Appliances"],
+    category: ["Kitchen Appliances"],
   },
   {
     floor: "First Floor",
@@ -182,7 +183,7 @@ export const shops = [
     name: "Zahran",
     facebook: "https://www.facebook.com/zahranstoreofficial/?locale=ar_AR",
     instagram: "https://www.instagram.com/zahranstores/?hl=ar",
-    category: ["Kitchen Ware Hardware"],
+    category: ["Kitchenware"],
   },
   {
     floor: "First Floor",
@@ -242,7 +243,7 @@ export const shops = [
     name: "Bed In Home",
     facebook: "https://www.facebook.com/BedNHome/?locale=ar_AR",
     instagram: "https://www.instagram.com/bednhome1/?hl=ar",
-    category: ["Bed Linen"],
+    category: ["Bed Linens", "Mattresses"],
   },
   {
     floor: "First Floor",
@@ -252,7 +253,7 @@ export const shops = [
     name: "Malina",
     facebook: "https://www.facebook.com/malinafurniture/",
     instagram: "",
-    category: ["Accessories & Décor", "Outdoor Furniture"],
+    category: ["Home Accessories & Decor", "Outdoor Furniture"],
   },
   {
     floor: "First Floor",
@@ -272,7 +273,7 @@ export const shops = [
     name: "Malek",
     facebook: "",
     instagram: "",
-    category: ["Bed Linen", "Dressing Rooms"],
+    category: ["Bed Linens", "Dressing Rooms"],
   },
   {
     floor: "First Floor",
@@ -283,7 +284,7 @@ export const shops = [
     facebook:
       "https://www.facebook.com/p/TTrack-Pvc-U-10/0067771684991/?locale=ar_AR",
     instagram: "https://www.instagram.com/track.gmbh/",
-    category: ["Doors & Windows"],
+    category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
   },
   {
     floor: "First Floor",
@@ -303,7 +304,7 @@ export const shops = [
     name: "Kian",
     facebook: "https://www.facebook.com/kianegypt",
     instagram: "https://www.instagram.com/kianegypt/",
-    category: ["Outdoor Furniture", "Accessories & Décor"],
+    category: ["Outdoor Furniture", "Home Accessories & Decor"],
   },
   {
     floor: "First Floor",
@@ -313,7 +314,7 @@ export const shops = [
     name: "Comfort Sleep",
     facebook: "https://www.facebook.com/comfortsleepegypt/",
     instagram: "",
-    category: ["Mattresses"],
+    category: ["Mattresses", "Bed Linens"],
   },
   {
     floor: "Second Floor",
@@ -434,11 +435,11 @@ export const shops = [
     name: "Vevian",
     facebook: "https://www.facebook.com/people/Drobina/100089809546351/",
     instagram: "",
-    category: ["Kitchen Ware Hardware"],
+    category: ["Kitchenware"],
   },
   {
     floor: "First Floor",
-    logo: "/43.jpg",
+    logo: "/logos/Broderie-Logo.png",
     phone: ["00201001123021"],
     email: "example@mail.com",
     name: "Broderie",
@@ -462,15 +463,14 @@ export const shops = [
     phone: ["0112 7206 763 0103 0266 007 "],
     name: "Only Tables",
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",
-    category: ["Accessories", "Decor"],
+    category: ["Home Accessories & Decor"],
   },
   {
     floor: "Ground Floor",
-    logo: "/logos/glass-style.png",
+    logo: "/logos/Glass Style copy.png",
     phone: ["0112 7206 763 0103 0266 007 "],
     name: "Glass Style",
     facebook: "https://www.facebook.com/GlassStyle.walidonsy/?locale=ar_AR",
-    category: ["Accessories & Décor"],
+    category: ["Home Accessories & Decor", "Hand Made"],
   },
-
 ];

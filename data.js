@@ -46,11 +46,11 @@ export const aboutUsPageSlides = [
 export const mallCategories = [
   {
     name: "Modern Furniture",
-    image: "/Mall Categories/modern.jpg",
+    image: "/Mall Categories/Modern Furniture .jpeg",
   },
   {
     name: "Classic Furniture",
-    image: "/Mall Categories/classic.jpg",
+    image: "/Mall Categories/Classic Furniture.jpg",
   },
   {
     name: "Lighting",
@@ -58,75 +58,87 @@ export const mallCategories = [
   },
   {
     name: "Outdoor Furniture",
-    image: "/Mall Categories/outdoor.jpg",
+    image: "/Mall Categories/Outdoor Furniture.jpg",
   },
   {
-    name: "Kitchen Ware",
-    image: "/Mall Categories/kitchen-wear.jpg",
+    name: "Kitchenware",
+    image: "/Mall Categories/Kitchenware .jpg",
   },
   {
     name: "Home Appliances",
-    image: "/Mall Categories/home-appliances.jpg",
+    image: "/Mall Categories/Home Appliances .jpg",
   },
   {
     name: "Bathrooms Accessories",
-    image: "/Mall Categories/modern.jpg",
+    image: "/Mall Categories/Bathrooms Accessories.jpg",
   },
   {
     name: "Artificial Plants & Pots",
-    image: "/Mall Categories/classic.jpg",
+    image: "/Mall Categories/Artificial Plants & Pots .jpg",
   },
   {
     name: "Flooring  ",
-    image: "/Mall Categories/lighting.jpg",
+    image: "/Mall Categories/Flooring .jpg",
   },
   {
     name: "Wallpaper  ",
-    image: "/Mall Categories/outdoor.jpg",
+    image: "/Mall Categories/Wallpaper .jpg",
   },
   {
     name: "Dressing Rooms ",
-    image: "/Mall Categories/kitchen-wear.jpg",
+    image: "/Mall Categories/Dressing Room.jpg",
   },
   {
     name: "Hand Made  ",
-    image: "/Mall Categories/home-appliances.jpg",
+    image: "/Mall Categories/Hand Craft .jpg",
   },
   {
     name: "Hardware",
-    image: "/Mall Categories/modern.jpg",
+    image: "/Mall Categories/Hardware.jpg",
   },
   {
     name: "Fabric & Curtains",
-    image: "/Mall Categories/classic.jpg",
+    image: "/Mall Categories/Fabrics & Curtains .jpg",
   },
   {
     name: "Kitchens   ",
-    image: "/Mall Categories/lighting.jpg",
+    image: "/Mall Categories/Kitchens.jpg",
+  },
+  {
+    name: "kitchen Appliances",
+    image: "/Mall Categories/kitchen Appliances",
   },
   {
     name: "Doors & Windows",
-    image: "/Mall Categories/outdoor.jpg",
+    image: "/Mall Categories/Doors & Widows .png",
   },
   {
-    name: "Home Accessories",
-    image: "/Mall Categories/kitchen-wear.jpg",
+    name: "Home Accessories & Decor",
+    image: "/Mall Categories/Accessories & Decore .jpg",
   },
   {
     name: "Office Furniture",
-    image: "/Mall Categories/home-appliances.jpg",
+    image: "/Mall Categories/Office Furniture.jpg",
   },
   {
-    name: "Shutters & Motoriesd Gates    ",
-    image: "/Mall Categories/modern.jpg",
+    name: "Shutters & Motoriesd Gates",
+    image: "/Mall Categories/Shutters & Motorized Gates .jpg",
   },
   {
-    name: "Mattress and Bed Linens    ",
-    image: "/Mall Categories/classic.jpg",
+    name: "Mattresses",
+    image: "/Mall Categories/Mattress.jpg",
+  },
+  {
+    name: "Bed Linens ",
+    image: "/Mall Categories/Bed Lines .jpg",
   },
 ];
 
 export const mainLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
   {
     name: "About Us",
     href: "/about-us",

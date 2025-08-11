@@ -6,15 +6,15 @@ import React from "react";
 const Page = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="h-[50vh] bg-white shadow-md relative overflow-hidden">
+      <header className="h-[70vh] bg-white shadow-md relative overflow-hidden">
         {/* Constrained image container */}
         <div className="h-full w-full relative">
           <Image
             width={1920}
             height={1080}
-            src="/Mall Photo_s/2 copy.JPG"
+            src="/Mall Photo_s/About HC Cover .jpeg"
             alt="Dubai Mall"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-fill"
           />
           {/* Text overlay - centered */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 p-4">
