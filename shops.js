@@ -1,3 +1,4 @@
+
 export const shops = [
   {
     floor: "Ground Floor",
@@ -14,6 +15,12 @@ export const shops = [
       " Artificial Plants & Pots",
       "Outdoor Furniture",
     ],
+    images: [
+      "/shops images/Verinno/6- universale dining room.JPG",
+      "/shops images/Verinno/7- sofa seat 7.JPG",
+      "/shops images/Verinno/IMG_0006 copy.JPG",
+      "/shops images/Verinno/IMG_0013  copy.JPG",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -24,6 +31,12 @@ export const shops = [
     facebook: "https://www.facebook.com/AmericanFurnitureEgypt/",
     instagram: "https://www.instagram.com/american_furniture_egypt/",
     category: ["Modern Furniture"],
+    images: [
+      "/shops images/americanfurniture/gris (4).JPG",
+      "/shops images/americanfurniture/hawai (1).JPG",
+      "/shops images/americanfurniture/marina (4).JPG",
+      "/shops images/americanfurniture/new gold (1).JPG",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -34,6 +47,12 @@ export const shops = [
     facebook: "https://www.facebook.com/ContistahlGroup/?locale=ar_AR",
     instagram: "https://www.instagram.com/contistahl_group/?hl=ar",
     category: ["Kitchens", "Dressing Rooms"],
+    images: [
+      "/shops images/Contistahl/IMG_2101 h-R.jpg",
+      "/shops images/Contistahl/new shaker.jpg",
+      "/shops images/Contistahl/Trend final low.jpg",
+      "/shops images/Contistahl/WESTERN.jpg",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -44,6 +63,12 @@ export const shops = [
     facebook: "https://www.facebook.com/cairo.art2020/",
     instagram: "",
     category: ["Home Accessories & Decor", "Hand Made"],
+    images: [
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.54 AM.jpg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.56 AM.jpg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.57 AM.jpg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.58 AM (1).jpg",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -54,6 +79,12 @@ export const shops = [
     facebook: "",
     instagram: "",
     category: ["Fabric & Curtains"],
+    images: [
+      "/shops images/Texmar/16299399_1162084360577030_6833736835422951265_n.jpg",
+      "/shops images/Texmar/13567488_969016959883772_4409438782163068140_n.jpg",
+      "/shops images/Texmar/13537627_969015906550544_3175867776933860562_n.jpg",
+      "/shops images/Texmar/13512233_969016736550461_8949507598340992598_n.jpg",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -74,6 +105,12 @@ export const shops = [
     facebook: "https://www.facebook.com/apex.furniture.1948",
     instagram: "https://www.instagram.com/apex.furniture/?hl=ar",
     category: ["Modern Furniture", "Lighting"],
+    images: [
+      "/shops images/Apex/002.jpg",
+      "/shops images/Apex/004 copy (1).jpg",
+      "/shops images/Apex/berly.jpg",
+      "/shops images/Apex/Daimond.jpg",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -84,6 +121,12 @@ export const shops = [
     facebook: "https://www.facebook.com/mazloumhome/",
     instagram: "https://www.instagram.com/mazloum_home/?hl=ar",
     category: ["Modern Furniture", "Lighting"],
+    images: [
+      "/shops images/Mazloum_Home/0093422_portento.JPEG",
+      "/shops images/Mazloum_Home/0093428_leggiadro.JPEG",
+      "/shops images/Mazloum_Home/ALF.JPEG",
+      "/shops images/Mazloum_Home/Mazloum Home 3.JPEG",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -94,6 +137,12 @@ export const shops = [
     facebook: "https://www.facebook.com/Tiffanylighting/?locale=ar_AR",
     instagram: "https://www.instagram.com/tiffanylightingco/?hl=ar",
     category: ["Lighting"],
+    images: [
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.42.43 AM.JPEG",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (1).JPEG",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (2).JPEG",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (3).JPEG",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -104,6 +153,12 @@ export const shops = [
     facebook: "https://www.facebook.com/AsfourCrystal/?locale=ar_AR",
     instagram: "https://www.instagram.com/asfourcrystalofficial/?hl=ar",
     category: ["Lighting"],
+    images: [
+      "/shops images/Asfour/97_45_14_26(2).PNG",
+      "/shops images/Asfour/31411-105-119-124.PNG",
+      "/shops images/Asfour/31611-232-119-124.PNG",
+      "/shops images/Asfour/313111-149-21-133.PNG",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -114,6 +169,12 @@ export const shops = [
     facebook: "https://www.facebook.com/Homepluseg/photos/?_rdr",
     instagram: "https://www.instagram.com/homepluseg/?hl=ar",
     category: ["Home Accessories & Decor", "Flooring", "Wallpaper"],
+    images: [
+      "/shops images/Home_Plus/DSCF2183-1.jpg",
+      "/shops images/Home_Plus/IMG-20250701-WA0020.jpg",
+      "/shops images/Home_Plus/IMG-20250701-WA0023.jpg",
+      "/shops images/Home_Plus/IMG-20250701-WA0028.jpg",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -134,6 +195,12 @@ export const shops = [
     facebook: "https://www.facebook.com/SmartShutterEg/",
     instagram: "",
     category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
+    images: [
+      "/shops images/Smart_Shutter/Bathroom Blinds 2.jpg",
+      "/shops images/Smart_Shutter/Flagstaff Hill 2.jpg",
+      "/shops images/Smart_Shutter/Sliding.jpg",
+      "/shops images/Smart_Shutter/Blackout phifer 2.jpg",
+    ],
   },
   {
     floor: "Ground Floor",
@@ -154,6 +221,12 @@ export const shops = [
       "Artificial Plants & Pots",
       "Flooring",
     ],
+    images: [
+      "/shops images/Hanimex/6a6a6eb5fa6ddf0e162157472cf9a60e.jpg",
+      "/shops images/Hanimex/52967-ek9298-kitchen-shot.png",
+      "/shops images/Hanimex/Divano.jpg",
+      "/shops images/Hanimex/LUCE 02 ambientata.jpg",
+    ],
   },
   {
     floor: "First Floor",
@@ -164,6 +237,12 @@ export const shops = [
     facebook: "",
     instagram: "https://www.instagram.com/divano.home.furniture/?hl=ar",
     category: ["Modern Furniture", "Dressing Rooms"],
+    images: [
+      "/shops images/Divano/9cd36757ffcdf483cc9146395995b279.jpg",
+      "/shops images/Divano/Big Round.jpg",
+      "/shops images/Divano/Curve (3).jpg",
+      "/shops images/Divano/Florida U Shape.jpg",
+    ],
   },
   {
     floor: "First Floor",
@@ -174,6 +253,12 @@ export const shops = [
     facebook: "",
     instagram: "",
     category: ["Kitchen Appliances"],
+    images: [
+      "/shops images/Fagor/B0293GCL.png",
+      "/shops images/Fagor/BO243EIE.png",
+      "/shops images/Fagor/BO243YQL.png",
+      "/shops images/Fagor/BO243YRL.png",
+    ],
   },
   {
     floor: "First Floor",
@@ -184,6 +269,12 @@ export const shops = [
     facebook: "https://www.facebook.com/zahranstoreofficial/?locale=ar_AR",
     instagram: "https://www.instagram.com/zahranstores/?hl=ar",
     category: ["Kitchenware"],
+    images: [
+      "/shops images/zahran tefal/6pc-set-house-miniature-metal-kitchenware.jpg",
+      "/shops images/zahran tefal/41ubejAduiL.jpg",
+      "/shops images/zahran tefal/988db4170874dba4a7e4d7805ecdaca0.jpg",
+      "/shops images/zahran tefal/item_XL_23671938_34023295.jpg",
+    ],
   },
   {
     floor: "First Floor",
@@ -194,6 +285,12 @@ export const shops = [
     facebook: "https://www.facebook.com/raiftextile/?locale=ar_AR",
     instagram: "https://www.instagram.com/raiftextile/?hl=ar",
     category: ["Fabric & Curtains"],
+    images: [
+      "/shops images/Raif/DSC06654.jpg",
+      "/shops images/Raif/DSC06664.jpg",
+      "/shops images/Raif/DSC06665.jpg",
+      "/shops images/Raif/DSC06658.jpg",
+    ],
   },
   {
     floor: "First Floor",
@@ -204,6 +301,12 @@ export const shops = [
     facebook: "",
     instagram: "https://www.instagram.com/reel/C0eosmOM8bU/",
     category: ["Fabric & Curtains"],
+    images: [
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.27 PM (2).JPEG",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.27 PM.JPEG",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.28 PM (2).JPEG",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 3.56.21 PM.JPEG",
+    ],
   },
   {
     floor: "First Floor",
@@ -214,6 +317,12 @@ export const shops = [
     facebook: "https://www.facebook.com/thelumberjack.eg/?locale=ar_AR",
     instagram: "",
     category: ["Modern Furniture", "Outdoor Furniture"],
+    images: [
+      "/shops images/Lumberjack/The Lumberjack 17-7-2022 (8).jpg",
+      "/shops images/Lumberjack/The Lumberjack 17-7-2022 (9).jpg",
+      "/shops images/Lumberjack/The Lumberjack 17-7-2022 (10).jpg",
+      "/shops images/Lumberjack/WhatsApp Image 2022-12-27 at 3.27.27 AM (1)IMG_20240701_120938.JPEG",
+    ],
   },
   {
     floor: "First Floor",
@@ -224,6 +333,12 @@ export const shops = [
     facebook: "https://www.facebook.com/cubehomefurniture/",
     instagram: "https://www.instagram.com/cube.furniture/?hl=ar",
     category: ["Modern Furniture"],
+    images: [
+      "/shops images/Cube Furniture/CUBE FURNITURE/269.jpeg",
+      "/shops images/Cube Furniture/CUBE FURNITURE/29.jpg",
+      "/shops images/Cube Furniture/CUBE FURNITURE/BLUES.jpg",
+      "/shops images/Cube Furniture/CUBE FURNITURE/Daimond.jpg",
+    ]
   },
   {
     floor: "First Floor",
@@ -234,6 +349,12 @@ export const shops = [
     facebook: "https://www.facebook.com/comfort.hc/?locale=ar_AR",
     instagram: "https://www.instagram.com/comforthomecollection/?hl=ar",
     category: ["Mattresses"],
+    images: [
+      "/shops images/Comfort Home/Comfort Home Collection/Comfort Home Collection 1.jpg",
+      "/shops images/Comfort Home/Comfort Home Collection/Comfort Home Collection 2.jpg",
+      "/shops images/Comfort Home/Comfort Home Collection/Comfort Home Collection 3.jpg",
+      "/shops images/Comfort Home/Comfort Home Collection/Comfort Home Collection 4.jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -244,6 +365,12 @@ export const shops = [
     facebook: "https://www.facebook.com/BedNHome/?locale=ar_AR",
     instagram: "https://www.instagram.com/bednhome1/?hl=ar",
     category: ["Bed Linens", "Mattresses"],
+    images: [
+      "/shops images/Bed N Home/duvet (2).jpg",
+      "/shops images/Bed N Home/mattress topper (3).jpg",
+      "/shops images/Bed N Home/A1PJapR7dGL.jpg",
+      "/shops images/Bed N Home/Pillow (2).jpeg",
+    ]
   },
   {
     floor: "First Floor",
@@ -264,6 +391,12 @@ export const shops = [
     facebook: "",
     instagram: "",
     category: ["Fabric & Curtains"],
+    images: [
+      "/shops images/Nagib Sliem/WhatsApp Image 2022-11-07 at 1.42.56 AM.jpeg",
+      "/shops images/Nagib Sliem/_DSC925000cvvvfxvdddddvvvvvvv.jpg",
+      "/shops images/Nagib Sliem/_DSC925000cvvvf.jpg",
+      "/shops images/Nagib Sliem/_DSC925000cvvvfxvd.jpg",
+    ],  
   },
   {
     floor: "First Floor",
@@ -274,6 +407,12 @@ export const shops = [
     facebook: "",
     instagram: "",
     category: ["Bed Linens", "Dressing Rooms"],
+    images: [
+      "/shops images/malek/2.png",
+      "/shops images/malek/4.png",
+      "/shops images/malek/16.png",
+      "/shops images/malek/38.PNG",
+    ],
   },
   {
     floor: "First Floor",
@@ -285,6 +424,12 @@ export const shops = [
       "https://www.facebook.com/p/TTrack-Pvc-U-10/0067771684991/?locale=ar_AR",
     instagram: "https://www.instagram.com/track.gmbh/",
     category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
+    images: [
+      "/shops images/TTrack/IMG_1916.tif",
+      "/shops images/TTrack/IMG-20180130-WA0011.jpg",
+      "/shops images/TTrack/PICT18.TIF",
+      "/shops images/TTrack/PICT16.TIF",
+    ]
   },
   {
     floor: "First Floor",
@@ -295,6 +440,12 @@ export const shops = [
     facebook: "https://www.facebook.com/asiafurniturestore/",
     instagram: "https://www.instagram.com/asiafurniturestore/?hl=ar",
     category: ["Outdoor Furniture"],
+    images: [
+      "/shops images/Asia_Furniture/IMG_3258.tif",
+      "/shops images/Asia_Furniture/IMG_3480.tif",
+      "/shops images/Asia_Furniture/IMG_7961.jpg",
+      "/shops images/Asia_Furniture/IMG_8245.jpg",
+    ],
   },
   {
     floor: "First Floor",
@@ -305,6 +456,11 @@ export const shops = [
     facebook: "https://www.facebook.com/kianegypt",
     instagram: "https://www.instagram.com/kianegypt/",
     category: ["Outdoor Furniture", "Home Accessories & Decor"],
+    images: [
+      "/shops images/Kian/WhatsApp Image 2025-03-23 at 10.56.45 AM.jpeg",
+      "/shops images/Kian/WhatsApp Image 2025-03-23 at 10.56.45 AM (2).jpeg",
+      "/shops images/Kian/WhatsApp Image 2025-03-23 at 10.56.45 AM (1).jpeg",
+    ]
   },
   {
     floor: "First Floor",
@@ -315,6 +471,12 @@ export const shops = [
     facebook: "https://www.facebook.com/comfortsleepegypt/",
     instagram: "",
     category: ["Mattresses", "Bed Linens"],
+    images: [
+      "/shops images/Comfort_sleep/Naxos (2).jpg",
+      "/shops images/Comfort_sleep/elise-pink-performance-velvet-channel-tufted-twin-bed-by-modway-16.jpg",
+      "/shops images/Comfort_sleep/hybrid_mattress.png",
+      "/shops images/Comfort_sleep/Bodema.jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -325,6 +487,12 @@ export const shops = [
     facebook: "https://www.facebook.com/fidahome.egypt/",
     instagram: "",
     category: ["Modern Furniture"],
+    images: [
+      "/shops images/Fida Home/Viola.jpeg",
+      "/shops images/Fida Home/Linia .jpeg",
+      "/shops images/Fida Home/Conic Dining .jpg",
+      "/shops images/Fida Home/Celine master& Teen Bedroom (1).jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -335,6 +503,12 @@ export const shops = [
     facebook: "https://www.facebook.com/capitaldesignfurniture/",
     instagram: "https://www.instagram.com/capital.design.eg/",
     category: ["Modern Furniture"],
+    images: [
+      "/shops images/Capital Design/Capital Design_286 copy.jpg",
+      "/shops images/Capital Design/9.jpg",
+      "/shops images/Capital Design/7.jpg",
+      "/shops images/Capital Design/6.jpg",
+    ]
   },
   {
     floor: "First Floor",
@@ -345,6 +519,12 @@ export const shops = [
     facebook: "https://www.facebook.com/CAJA.furniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/caja.furniture/?hl=ar",
     category: ["Kitchens", "Dressing Rooms"],
+    images: [
+      "/shops images/Caja/Caja (2).jpg",
+      "/shops images/Caja/Caja (9).jpg",
+      "/shops images/Caja/Caja 11-5-2022 (2).jpg",
+      "/shops images/Caja/Caja 11-5-2022 (5).jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -355,6 +535,12 @@ export const shops = [
     facebook: "https://www.facebook.com/doortech.egy/?locale=ar_AR",
     instagram: "",
     category: ["Doors & Windows"],
+    Images  : [
+      "/shops images/doortech/DT-Model-33-CELEGON FOLDING - SYCAMORE- ROUTER-1.jpg",
+      "/shops images/doortech/DT-Model-32-NORMAL FOLDING - LM09 - 2.JPG",
+      "/shops images/doortech/DT-Model-19-OKUME (FINGERS).JPG",
+      "/shops images/doortech/DT-Model-17-MASSIVE OAK( U ).JPG",
+    ]
   },
   {
     floor: "First Floor",
@@ -365,6 +551,12 @@ export const shops = [
     facebook: "https://www.facebook.com/RadwanMardini/?locale=ar_AR",
     instagram: "",
     category: ["Fabric & Curtains"],
+    images: [
+      "/shops images/Radwan Mardini/Calenders Mardini 299.jpg",
+      "/shops images/Radwan Mardini/Calenders Mardini 308.jpg",
+      "/shops images/Radwan Mardini/Calenders Mardini 309.jpg",
+      "/shops images/Radwan Mardini/chance 01.jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -375,6 +567,12 @@ export const shops = [
     facebook: "",
     instagram: "",
     category: ["Modern Furniture"],
+    images: [
+      "/shops images/Innova/11 copy.jpg",
+      "/shops images/Innova/8.jpg",
+      "/shops images/Innova/8 copy (1).jpg",
+      "/shops images/Innova/7 copy.jpg",
+    ]
   },
   {
     floor: "Ground Floor ",
@@ -385,6 +583,12 @@ export const shops = [
     facebook: "https://www.facebook.com/VALUESdesign/?locale=ar_AR",
     instagram: "",
     category: ["Modern Furniture"],
+    images: [
+      "/shops images/Values/values 5.jpg",
+      "/shops images/Values/values 4.jpg",
+      "/shops images/Values/Values 3.jpg",
+      "/shops images/Values/Values 2.jpg",
+    ]
   },
 
   {
@@ -396,6 +600,12 @@ export const shops = [
     facebook: "https://www.facebook.com/ArtynovaFurniture/?locale=ar_AR",
     instagram: "https://www.instagram.com/artynovafurniture/?hl=ar",
     category: ["Kitchens", "Dressing Rooms"],
+    images: [
+      "/shops images/ArtyNova/WhatsApp Image 2022-01-31 at 4.18.29 PM (2).jpeg",
+      "/shops images/ArtyNova/WhatsApp Image 2022-01-31 at 4.18.29 PM (1).jpeg",
+      "/shops images/ArtyNova/WhatsApp Image 2022-01-31 at 4.18.28 PM.jpeg",
+      "/shops images/ArtyNova/WhatsApp Image 2022-01-31 at 4.18.28 PM (2).jpeg",
+    ]
   },
   {
     floor: "First Floor",
@@ -406,6 +616,12 @@ export const shops = [
     facebook: "https://www.facebook.com/SpringAirEgypt/?locale=ar_AR",
     instagram: "",
     category: ["Mattresses"],
+    images: [
+      "/shops images/Spring_Air/02 Visco Pedic.jpg",
+      "/shops images/Spring_Air/12004011_984916538196017_8881610200908736363_n.jpg",
+      "/shops images/Spring_Air/02 American Spirit.jpg",
+      "/shops images/Spring_Air/01  Honey Moon_2 (1).jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -416,6 +632,7 @@ export const shops = [
     facebook: "",
     instagram: "",
     category: ["Modern Furniture"],
+
   },
   {
     floor: "Second Floor",
@@ -426,6 +643,7 @@ export const shops = [
     facebook: "",
     instagram: "https://www.instagram.com/natuzziegypt/",
     category: ["Modern Furniture"],
+
   },
   {
     floor: "Ground Floor Floor",
@@ -436,6 +654,11 @@ export const shops = [
     facebook: "https://www.facebook.com/people/Drobina/100089809546351/",
     instagram: "",
     category: ["Kitchenware"],
+    images: [
+      "/shops images/Vevian/image00054.jpeg",
+      "/shops images/Vevian/image00027.jpeg",
+      "/shops images/Vevian/image00019.jpeg",
+    ]
   },
   {
     floor: "First Floor",
@@ -446,6 +669,12 @@ export const shops = [
     facebook: "https://www.facebook.com/BroderieTex/",
     instagram: "https://www.instagram.com/broderie.textiles/",
     category: ["Fabric & Curtains"],
+    images: [
+      "/shops images/Broderie/WhatsApp Image 2023-12-13 at 12.00.20 PM.jpeg",
+      "/shops images/Broderie/6F4A2992-.jpg",
+      "/shops images/Broderie/6F4A2978-.jpg",
+      "/shops images/Broderie/6F4A2966-.jpg",
+    ]
   },
   {
     floor: "Second Floor",
@@ -456,6 +685,12 @@ export const shops = [
     facebook: "",
     instagram: "https://www.instagram.com/elara.furniture/?hl=ar",
     category: ["Modern furniture"],
+    images: [
+      "/shops images/Elara/IMG_3542.JPG",
+      "/shops images/Elara/IMG_3541.JPG",
+      "/shops images/Elara/IMG_3540.JPG",
+      "/shops images/Elara/IMG_3539.JPG",
+    ]
   },
   {
     floor: "Ground Floor",
@@ -464,6 +699,12 @@ export const shops = [
     name: "Only Tables",
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",
     category: ["Home Accessories & Decor"],
+    images: [
+      "/shops images/Only_Tables/IMG_6083_Final_G.jpg",
+      "/shops images/Only_Tables/IMG_6064_Final_G.jpg",
+      "/shops images/Only_Tables/IMG_6046_Final_G.jpg",
+      "/shops images/Only_Tables/IMG_6010.jpg",
+    ]
   },
   {
     floor: "Ground Floor",
@@ -472,5 +713,11 @@ export const shops = [
     name: "Glass Style",
     facebook: "https://www.facebook.com/GlassStyle.walidonsy/?locale=ar_AR",
     category: ["Home Accessories & Decor", "Hand Made"],
+    images: [
+      "/shops images/Glass_Style/52557708_10157160847242853_2891176622784774144_n.jpg",
+      "/shops images/Glass_Style/22228419_1458526250897727_9082128643932463720_n.jpg",
+      "/shops images/Glass_Style/16.jpg",
+      "/shops images/Glass_Style/15.jpg",
+    ]
   },
 ];
