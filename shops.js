@@ -63,10 +63,10 @@ export const shops = [
     instagram: "",
     category: ["Home Accessories & Decor", "Hand Made"],
     images: [
-      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.54 AM.jpg",
-      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.56 AM.jpg",
-      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.57 AM.jpg",
-      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.58 AM (1).jpg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.54 AM.jpeg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.56 AM.jpeg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.57 AM.jpeg",
+      "/shops images/Cairo Art/WhatsApp Image 2023-03-21 at 9.03.58 AM (1).jpeg",
     ],
   },
   {
