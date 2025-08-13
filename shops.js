@@ -313,10 +313,10 @@ export const shops = [
     instagram: "https://www.instagram.com/reel/C0eosmOM8bU/",
     category: ["Fabric & Curtains"],
     images: [
-      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.27 PM (2).JPEG",
-      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.27 PM.JPEG",
-      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.28 PM (2).JPEG",
-      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 3.56.21 PM.JPEG",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.27 PM (2).jpeg",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.27 PM.jpeg",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 6.35.28 PM (2).jpeg",
+      "/shops images/Velour De Gene/WhatsApp Image 2024-12-02 at 3.56.21 PM.jpeg",
     ],
   },
   {
