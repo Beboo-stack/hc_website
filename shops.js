@@ -458,8 +458,8 @@ export const shops = [
     instagram: "https://www.instagram.com/asiafurniturestore/?hl=ar",
     category: ["Outdoor Furniture"],
     images: [
-      "/shops images/Asia_Furniture/IMG_3258.tif",
-      "/shops images/Asia_Furniture/IMG_3480.tif",
+      "/shops images/Asia_Furniture/IMG_8146.jpg",
+      "/shops images/Asia_Furniture/IMG_8402.jpg",
       "/shops images/Asia_Furniture/IMG_7961.jpg",
       "/shops images/Asia_Furniture/IMG_8245.jpg",
     ],
