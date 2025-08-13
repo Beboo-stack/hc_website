@@ -332,7 +332,7 @@ export const shops = [
       "/shops images/Lumberjack/The Lumberjack 17-7-2022 (8).jpg",
       "/shops images/Lumberjack/The Lumberjack 17-7-2022 (9).jpg",
       "/shops images/Lumberjack/The Lumberjack 17-7-2022 (10).jpg",
-      "/shops images/Lumberjack/WhatsApp Image 2022-12-27 at 3.27.27 AM (1)IMG_20240701_120938.JPEG",
+      "/shops images/Lumberjack/WhatsApp Image 2022-12-27 at 3.27.27 AM (1)IMG_20240701_120938.jpeg",
     ],
   },
   {
