@@ -6,7 +6,7 @@ import { mallCategories } from '@/data'
 const Page = () => {
   return (
     <div>
-      <CategoryStructure category={mallCategories[18]}/>
+      <CategoryStructure category={mallCategories[5]}/>
     </div>
   )
 }

@@ -106,7 +106,7 @@ export const mallCategories = [
   },
   {
     name: "kitchen Appliances",
-    image: "/Mall Categories/kitchen Appliances",
+    image: "/Mall Categories/kitchen appliances.jpg",
   },
   {
     name: "Doors & Windows",

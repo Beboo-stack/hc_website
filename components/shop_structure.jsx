@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, MapPin, Facebook, Instagram } from 'lucide-react';
-
+import ImageGallery from './ImageCarousel'; // Adjust path as needed
 
 const ShopStructure = ({ data }) => {
     return (
@@ -30,11 +30,9 @@ const ShopStructure = ({ data }) => {
                 </div>
             </nav>
 
-
             {/* Main Content */}
             <div className="container mx-auto px-6 py-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-
                     {/* Left Side - Brand Logo */}
                     <div className="flex justify-center lg:justify-start">
                         <div className="w-full max-w-md">
@@ -49,13 +47,10 @@ const ShopStructure = ({ data }) => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 {/* Bottom Content - Description and Contact */}
-                <div className="mt-16  grid lg:grid-cols-3 gap-8">
-
+                <div className="mt-16 grid lg:grid-cols-3 gap-8">
                     {/* Brand Description */}
                     <div className="lg:col-span-2">
                         <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg text-white">
@@ -78,7 +73,7 @@ const ShopStructure = ({ data }) => {
                             {/* Phone numbers */}
                             {data.phone && data.phone.length > 0 ? (
                                 data.phone.map((phoneNumber, index) => (
-                                    <div className="flex items-center justify-center lg:justify-start space-x-3" key={index}>
+                                    <div className="flex items-center justify-center lg:justify-start space-x-3 mb-2" key={index}>
                                         <Phone className="w-5 h-5" />
                                         <span className="text-lg font-medium">{phoneNumber}</span>
                                     </div>
@@ -88,7 +83,7 @@ const ShopStructure = ({ data }) => {
                             )}
 
                             {/* Social Media Icons */}
-                            <div className="flex items-center justify-center lg:justify-start gap-4 mt-4 ">
+                            <div className="flex items-center justify-center lg:justify-start gap-4 mt-4">
                                 {data.facebook && (
                                     <Link href={data.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors">
                                         <Facebook size={32} />
@@ -102,18 +97,23 @@ const ShopStructure = ({ data }) => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
+                {/* Image Gallery - Below Description and Contact */}
+                {data.images && data.images.length > 0 && (
+                    <div className="mt-16">
+                        <h3 className="text-2xl font-semibold text-white mb-6 text-center">
+                            Gallery
+                        </h3>
+                        <ImageGallery 
+                            images={data.images} 
+                            height="h-[300px]"
+                        />
+                    </div>
+                )}
             </div>
         </div>
     );
 };
 
 export default ShopStructure;
-
-
-// export const metadata = {
-//   title: 'Bulgari - Luxury Jewelry Collection',
-//   description: 'Discover Bulgari\'s exquisite Italian craftsmanship and magnificent jewelry creations featuring rare colored gems.',
-// };
