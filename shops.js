@@ -15,10 +15,10 @@ export const shops = [
       "Outdoor Furniture",
     ],
     images: [
-      "/shops images/Verinno/6- universale dining room.JPG",
-      "/shops images/Verinno/7- sofa seat 7.JPG",
-      "/shops images/Verinno/IMG_0006 copy.JPG",
-      "/shops images/Verinno/IMG_0013  copy.JPG",
+      "/shops images/Verinno/6- universale dining room.jpg",
+      "/shops images/Verinno/7- sofa seat 7.jpg",
+      "/shops images/Verinno/IMG_0006 copy.jpg",
+      "/shops images/Verinno/IMG_0013  copy.jpg",
     ],
   },
   {
