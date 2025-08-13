@@ -75,7 +75,7 @@ const Page = () => {
                     src={deal.promotionalImage}
                     alt={`${deal.brandName} promotional offer`}
                     fill
-                    className="object-fill w-full h-full"
+                    className="object-contain w-full h-full"
                     priority
                   />
                 </div>
