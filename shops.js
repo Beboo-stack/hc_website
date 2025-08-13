@@ -31,10 +31,10 @@ export const shops = [
     instagram: "https://www.instagram.com/american_furniture_egypt/",
     category: ["Modern Furniture"],
     images: [
-      "/shops images/americanfurniture/gris (4).JPG",
-      "/shops images/americanfurniture/hawai (1).JPG",
-      "/shops images/americanfurniture/marina (4).JPG",
-      "/shops images/americanfurniture/new gold (1).JPG",
+      "/shops images/americanfurniture/gris (4).jpg",
+      "/shops images/americanfurniture/hawai (1).jpg",
+      "/shops images/americanfurniture/marina (4).jpg",
+      "/shops images/americanfurniture/new gold (1).jpg",
     ],
   },
   {
