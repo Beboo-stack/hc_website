@@ -442,10 +442,10 @@ export const shops = [
     instagram: "https://www.instagram.com/track.gmbh/",
     category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
     images: [
-      "/shops images/TTrack/IMG_1916.tif",
+      "/shops images/TTrack/5.jpg",
       "/shops images/TTrack/IMG-20180130-WA0011.jpg",
-      "/shops images/TTrack/PICT18.TIF",
-      "/shops images/TTrack/PICT16.TIF",
+      "/shops images/TTrack/6.jpg",
+      "/shops images/TTrack/1 (1).jpg",
     ],
   },
   {
