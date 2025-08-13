@@ -1,113 +1,116 @@
-import React from 'react'
-import { hotDeals } from '@/data'
-import Image from 'next/image'
-import { FaInstagram, FaFacebook } from 'react-icons/fa'
+import React from "react";
+import { hotDeals } from "@/data";
+import Image from "next/image";
+import { FaInstagram, FaFacebook, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const Page = () => {
-    return (
-        <div>
-            {/* Hot Deals Section */}
-            <section className="py-16 px-4 max-w-7xl mx-auto bg-white">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        🔥 Hot Deals
-                    </h2>
-                    <p className="text-xl text-gray-600">🎉 Discover the Best Offers</p>
-                    <p className="text-lg text-gray-500 mt-2">
-                        Check our current promotions and discounts across the mall.
-                    </p>
-                </div>
+  // This will come from Contentful CMS in the future
+  // Only requires: promotionalImage and brandName
+  const featuredDeals = [
+    {
+      id: 1,
+      brandName: "Verinno",
+      promotionalImage: "/Artboard 2 (4).png",
+    },
+    {
+      id: 2,
+      brandName: "Divano",
+      promotionalImage: "/Artboard 1.png",
+    },
+    {
+      id: 3,
+      brandName: "Asfour Crystal",
+      promotionalImage: "/Artboard 3.png",
+    },
+  ];
 
-                <div className="space-y-12">
-                    {hotDeals.map((deal) => (
-                        <div key={deal.id} className="bg-gray-50 rounded-xl p-8">
-                            <div className="flex items-center mb-6">
-                                <Image
-                                    src={deal.logo}
-                                    alt={`${deal.brandName} logo`}
-                                    width={120}
-                                    height={60}
-                                    className="mr-6"
-                                />
-                                <div>
-                                    <h3 className="text-2xl font-bold text-gray-900">
-                                        {deal.brandName}
-                                    </h3>
-                                    <div className="flex items-center space-x-4 text-sm text-gray-600">
-                                        <span>📍 {deal.floor}</span>
-                                        <span>📞 {deal.phone}</span>
-                                    </div>
-                                </div>
-                            </div>
+  // Helper function to generate shop route from brand name
+  const getShopRoute = (brandName) => {
+    // Remove spaces and special characters for URL
+    return `/shops/${brandName.replace(/[^a-zA-Z0-9]/g, "")}`;
+  };
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {deal.products.map((product, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-white rounded-lg p-4 shadow-md"
-                                    >
-                                        <div className="relative mb-4">
-                                            <Image
-                                                src={product.image}
-                                                alt={product.name}
-                                                width={300}
-                                                height={200}
-                                                className="w-full h-48 object-cover rounded-lg"
-                                            />
-                                            <div className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                                                {product.discount}% OFF
-                                            </div>
-                                        </div>
+  // Helper function to get logo path from brand name
+  const getLogoPath = (brandName) => {
+    const logoMap = {
+      Verinno: "/logos/Verinno_Black_White.webp",
+      Divano: "/logos/Divano_Artboard 1.webp",
+      "Asfour Crystal": "/logos/logo-FB.webp",
+    };
+    return logoMap[brandName] || "/logos/default-logo.webp";
+  };
 
-                                        <h4 className="font-semibold text-gray-900 mb-2">
-                                            {product.name}
-                                        </h4>
-
-                                        <div className="flex items-center space-x-3 mb-2">
-                                            <span className="text-gray-400 line-through">
-                                                EGP {product.originalPrice.toLocaleString()}
-                                            </span>
-                                            <span className="text-red-600 font-bold text-lg">
-                                                EGP {product.discountedPrice.toLocaleString()}
-                                            </span>
-                                        </div>
-
-                                        <div className="text-xs text-gray-500">
-                                            Valid until:{" "}
-                                            {new Date(product.validUntil).toLocaleDateString()}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="flex space-x-4 mt-6">
-                                {deal.instagram && (
-                                    <a
-                                        href={deal.instagram}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-pink-600 hover:text-pink-700 font-medium"
-                                    >
-                                        <FaInstagram size={25} className="inline mr-1" />
-                                    </a>
-                                )}
-                                {deal.facebook && (
-                                    <a
-                                        href={deal.facebook}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-600 hover:text-blue-700 font-medium"
-                                    >
-                                        <FaFacebook size={25} className="inline mr-1" />
-                                    </a>
-                                )}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <section className="bg-gradient-to-r from-orange-500 to-red-600 text-white py-16 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔥 Hot Deals</h1>
+          <p className="text-xl">Limited Time Offers - Don't Miss Out!</p>
         </div>
-    )
-}
+      </section>
 
-export default Page
+      {/* Featured Promotional Deals */}
+      <section className="py-16 px-4 max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Featured Promotions
+          </h2>
+          <p className="text-lg text-gray-600">
+            Amazing deals from our top brands
+          </p>
+        </div>
+
+        <div className="space-y-8 w-full">
+          {featuredDeals.map((deal) => (
+            <div
+              key={deal.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden w-full"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] w-full">
+                {/* Promotional Image */}
+                <div className="relative h-80 md:h-96 w-full">
+                  <Image
+                    src={deal.promotionalImage}
+                    alt={`${deal.brandName} promotional offer`}
+                    fill
+                    className="object-fill w-full h-full"
+                    priority
+                  />
+                </div>
+
+                {/* Deal Details */}
+                <div className="p-6 md:p-8 flex flex-col justify-center min-h-[200px] md:min-h-0">
+                  <div className="flex items-center mb-6">
+                    <Image
+                      src={getLogoPath(deal.brandName)}
+                      alt={`${deal.brandName} logo`}
+                      width={80}
+                      height={40}
+                      className="mr-4"
+                    />
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      {deal.brandName}
+                    </h3>
+                  </div>
+
+                  {/* Shop Button */}
+                  <Link
+                    href={getShopRoute(deal.brandName)}
+                    className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-orange-600 transition-colors duration-300 flex items-center justify-center"
+                  >
+                    Visit {deal.brandName} Shop
+                    <FaArrowRight className="ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Page;
