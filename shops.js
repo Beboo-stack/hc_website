@@ -127,10 +127,10 @@ export const shops = [
     instagram: "https://www.instagram.com/mazloum_home/?hl=ar",
     category: ["Modern Furniture", "Lighting"],
     images: [
-      "/shops images/Mazloum_Home/0093422_portento.JPEG",
-      "/shops images/Mazloum_Home/0093428_leggiadro.JPEG",
-      "/shops images/Mazloum_Home/ALF.JPEG",
-      "/shops images/Mazloum_Home/Mazloum Home 3.JPEG",
+      "/shops images/Mazloum_Home/0093422_portento.jpeg",
+      "/shops images/Mazloum_Home/0093428_leggiadro.jpeg",
+      "/shops images/Mazloum_Home/ALF.jpeg",
+      "/shops images/Mazloum_Home/Mazloum Home 3.jpeg",
     ],
   },
   {
