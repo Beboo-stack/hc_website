@@ -143,10 +143,10 @@ export const shops = [
     instagram: "https://www.instagram.com/tiffanylightingco/?hl=ar",
     category: ["Lighting"],
     images: [
-      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.42.43 AM.JPEG",
-      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (1).JPEG",
-      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (2).JPEG",
-      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (3).JPEG",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.42.43 AM.jpeg",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (1).jpeg",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (2).jpeg",
+      "/shops images/Tiffany/WhatsApp Image 2022-08-08 at 8.43.10 AM (3).jpeg",
     ],
   },
   {
