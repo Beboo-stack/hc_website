@@ -727,10 +727,10 @@ export const shops = [
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",
     category: ["Home Accessories & Decor"],
     images: [
-      "/shops images/Only_Tables/IMG_6083_Final_G.jpg",
-      "/shops images/Only_Tables/IMG_6064_Final_G.jpg",
-      "/shops images/Only_Tables/IMG_6046_Final_G.jpg",
-      "/shops images/Only_Tables/IMG_6010.jpg",
+      "/shops images/Only_Tables/IMG_6083_Final_G.jpeg",
+      "/shops images/Only_Tables/IMG_6064_Final_G.jpeg",
+      "/shops images/Only_Tables/IMG_6046_Final_G.jpeg",
+      "/shops images/Only_Tables/IMG_6010.JPG",
     ],
   },
   {
