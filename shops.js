@@ -175,7 +175,7 @@ export const shops = [
     instagram: "https://www.instagram.com/homepluseg/?hl=ar",
     category: ["Home Accessories & Decor", "Flooring", "Wallpaper"],
     images: [
-      "/shops images/Home_Plus/DSCF2183-1.jpg",
+      "/shops images/Home_Plus/DSCF2183-1.JPG",
       "/shops images/Home_Plus/IMG-20250701-WA0020.jpg",
       "/shops images/Home_Plus/IMG-20250701-WA0023.jpg",
       "/shops images/Home_Plus/IMG-20250701-WA0028.jpg",
