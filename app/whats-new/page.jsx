@@ -105,4 +105,3 @@ const WhatsNewPage = () => {
 };
 
 export default WhatsNewPage;
-      
