@@ -36,7 +36,7 @@ const Page = () => {
     const logoMap = {
       Verinno: "/logos/Verinno_Black_White.webp",
       Divano: "/logos/Divano_Artboard 1.webp",
-      "Asfour Crystal": "/logos/logo-FB.webp",
+      "Asfour Crystal": "/logos/Artboard 1 copy 10.webp",
     };
     return logoMap[brandName] || "/logos/default-logo.webp";
   };

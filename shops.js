@@ -607,7 +607,6 @@ export const shops = [
       "/shops images/Values/Values 2.jpg",
     ],
   },
-
   {
     floor: "First Floor",
     logo: "/logos/artynova.png",
@@ -685,6 +684,7 @@ export const shops = [
       "/shops images/Vevian/image00054.jpeg",
       "/shops images/Vevian/image00027.jpeg",
       "/shops images/Vevian/image00019.jpeg",
+      "/shops images/Vevian/image00054.jpeg",
     ],
   },
   {
