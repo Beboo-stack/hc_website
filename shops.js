@@ -159,10 +159,10 @@ export const shops = [
     instagram: "https://www.instagram.com/asfourcrystalofficial/?hl=ar",
     category: ["Lighting"],
     images: [
-      "/shops images/Asfour/97_45_14_26(2).PNG",
-      "/shops images/Asfour/31411-105-119-124.PNG",
-      "/shops images/Asfour/31611-232-119-124.PNG",
-      "/shops images/Asfour/313111-149-21-133.PNG",
+      "/shops images/Asfour/Alabaster/313111-149-21-133.png",
+      "/shops images/Asfour/Clay Glue/97_3001_34_24.png",
+      "/shops images/Asfour/Empire/31511-248-119-149.png",
+      "/shops images/Asfour/Maria Theresa/31111-118-119-105.png",
     ],
   },
   {
