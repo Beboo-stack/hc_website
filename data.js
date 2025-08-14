@@ -121,7 +121,7 @@ export const mallCategories = [
     image: "/Mall Categories/Office Furniture.jpg",
   },
   {
-    name: "Shutters & Motoriesd Gates",
+    name: "Shutters & Motorized Gates",
     image: "/Mall Categories/Shutters & Motorized Gates .jpg",
   },
   {

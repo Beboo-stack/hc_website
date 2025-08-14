@@ -205,7 +205,7 @@ export const shops = [
     name: "Smart Shutter",
     facebook: "https://www.facebook.com/SmartShutterEg/",
     instagram: "",
-    category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
+    category: ["Doors & Windows", "Shutters & Motorized Gates"],
     images: [
       "/shops images/Smart_Shutter/Bathroom Blinds 2.jpg",
       "/shops images/Smart_Shutter/Flagstaff Hill 2.jpg",
@@ -231,6 +231,7 @@ export const shops = [
       "Bathrooms accessories",
       "Artificial Plants & Pots",
       "Flooring",
+      "Outdoor Furniture",
     ],
     images: [
       "/shops images/Hanimex/6a6a6eb5fa6ddf0e162157472cf9a60e.jpg",
@@ -263,7 +264,7 @@ export const shops = [
     name: "Fagor",
     facebook: "",
     instagram: "",
-    category: ["Kitchen Appliances"],
+    category: ["Kitchen Appliances", "Home Appliances"],
     images: [
       "/shops images/Fagor/B0293GCL.png",
       "/shops images/Fagor/BO243EIE.png",
@@ -279,7 +280,7 @@ export const shops = [
     name: "Zahran",
     facebook: "https://www.facebook.com/zahranstoreofficial/?locale=ar_AR",
     instagram: "https://www.instagram.com/zahranstores/?hl=ar",
-    category: ["Kitchenware"],
+    category: ["Kitchenware", "Home Appliances"],
     images: [
       "/shops images/zahran tefal/6pc-set-house-miniature-metal-kitchenware.jpg",
       "/shops images/zahran tefal/41ubejAduiL.jpg",
@@ -404,7 +405,7 @@ export const shops = [
     logo: "/logos/selim.png",
     phone: ["01069564959"],
     email: "example@mail.com",
-    name: "Nagib Selim",
+    name: "Naguib Selim",
     facebook: "",
     instagram: "",
     category: ["Fabric & Curtains"],
@@ -440,7 +441,7 @@ export const shops = [
     facebook:
       "https://www.facebook.com/p/TTrack-Pvc-U-10/0067771684991/?locale=ar_AR",
     instagram: "https://www.instagram.com/track.gmbh/",
-    category: ["Doors & Windows", "Shutters & Motoriesd Gates"],
+    category: ["Doors & Windows", "Shutters & Motorized Gates"],
     images: [
       "/shops images/TTrack/5.jpg",
       "/shops images/TTrack/IMG-20180130-WA0011.jpg",
@@ -552,11 +553,11 @@ export const shops = [
     facebook: "https://www.facebook.com/doortech.egy/?locale=ar_AR",
     instagram: "",
     category: ["Doors & Windows"],
-    Images: [
-      "/shops images/doortech/DT-Model-33-CELEGON FOLDING - SYCAMORE- ROUTER-1.jpg",
-      "/shops images/doortech/DT-Model-32-NORMAL FOLDING - LM09 - 2.JPG",
-      "/shops images/doortech/DT-Model-19-OKUME (FINGERS).JPG",
+    images: [
+      "/shops images/doortech/DT -Model -12- CPL- LK48 (1).JPG",
       "/shops images/doortech/DT-Model-17-MASSIVE OAK( U ).JPG",
+      "/shops images/doortech/DT -Model -13- CPL- LR39.JPG",
+      "/shops images/doortech/DT-Model-24- OKOUME– RANDOM Boxes.JPG",
     ],
   },
   {
@@ -727,9 +728,9 @@ export const shops = [
     facebook: "https://www.facebook.com/p/Only-Tables-1000 64522032551/",
     category: ["Home Accessories & Decor"],
     images: [
-      "/shops images/Only_Tables/IMG_6083_Final_G.jpeg",
-      "/shops images/Only_Tables/IMG_6064_Final_G.jpeg",
-      "/shops images/Only_Tables/IMG_6046_Final_G.jpeg",
+      "/shops images/Only_Tables/IMG_6046_Final_G.jpg",
+      "/shops images/Only_Tables/IMG_6064_Final_G.jpg",
+      "/shops images/Only_Tables/IMG_6083_Final_G.jpg",
       "/shops images/Only_Tables/IMG_6010.JPG",
     ],
   },

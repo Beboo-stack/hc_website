@@ -4,13 +4,13 @@ import React from "react";
 
 const Whats_New = () => {
   return (
-    <div className="w-full h-[40vh] flex flex-col items-center justify-center relative ">
+    <div className="w-full h-[50vh] flex flex-col items-center justify-center relative ">
       <Image
-        src="/Mall Photo_s/IMG_7893 copy.jpg"
+        src="/winner/IMG_7894 copy.jpg"
         alt="Third Section Image"
         width={1000}
         height={1000}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover object-bottom"
       />
 
       <div className="absolute top-0 left-0 w-full h-full bg-black/50 flex flex-col items-center justify-center text-white px-5">

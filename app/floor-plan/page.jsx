@@ -298,14 +298,14 @@ const FloorPlanPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative h-[50vh] bg-gradient-to-r from-blue-900 to-purple-900">
+      <div className="relative h-[70vh] ">
         <Image
-          src="/Mall Photo_s/IMG_7893 copy.jpg"
+          src="/winner/IMG_7903 copy.jpg"
           alt="Floor Plan"
           fill
-          className="object-cover opacity-30"
+          className="object-cover object-left-bottom "
         />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute bg-black/50 inset-0 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Floor Plan</h1>
             <p className="text-xl md:text-2xl mb-8">

@@ -116,7 +116,6 @@ const Footer = () => {
             <li>24/7 Security & Cameras</li>
             <li>Accessibility Support</li>
             <li>Information Desk</li>
-            <li>Wi-Fi Access</li>
           </ul>
         </div>
 
