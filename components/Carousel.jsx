@@ -4,10 +4,20 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { homePageBanner } from "@/lib/contentful";
 
 const Carousel = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [banner, setBanner] = useState([]);
+
+  useEffect(() => {
+    const fetchBanner = async () => {
+      const banner = await homePageBanner();
+      setBanner(banner);
+    };
+    fetchBanner();
+  }, []);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -43,22 +53,31 @@ const Carousel = ({ slides }) => {
       <div className="absolute inset-0">
         <div className="h-full w-full" ref={emblaRef}>
           <div className="flex h-full">
-            {slides[0].map((slide, idx) => (
+            {banner.map((slide, idx) => (
               <div
                 className="flex-[0_0_100%] relative h-full"
                 key={idx}
                 style={{ minWidth: 0 }}
               >
                 <div
-                  className={`absolute inset-0 bg-cover bg-center ${idx === 0 && "bg-bottom"}`}
-                  style={{ backgroundImage: `url(${slide.image})` }}
+                  className={`absolute inset-0 bg-cover bg-center ${
+                    idx === 0 && "bg-bottom"
+                  }`}
+                  style={{
+                    backgroundImage: `url(${slide.fields.image.fields.file.url})`,
+                  }}
                 >
                   <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white">
-                    <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
-                    <p className="mb-6">{slide.subtitle}</p>
-                    <Link href={slide.link} className="px-6 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200">
-                      {slide.button}
+                    <h1 className="text-5xl font-bold mb-4">
+                      {slide.fields.title}
+                    </h1>
+                    <p className="mb-6">{slide.fields.subtitle}</p>
+                    <Link
+                      href={slide.fields.slideLink}
+                      className="px-6 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200"
+                    >
+                      EXPLORE NOW
                     </Link>
                   </div>
                 </div>
@@ -73,7 +92,7 @@ const Carousel = ({ slides }) => {
         onClick={scrollPrev}
         aria-label="Previous slide"
       >
-        <ChevronLeft/>
+        <ChevronLeft />
       </button>
       <button
         className="absolute w-10 flex items-center justify-center right-4 top-1/2 -translate-y-1/2 rounded-full p-2 text-white"

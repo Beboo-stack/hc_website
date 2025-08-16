@@ -1,9 +1,27 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { newArrivals } from "../../data";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import { whatsNew } from "@/lib/contentful";
 
 const WhatsNewPage = () => {
+  const [newArrivals, setNewArrivals] = useState([]);
+
+  useEffect(() => {
+    const fetchNewArrivals = async () => {
+      const arrivals = await whatsNew();
+      setNewArrivals(arrivals);
+    };
+    fetchNewArrivals();
+  }, []);
+
+  console.log("New Arrivals:", newArrivals);
+  if (newArrivals.length > 0) {
+    console.log("First arrival category:", newArrivals[0].fields?.category);
+    console.log("Category type:", typeof newArrivals[0].fields?.category);
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -33,71 +51,81 @@ const WhatsNewPage = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* {newArrivals.map((arrival) => (
-            <div
-              key={arrival.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="relative h-64">
-                <Image
-                  src={arrival.image}
-                  alt={arrival.brandName}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
+          {newArrivals.length > 0 ? (
+            newArrivals.map((arrival) => (
+              <div
+                key={arrival.fields?.brandName}
+                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
                   <Image
-                    src={arrival.logo}
-                    alt={`${arrival.brandName} logo`}
-                    width={80}
-                    height={40}
-                    className="bg-white rounded-lg p-2"
+                    src={arrival.fields?.image?.fields?.file?.url}
+                    alt={arrival.fields?.brandName}
+                    fill
+                    className="object-cover"
                   />
-                </div>
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {arrival.brandName}
-                </h3>
-                <p className="text-gray-600 mb-2">{arrival.category}</p>
-
-                <div className="space-y-2 text-sm text-gray-700">
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">📍</span>
-                    <span>{arrival.floor}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-blue-600 mr-2">📞</span>
-                    <span>{arrival.phone}</span>
+                  <div className="absolute top-4 left-4">
+                    <Image
+                      src={arrival.fields?.logo?.fields?.file?.url}
+                      alt={`${arrival.fields?.brandName} logo`}
+                      width={80}
+                      height={40}
+                      className="bg-white rounded-lg p-2"
+                    />
                   </div>
                 </div>
 
-                <div className="flex space-x-4 mt-4">
-                  {arrival.instagram && (
-                    <a
-                      href={arrival.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-pink-600 hover:text-pink-700 font-medium"
-                    >
-                      <FaInstagram size={25} className="inline mr-1" />
-                    </a>
-                  )}
-                  {arrival.facebook && (
-                    <a
-                      href={arrival.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-700 font-medium"
-                    >
-                      <FaFacebook size={25} className="inline mr-1" />
-                    </a>
-                  )}
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {arrival.fields?.brandName}
+                  </h3>
+                  <p className="text-gray-600 mb-2">
+                    {arrival.fields?.category
+                      ? Object.values(arrival.fields.category).join(", ")
+                      : "No category"}
+                  </p>
+
+                  <div className="space-y-2 text-sm text-gray-700">
+                    <div className="flex items-center">
+                      <span className="text-green-600 mr-2">📍</span>
+                      <span>{arrival.fields?.floorNumber}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-blue-600 mr-2">📞</span>
+                      <span>{arrival.fields?.phone1}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex space-x-4 mt-4">
+                    {arrival.fields?.instagram && (
+                      <a
+                        href={arrival.fields?.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-pink-600 hover:text-pink-700 font-medium"
+                      >
+                        <FaInstagram size={25} className="inline mr-1" />
+                      </a>
+                    )}
+                    {arrival.fields?.facebook && (
+                      <a
+                        href={arrival.fields?.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-700 font-medium"
+                      >
+                        <FaFacebook size={25} className="inline mr-1" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
+            ))
+          ) : (
+            <div className="col-span-full text-center py-12">
+              <p className="text-gray-500 text-lg">Loading new arrivals...</p>
             </div>
-          ))} */}
+          )}
         </div>
       </section>
     </div>

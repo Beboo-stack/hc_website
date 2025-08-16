@@ -1,12 +1,10 @@
-'use client'
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+"use client";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-const CategoryCard = ({
-  category,
-}) => {
+const CategoryCard = ({ category }) => {
   const router = useRouter();
-  const slug = category.name.toLowerCase().trim().replace(/\s+/g, "-")
+  const slug = category.name.toLowerCase().trim().replace(/\s+/g, "-");
 
   // Handle click on the card to navigate
   const handleCardClick = () => {
@@ -16,7 +14,9 @@ const CategoryCard = ({
   return (
     <div
       className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
-      onClick={() => {handleCardClick()}}
+      onClick={() => {
+        handleCardClick();
+      }}
     >
       <div className="relative h-48 w-full">
         <Image
@@ -36,4 +36,4 @@ const CategoryCard = ({
   );
 };
 
-export default CategoryCard
+export default CategoryCard;
